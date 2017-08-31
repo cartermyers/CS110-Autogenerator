@@ -1,0 +1,23 @@
+Main Category:
+Examples
+Sub Category:
+For Loops Printing
+File Out:
+For_Loops_printing_examples.txt
+Number of Questions to generate:
+1000
+Base Difficulty (from 1 to 4):
+1
+Difficulty Range (i.e. "increase by how many levels"; NOTE: (Base Difficulty + Difficulty Range) <= 4):
+1
+Question Set (Please choose one from below):
+0
+[0] - Arrays (Currently-used questions in Levels 1-2)
+[1] - For Loops
+[2] - Do While Loops
+[3] - While Loops
+[4] - Dynamic Expressions
+[5] - Functions (Currently-used questions in level 1-2)
+[6] - Switch Cases 
+[7] - Identifiers
+[8] - Conditionals
