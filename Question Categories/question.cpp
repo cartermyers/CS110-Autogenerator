@@ -573,33 +573,33 @@ void Question::Tests()
 	//5++ == 6 (or ++5 == 6 more realistically)
 	assert(Arithmetic<int>(incr, 5, -5) == 6);
 
-	//3 > 2 == 1
-	assert(Arithmetic<int>(gt, 3, 2) == 1);
-	//5 > 5 == 0
-	assert(Arithmetic<int>(gt, 5, 5) == 0);
-	//4 > 6 == 0
-	assert(Arithmetic<int>(gt, 4, 6) == 0);
+	// 3 > 2
+	assert(Compare(gt, 3, 2));
+	// ! 5 > 5 
+	assert(!Compare(gt, 5, 5));
+	// ! 4 > 6
+	assert(!Compare(gt, 4, 6));
 
-	//3 >= 2 == 1
-	assert(Arithmetic<int>(gte, 3, 2) == 1);
-	//5 >= 5 == 1
-	assert(Arithmetic<int>(gte, 5, 5) == 1);
-	//4 >= 6 == 0
-	assert(Arithmetic<int>(gte, 4, 6) == 0);
+	//3 >= 2
+	assert(Compare(gte, 3, 2));
+	//5 >= 5
+	assert(Compare(gte, 5, 5));
+	// ! 4 >= 6
+	assert(!Compare(gte, 4, 6));
 
-	//1 < 6 == 1
-	assert(Arithmetic<int>(lt, 1, 6) == 1);
-	//7 < 7 == 0
-	assert(Arithmetic<int>(lt, 7, 7) == 0);
-	//10 < 9 == 0
-	assert(Arithmetic<int>(lt, 10, 9) == 0);
+	// 1 < 6
+	assert(Compare(lt, 1, 6));
+	// ! 7 < 7 == 0
+	assert(!Compare(lt, 7, 7));
+	// ! 10 < 9 == 0
+	assert(!Compare(lt, 10, 9));
 
-	//5 <= 6 == 1
-	assert(Arithmetic<int>(lte, 5, 6) == 1);
-	//6 <= 6 == 1
-	assert(Arithmetic<int>(lte, 6, 6) == 1);
-	//3 <= 2 == 0
-	assert(Arithmetic<int>(lte, 3, 2) == 0);
+	// 5 <= 6
+	assert(Compare(lte, 5, 6));
+	// 6 <= 6
+	assert(Compare(lte, 6, 6));
+	// ! 3 <= 2
+	assert(!Compare(lte, 3, 2));
 
 	//TEST FLOAT STUFF?
 	//AND BOOL STUFF?

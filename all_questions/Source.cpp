@@ -1,18 +1,16 @@
-// A general-purpose program for generating random questions 
+// A general-purpose program for generating random questions
 // based off of difficulty
 // currently about arrays and loops (more to come)
 //-----------------------------------------------------------------
-// Made using "For Loop w Skew" as a template 
+// Made using "For Loop w Skew" as a template
 //-----------------------------------------------------------------
 // See 	README.md for question set difficulties and general notes
 //-----------------------------------------------------------------
 
 #include <iostream>
 #include <ctime>
-
 #include "../Question Categories/question.h"	//contains <fstream> and <string>
 #include "../Question Categories/All Questions.h"
-
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -47,20 +45,20 @@ int main(int argc, char *argv[])
 		{
 			fileControl = argv[1];
 		}
-	
+
 		//Opening the control file; FILE MUST BE IN SOLUTION DIRECTORY
-		ifstream fileCtr(fileControl.c_str()); 
+		ifstream fileCtr(fileControl.c_str());
 
 		if (!fileCtr.is_open())
 		{
 			cout << "Could not open the input file.\n";
 			return 1;
 		}
-		
-		//read in the arguments from the control file 
+
+		//read in the arguments from the control file
 		//(assuming it's in the standard format)
-		getline(fileCtr, deadLine);		
-		getline(fileCtr, mainCategory); 
+		getline(fileCtr, deadLine);
+		getline(fileCtr, mainCategory);
 		getline(fileCtr, deadLine);
 		getline(fileCtr, subCategory);
 		getline(fileCtr, deadLine);
@@ -88,65 +86,16 @@ int main(int argc, char *argv[])
 	srand(unsigned int(time(NULL)));
 
 	//Starting the output file
-	ofstream file(fileOut.c_str()); 
+	ofstream file(fileOut.c_str());
 	if (!file.is_open())
 	{
 		cout << "Error opening the output file.\n";
 		return 1;
 	}
 
-	//First, test the question category:
-		
 	//dynamically create a new question based on desired question class
 	Question* currQuestion;
-			
-	//choose the category
-	//(maybe make a function for this because I use it in the for loop as well)
-	//but that's tricky because we have to allocate memory, so pass a pointer by reference or something
-	switch (questionSet)
-	{
-		case 0:
-			currQuestion = new Arrays();
-			break;
-		case 1:
-			currQuestion = new Loops(0); //for loops
-			break;
-		case 2:
-			currQuestion = new Loops(2); //do while loops
-			break;
-		case 3:
-			currQuestion = new Loops(1); //while loops
-			break;
-		case 4: 
-			currQuestion = new Expressions();
-			break;
-		case 5:
-			currQuestion = new Functions();
-			break;
-		case 6:
-			currQuestion = new SwitchCases();
-			break;
-		case 7:
-			currQuestion = new Identifiers();
-			break;
-		case 8:
-			currQuestion = new Conditionals();
-			break;
-		default: //hopefully never happens
-			currQuestion = new Arrays();
-	}
-	
-	//test the superclass:
-	currQuestion->Question::Tests();
 
-	//test current set:
-	currQuestion->Tests();
-			
-	delete currQuestion;
-	currQuestion = NULL;
-
-	//Now actually make the questions:
-	
 	//Setting category the questions will be uploaded to.
 	file << "$CATEGORY: $course$ / " + mainCategory + " / " + subCategory + to_string(baseDifficulty);
 	file << "\n\n";
@@ -195,10 +144,10 @@ int main(int argc, char *argv[])
 			questionCategory = "Conditionals";
 			break;
 		default:
-			currQuestion = new Arrays();
-			questionCategory = "Please select a proper question set.";
+			cout << "Please select a proper question set.";
+			return 1;
 		}
-		
+
 		int difficulty = baseDifficulty + (rangeDifficulty * i / numQuestions);
 
 		//this updates the category for every different difficulty
@@ -212,7 +161,7 @@ int main(int argc, char *argv[])
 		currQuestion->SetDifficulty(difficulty);
 
 		currQuestion->Generate();
-			
+
 		//Writing the question to the file.
 		//Question
 		file << "::" + questionCategory + " Level " << difficulty << " #" << setw(3) << setfill('0') << i << "::\n";
@@ -226,15 +175,17 @@ int main(int argc, char *argv[])
 		{
 			cout << "THE SAME ANSWERS HAVE APPEARED IN A QUESTION\n";
 			cout << "Please fix your code.\n";
-			
+
 			delete currQuestion;
 			currQuestion = NULL;
-			return 2; 
+			return 2;
 		}
 
 		delete currQuestion;
 		currQuestion = NULL;
 	}
+
+	file.close();
 
 	return 0;
 }
