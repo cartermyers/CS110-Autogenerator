@@ -136,14 +136,8 @@ bool Conditionals::EvalExpression(vector<float> vals, vector<Symbols> operators)
 {
 	assert(operators.size() == vals.size() - 1);
 
-	vector<bool> tempRes;						//a temporary vector of the results of each parenthetical expression
-	vector<Symbols> tempOperators = operators;	//another temporary vector, just a subset of the operators
-							//this just makes calculations more clear
-	
-	for (size_t i = 0; i < vals.size(); i++)
-	{
-		tempRes.push_back(bool(vals[i]));
-	}
+	vector<Symbols> tempOperators = operators;	//temporary vector, just a subset of the operators
+												//this just makes calculations more clear
 
 	//use a different loop to check for each operator precedence
 	
@@ -151,11 +145,11 @@ bool Conditionals::EvalExpression(vector<float> vals, vector<Symbols> operators)
 	{
 		if (gt <= tempOperators[i] && tempOperators[i] <= lte)
 		{
-			tempRes[i] = Compare(tempOperators[i], tempRes[i], tempRes[i + 1]);
+			vals[i] = Compare(tempOperators[i], vals[i], vals[i + 1]);
 			
 			//and delete the parts we used
 			tempOperators.erase(tempOperators.begin() + i);
-			tempRes.erase(tempRes.begin() + i + 1);
+			vals.erase(vals.begin() + i + 1);
 		}
 		else
 		{
@@ -163,6 +157,13 @@ bool Conditionals::EvalExpression(vector<float> vals, vector<Symbols> operators)
 		}
 	}
 	
+	vector<bool> tempRes;	//a temporary vector of the results of each parenthetical expression
+
+	for (size_t i = 0; i < vals.size(); i++)
+	{
+		tempRes.push_back(bool(vals[i]));
+	}
+
 	assert(tempRes.size() - 1 == tempOperators.size());
 	
 	//check for != and == operators (next highest precedence)
