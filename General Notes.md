@@ -4,6 +4,51 @@
 #### Documentation Beginnning March 30, 2017
 ##### (Most recent at top):
 
+##### 02/09/17
+Now that this set of questions is mostly complete, I've been researching ways to autogenerate 
+"Theoretical" questions. There has actually been a lot of work done in the field, and here
+are some papers that I think are notable:
+
+- [RevUp](https://www.googlesciencefair.com/projects/en/2015/7151ae4ff6b70198aafc08fbee39127ad0913cd407d98d8b596a85c14ed57ba9)
+- [A System for Generating Multiple Choice Questions: With a Novel
+Approach for Sentence Selection](http://www.aclweb.org/anthology/W15-4410)
+- [Automatic gap-fill question generation from text books](http://dl.acm.org/citation.cfm?id=2043139)
+- [Automatic Question Generation for Vocabulary Assessment](http://delivery.acm.org/10.1145/1230000/1220678/p819-brown.pdf?ip=65.87.236.10&id=1220678&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&CFID=980009987&CFTOKEN=73319641&__acm__=1504386329_24b4985962bed5adaf187a090b730f7d)
+
+There are countless other papers that I will not mention here, but more thorough research should be done if any 
+papers need to be cited or anything like that. Instead, here I will explain the main steps of this procedure and
+a possible plan to implement it in the scope of these questions.
+
+The main process of generating questions consists of three steps:
+1. Select possible sentences or facts from a corpus.
+2. Select a gap word or phrase from the sentence to make the answer.
+3. Select relevant and convincing distractors based on the answer.
+
+The first step here has been achieved by neural networks, classification algorithms, or by simply manually setting weights 
+to features for scoring. In this class, I think a classification algorithm would be best, as neural networks can get complex,
+and the manual weightting approach can not be as affective. The only downside is that a good dataset would need to be gathered
+to perform an accurate supervised classification (because I'm not sure that unsupervised classification would be sufficient). 
+In addition, a digital textbook or some other type of source would be needed for the corpus.
+
+In the next step, I think manual weighting would be the simplest approach. Some filtering would be conducted first, 
+based on studies that only select certain parts of speech (noun phrases, adjectives, etc.), then parsed and compared to
+a small test set with known parse trees. It's tough to see the exact implementation of this step currently - as it
+is probably the most difficulty - but I believe at least some rudimentary process can be conducted.
+
+For the last step, I think the easiest implementation would include some part of [WordNet](https://wordnet.princeton.edu/) to
+select gaps with simialr parts of speech, synonyms, hyponyms, or hypernyms. This might be a little difficult dealing
+with computer science in particular because it contains technical terms that may be hard to find distractors for.
+Overall, I think this step is probably the easiest, as distractors are important, but not nearly as crucial as the
+other aspects of the question.
+
+As for the format, I think it is obviously easiest to generate fill-in-the-blank (or "cloze") questions using this. Some
+papers would use methods to rephrase the sentence to be a "WH question" (beginning with "who", "what", etc.), however
+I think this is unnecessarily complicated for this scope. 
+
+So far, this is all just planning. I am not positive if it is worth it to pursue this strategy, as there is currently
+no chosen corpus and the whole implementation would take a lot of work. But I think it's a good start if theoretical
+questions are ever considered.
+
 ##### 01/08/17
 I think I am almost done with the current iteration of these questions. I've
 added more categories from older questions (ones completed before I started on this project)
