@@ -1,5 +1,4 @@
 # General Notes
--------------------------------------------------------------------
 
 #### Documentation Beginnning March 30, 2017
 ##### (Most recent at top):
