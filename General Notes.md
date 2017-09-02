@@ -48,6 +48,8 @@ So far, this is all just planning. I am not positive if it is worth it to pursue
 no chosen corpus and the whole implementation would take a lot of work. But I think it's a good start if theoretical
 questions are ever considered.
 
+-CM
+
 ##### 01/08/17
 I think I am almost done with the current iteration of these questions. I've
 added more categories from older questions (ones completed before I started on this project)
