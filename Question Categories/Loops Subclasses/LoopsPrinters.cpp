@@ -37,9 +37,7 @@ string WhileLoopsPrinters::PrintLoop(QLoops* current, string id, string printerI
 	string res = "int " + id + " = " + to_string(current->GetStart()) + ";\n";
 
 	res += "while (" + id + " " + SYMBOLS[current->GetSymb()] + " " + to_string(current->GetStop()) + ")\n";
-
 	res += "\\{\n\tcout << " + printerId + " << \" \";\n";
-
 	res += "\t" + id + " " + SYMBOLS[(current->GetIncSymb())] + "= " + to_string(current->GetIncrement()) + ";\n\\}";
 
 	return res;
@@ -48,17 +46,11 @@ string WhileLoopsPrinters::PrintLoop(QLoops* current, string id, string printerI
 string WhileLoopsPrinters::PrintLoop(QLoops* outer, string outerId, QLoops* inner, string innerId, string printerId)
 {
 	string res = "int " + outerId + " = " + to_string(outer->GetStart()) + ";\n";
-
 	res += "while (" + outerId + " " + SYMBOLS[outer->GetSymb()] + " " + to_string(outer->GetStop()) + ")\n";
-
-	res += "\\{\n\tint " + innerId + "= " + to_string(inner->GetStart()) + ";\n";
-
+	res += "\\{\n\tint " + innerId + " = " + to_string(inner->GetStart()) + ";\n";
 	res += "\twhile (" + innerId + " " + SYMBOLS[inner->GetSymb()] + " " + to_string(inner->GetStop()) + ")\n";
-
 	res += "\t\\{\n\t\tcout << " + printerId + " << endl;\n";
-
 	res += "\t\t" + innerId + " " + SYMBOLS[(inner->GetIncSymb())] + "= " + to_string(inner->GetIncrement()) + ";\n\t\\}\n";
-
 	res += "\\}";
 
 	return res;
