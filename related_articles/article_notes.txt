@@ -1,0 +1,86 @@
+
+
+
+General notes on current articles:
+- Most autogeneration uses a corpus; usually interested in NLP techniques and natural language learning. Dozens of examples of this.
+- Other generated questions focus on student generation (and focuses on benefits of learning after generating questions)
+- Online cheating factors are sometimes considered (usually separate from generation/selection of questions)
+- Most sources mention the strenuous manual labor of manually creating questions
+
+Notable papers
+****************************************************************************
+
+Multiple-Choice Tests and Student Understanding: What Is the Connection?
+MG Simkin, William Kuechler
+Dec. 2004
+
+Notes
+-------------
+- good intro to use of MC questions over "CR" questions for introductory undergrad courses (especially programming)
+- classification of certain MC questions (using developed hierarchy - Bloom's taxonomy?)
+
+
+****************************************************************************
+
+Creation of a dynamic question database for pharmacokinetics
+Reza Mehvar
+American Journal of Pharmaceutical Education
+Winter 2000
+
+Notes
+-------------
+- very similar to our current implementation of questions (except using excel for generation and format)
+- generates calculation vs. concept questions. However, concept questions seem very limited in regards
+to random generation (each question is limited to 3 or 4 predefined answers)
+- explicit steps for instructor and student actions
+- relatively small testing (N = 56); only compared average of a single test between a year
+- included a student survey of the method; students agreed that it would decrease "academic dishonesty"
+and thought the exams should continue
+
+New article by the same author was published in 2017. It continues on the same path, comparing individualized
+questions to traditional exams (much more statistically rigorous)
+
+
+****************************************************************************
+
+Design for Web-based on-demand multiple choice exams using XML
+R. Lister, P. Jerram
+August 2001
+
+Notes
+-------------
+- basically a description for a testing system that randomly generates exams based on XML (similar to Moodle)
+- good intro to online exams (asks questions about security, problems with large classrooms)
+- leaves problems that can be solved by generated MCQ
+
+
+
+****************************************************************************
+
+Envisioning the use of online tests in assessing twenty-first century learning: a literature review
+Bopelo BoitshwareloEmail, Alison Kay Reedy, Trevor Billany
+August 2017
+
+Notes
+-------------
+- MCQ are the best evaluator of the first three cognitive levels in Bloom's taxonomy; also most widely used type of question
+- Touch on problems of cheating, widely-available publisher test banks, etc.
+- Online tests are often poorly designed and require shallow understanding
+- Reviews most papers relevant to MCQ
+
+
+****************************************************************************
+
+A Proposed Framework for Generating Random Objective Exams using Paragraphs of Electronic Courses
+Elsaeed E. AbdElrazek
+International Journal of Advanced Computer Science and Applications
+August 2017
+
+Notes
+-------------
+- multiple question types generated from a corpus using NLP
+- current advanced question generation 
+- hard to read at some points (too ambiguous)
+
+
+****************************************************************************
