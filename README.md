@@ -42,131 +42,157 @@ for (int i = 0; i < 5; i += 1)
 - ```{4, 0, 7, 1, 5}```
 
 
+##### (iii) - Incorrect element access
+What is printed after the following statements?
+There is an option for out of bounds indexing (hence the last distractor may be correct at times).
+```cpp
+int list[6] = {5, 10, 4, 1, 3, 7};
+for (int i = 1; i < 5; i = i + 2)
+{
+	cout << list[i] << " ";
+}
+```
+- **10 1**
+- 1 7
+- 1 10
+- 5 4
+- Run-time error due to out of bound index.
+
+
 ## Loops
 
 All Loops have the same nature of questions, they are just in different formats based on
-selection (For Loop, While Loop, or Do While Loop).
-
-There is also an option to change the type of questions inside Loops.cpp (see Loops::TypeOne()
-and Loops::TypeTwo() for more details)
+selection (For Loop, While Loop, or Do While Loop). Each also has the option of "improper"
+loops, meaning that the loop conditions are such that the statement will execute billions
+of times (due to integer overflow).
 
 Here are all of the currently used Loop questions.
 
 ### Loop Counting
 
-##### (i) - Single Loops using additive and subtractive updates
+##### (i) - Single Loops using additive updates
 
 How many times does the '\*' print?
 ```cpp
-for (int a = 31; a > 22; a = a - 5)
+for (int i = 10; i < 25; i = i + 5)
 {
-	cout << '*' << " ";
+	cout << '\*';
 }
 ```
-
-- **2**
+- **3**
+- 2
+- 4
+- 0
 - 1
-- 3
-- 8
-- 6
 
-##### (ii) - Single Loops using multiplicative and divisive (?) updates
+##### (ii) - Single Loops using additive and subtractive updates with improper loops
 
 How many times does the '\*' print?
 ```cpp
-int d = 61;
-while (d > 4)
+int c = 44;
+do
 {
-	cout << '*' << " ";
-	d /= 2;
-}	
+	cout << '\*';
+	c = c - 5;
+} while (c > 24);
 ```
 - **4**
 - 3
 - 5
-- 8
-- 2
+- 0
+- Around a couple billion
 
 
-##### (iii) - A similar question to (i) but with nested loops
+##### (iii) - A similar question to (ii) but multiplicative and divisive (?) updates
 
 How many times does the '\*' print?
 ```cpp
-int i = 17;
-do
+int a = 1;
+while (a < 189)
 {
-	int j = 73;
-	do
-	{		
-		cout << '*' << " ";
-		j = j + 10;
-	} while (j <= 106);
-	i = i - 1;
-} while (i > 14);
+	cout << '\*';
+	a \*= 10;
+}
 ```
-
-- **12**
+- **3**
+- 2
 - 4
-- 3
-- 13
-- 16
+- 0
+- Around a couple billion
+
 
 ##### (iv) - A similar question to (ii) but with nested loops
 
 How many times does the '\*' print?
 ```cpp
-for (int i = 1; i <= 5; i = i * 2)
+for (int i = 90; i > 60; i = i - 10)
 {
-	for (int j = 451; j >= 1; j = j / 10)
+	for (int j = 30; j < 62; j = j + 10)
 	{
-		cout << '*' << " ";
+		cout << '\*';
 	}
 }
 ```
-- **9**
+- **12**
 - 4
 - 3
-- 12
+- 11
 - 16
+
 
 ### Loop Printing
 
-This is currently only used for single loops in (i) and (ii). I think this would be too difficult with nested loops.
+This is currently only used for single loops in (i) - (iii). I think this would be too difficult with nested loops.
 
 ##### (i) - Single Loops that output the "loop variable" at every iteration
 
 What is the following output of the code?
 ```cpp
-int b = 85;
-while (b > 40)
+int g = 6;
+while (g < 10)
 {
-	cout << b << " ";
-	b -= 10;
-}	
+	cout << g << ' ';
+	g += 1;
+}
 ```
-- **85 75 65 55 45**
-- 75 65 55 45 
-- 75 65 55 45 35 
-- 85 75 65 55 
-- 85 75 65 55 45 35 
+- **6 7 8 9**
+- 7 8 9
+- 7 8 9 10
+- 6 7 8
+- 6 7 8 9 10
 
-##### (ii) Similar to (i) but with multiplicative and divisive increments
+##### (ii) Similar to (i) but with subtraction as well
 
 What is the following output of the code?
 ```cpp
-int j = 1915;
+int b = 61;
 do
 {
-	cout << j << " ";
-	j = j / 10;
-} while (j >= 2);
+	cout << b << ' ';
+	b = b - 10;
+} while (b > 20);
 ```
+- **61 51 41 31 21**
+- 51 41 31 21
+- 51 41 31 21 11
+- 61 51 41 31
+- 61 51 41 31 21 11
 
-- **1915 191 19** 
-- 191 19 
-- 191 19 1 
-- 1915 191 
-- 1915 191 19 1 
+##### (iii) Similar to (ii) but with multiplicative and divisive increments
+
+What is the following output of the code?
+```cpp
+for (int c = 21; c > 4; c = c / 2)
+{
+	cout << c << ' ';
+}
+```
+- **21 10 5**
+- 10 5
+- 10 5 2
+- 21 10
+- 21 10 5 2
+
 
 ## Expressions
 
@@ -191,48 +217,70 @@ What is the variable "bar" equal to?
 ##### (i) - Reference Parameters
 The order of the parameters and the arguments have the option of being randomized.
 
-What values are printed out at the end of the code?
+Given the following function definition:
 ```cpp
-void Find(int b, int& c, int& a)
+void Calculate(int& a, int& b, int c)
 {
-	c = b / c * a;
-}
-int main()
-{
-   int dogs = 6;
-   int matrix = 8;
-   int marks = 3;
-   Find(dogs, matrix, marks);
-   cout << matrix << endl;
-   return 0;
+	b = a / b + c;
 }
 ```
-- **0**
-- 8
-- 2.25
+What value is printed after the following statments?
+```cpp
+int marks = 5;
+int matrix = 4;
+int item = 5;
+Calculate(marks, matrix, item);
+cout << matrix << endl;
+```
+
+- **6**
+- 4
 - 3
-- 0.25
+- 5
+- 1
 
-##### (ii) - Parameter and Return types
-The return type has an option of being "void", so the answer is sometimes a compile-time error
+##### (ii) - Parameter data types
+The return type is always float to give the most general return value.
 
-What values are printed out at the end of the code?
+Given the following function definition:
 ```cpp
-float Switch(float item, int dogs)
+float Switch(float a, int b)
 {
-    return item + dogs;
-}
-int main()
-{
-    cout << Switch(5.5, 0.5);
-    return 0;
+    return a - b;
 }
 ```
-- **5.5**
-- Compile-time error
-- Run-time error
-- 6
+What is printed from the following call?
+```cpp
+cout << Switch(3.5, 1.5) << endl;
+```
+
+- **2.5**
+- -1
 - 4.5
+- -2.5
+- 2
+
+
+##### (ii) - Function return types
+The main random element is the function return type, which forces type coercion. There is also a possibility that the return type is void, and the correct answer is "Compile-time Error".
+
+Given the following function definition:
+```cpp
+int Pow()
+{
+	return 4.5 + 1.0;
+}
+```
+What is printed from the following call?
+```cpp
+cout << Pow() << endl;
+```
+
+- **5**
+- 6.5
+- 5.5
+- Run-time error.
+- Compile-time error.
 
 
 ## Switch Cases

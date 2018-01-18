@@ -4,65 +4,63 @@
 // This program is mainly an environment to run the Tests() functions
 
 #include <iostream>
-#include <cassert>
-#include "../Question Categories/question.h"
-#include "../Question Categories/All Questions.h"
-
+#include "../Questions/Categories/question.h"
+#include "../Questions/Categories/all_questions.h"
 
 int main()
 {
-  Question* tester = new Arrays();
+	try
+	{
+		Question* tester = new QArrays();
 
-  //first, test the superclass:
-  tester->Question::Tests();
+		//first, test the superclass:
+		tester->Question::Tests();
 
-  //then all the subclasses:
+		//then all the subclasses:
 
-  //Arrays:
-  tester->Tests();
-  delete tester;
+		//Arrays:
+		tester->Tests();
+		delete tester;
 
-  //for loops
-  tester = new Loops(0);
-  tester->Tests();
-  delete tester;
+		//for loops
+		tester = new QLoops(0, 0);	//these numbers don't matter for initialization, as all tests for loops are at QLoops::Tests()
+		tester->Tests();
+		delete tester;
 
-  //do while loops
-  tester = new Loops(2);
-  tester->Tests();
-  delete tester;
+		//expressions
+		tester = new QExpressions();
+		tester->Tests();
+		delete tester;
 
-  //while loops
-  tester = new Loops(1);
-  tester->Tests();
-  delete tester;
+		//functions
+		tester = new QFunctions();
+		tester->Tests();
+		delete tester;
 
-  //expressions
-  tester = new Expressions();
-  tester->Tests();
-  delete tester;
+		//switch cases
+		tester = new QSwitchCases();
+		tester->Tests();
+		delete tester;
 
-  //functions
-  tester = new Functions();
-  tester->Tests();
-  delete tester;
+		//identifiers
+		tester = new QIdentifiers();
+		tester->Tests();
+		delete tester;
 
-  //switch cases
-  tester = new SwitchCases();
-  tester->Tests();
-  delete tester;
+		//conditionals
+		tester = new QConditionals();
+		tester->Tests();
+		delete tester;
 
-  //identifiers
-  tester = new Identifiers();
-  tester->Tests();
-  delete tester;
+		tester = NULL;
 
-  //conditionals
-  tester = new Conditionals();
-  tester->Tests();
-  delete tester;
+		cout << "All tests have passed.\n";
+	}
+	catch (exception &e)
+	{
+		cout << "An error was found with the statement: " << e.what() << endl;
+	}
 
-  tester = NULL;
-
-  return 0;
+	system("pause");
+	return 0;
 }

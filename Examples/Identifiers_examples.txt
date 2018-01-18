@@ -2,31 +2,31 @@ $CATEGORY: $course$ / Examples / Identifiers1
 
 ::Identifiers Level 1 #000::
 Is the following a valid C++ identifier?
-UECdd5xU
+6z3Sspd2E
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #001::
+Is the following a valid C++ identifier?
+T1zXeut
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #001::
-Is the following a valid C++ identifier?
-7ODq2
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 1 #002::
 Is the following a valid C++ identifier?
-7do3zkq4
+duAoONb0
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #003::
 Is the following a valid C++ identifier?
-jgx1v
+r5hd6zCnZ
 	{
 	=True
 	~False
@@ -34,7 +34,7 @@ jgx1v
 
 ::Identifiers Level 1 #004::
 Is the following a valid C++ identifier?
-YzZfT
+Eehf3e
 	{
 	=True
 	~False
@@ -42,7 +42,7 @@ YzZfT
 
 ::Identifiers Level 1 #005::
 Is the following a valid C++ identifier?
-EY9RP
+biK66
 	{
 	=True
 	~False
@@ -50,7 +50,7 @@ EY9RP
 
 ::Identifiers Level 1 #006::
 Is the following a valid C++ identifier?
-Az4L4uH0
+K4N2cKJ
 	{
 	=True
 	~False
@@ -58,23 +58,23 @@ Az4L4uH0
 
 ::Identifiers Level 1 #007::
 Is the following a valid C++ identifier?
-Hix6w74F
+8BNRNxV
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #008::
 Is the following a valid C++ identifier?
-bOBiH4
+3f1Vy
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #009::
 Is the following a valid C++ identifier?
-1OwXQ7
+16COsH
 	{
 	=False
 	~True
@@ -82,7 +82,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #010::
 Is the following a valid C++ identifier?
-Sr7QvK
+kC3OOP
 	{
 	=True
 	~False
@@ -90,31 +90,31 @@ Sr7QvK
 
 ::Identifiers Level 1 #011::
 Is the following a valid C++ identifier?
-84eceVO
+SLBRcn6
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 1 #012::
+Is the following a valid C++ identifier?
+7xmyja4
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 1 #012::
-Is the following a valid C++ identifier?
-ZPq9Wy
-	{
-	=True
-	~False
-	}
-
 ::Identifiers Level 1 #013::
 Is the following a valid C++ identifier?
-Qfea3s
+1VKFk3
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #014::
 Is the following a valid C++ identifier?
-Z5Ft9pO
+E7H0Nl
 	{
 	=True
 	~False
@@ -122,7 +122,7 @@ Z5Ft9pO
 
 ::Identifiers Level 1 #015::
 Is the following a valid C++ identifier?
-4tDVVnxj
+6glSQ0d
 	{
 	=False
 	~True
@@ -130,15 +130,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #016::
 Is the following a valid C++ identifier?
-CdSTy
+1m5Y5vVVU
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #017::
 Is the following a valid C++ identifier?
-vzKF26
+QEdGeEh
 	{
 	=True
 	~False
@@ -146,15 +146,15 @@ vzKF26
 
 ::Identifiers Level 1 #018::
 Is the following a valid C++ identifier?
-RxlTxt
+8i1jH
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #019::
 Is the following a valid C++ identifier?
-ENrH5uECD
+jCQCD
 	{
 	=True
 	~False
@@ -162,7 +162,7 @@ ENrH5uECD
 
 ::Identifiers Level 1 #020::
 Is the following a valid C++ identifier?
-0QPTCyiPE
+5Q3y3WW
 	{
 	=False
 	~True
@@ -170,7 +170,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #021::
 Is the following a valid C++ identifier?
-vK1QhwJ
+ZcNl6
 	{
 	=True
 	~False
@@ -178,7 +178,7 @@ vK1QhwJ
 
 ::Identifiers Level 1 #022::
 Is the following a valid C++ identifier?
-V7887
+C2Uks8W0F
 	{
 	=True
 	~False
@@ -186,7 +186,7 @@ V7887
 
 ::Identifiers Level 1 #023::
 Is the following a valid C++ identifier?
-S47NkyzLF
+leVmTmmPd
 	{
 	=True
 	~False
@@ -194,15 +194,15 @@ S47NkyzLF
 
 ::Identifiers Level 1 #024::
 Is the following a valid C++ identifier?
-jUd9L6RO
+1lZZojlK
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #025::
 Is the following a valid C++ identifier?
-mm91i9Qt
+YnAFjH
 	{
 	=True
 	~False
@@ -210,15 +210,15 @@ mm91i9Qt
 
 ::Identifiers Level 1 #026::
 Is the following a valid C++ identifier?
-17OtakT0
+h6k3q
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #027::
 Is the following a valid C++ identifier?
-TOxAGEO1
+dM86Wp
 	{
 	=True
 	~False
@@ -226,7 +226,7 @@ TOxAGEO1
 
 ::Identifiers Level 1 #028::
 Is the following a valid C++ identifier?
-VHUt10v
+j48vtUQ
 	{
 	=True
 	~False
@@ -234,15 +234,15 @@ VHUt10v
 
 ::Identifiers Level 1 #029::
 Is the following a valid C++ identifier?
-CvLk0wE
+3khUt4
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #030::
 Is the following a valid C++ identifier?
-Sl5Av1a
+VPwywE6l
 	{
 	=True
 	~False
@@ -250,39 +250,39 @@ Sl5Av1a
 
 ::Identifiers Level 1 #031::
 Is the following a valid C++ identifier?
-0iQRvwQn
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #032::
-Is the following a valid C++ identifier?
-2H9h7K
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #033::
-Is the following a valid C++ identifier?
-p8oj2Q9AD
+o5BmXmKkZ
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #034::
+::Identifiers Level 1 #032::
 Is the following a valid C++ identifier?
-56LR62e
+P98pXrLP5
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 1 #033::
+Is the following a valid C++ identifier?
+7R2YLe1
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #034::
+Is the following a valid C++ identifier?
+qgVb11
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #035::
 Is the following a valid C++ identifier?
-i873J9cF
+s9gf80eR5
 	{
 	=True
 	~False
@@ -290,7 +290,7 @@ i873J9cF
 
 ::Identifiers Level 1 #036::
 Is the following a valid C++ identifier?
-I8JGj6m8
+b82BTAae
 	{
 	=True
 	~False
@@ -298,7 +298,7 @@ I8JGj6m8
 
 ::Identifiers Level 1 #037::
 Is the following a valid C++ identifier?
-vKcMd
+iEFMY
 	{
 	=True
 	~False
@@ -306,15 +306,15 @@ vKcMd
 
 ::Identifiers Level 1 #038::
 Is the following a valid C++ identifier?
-3g08oU5n1
+Tr8kq
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #039::
 Is the following a valid C++ identifier?
-4322t
+8emMdN
 	{
 	=False
 	~True
@@ -322,7 +322,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #040::
 Is the following a valid C++ identifier?
-xChYFs0oL
+KGS1x
 	{
 	=True
 	~False
@@ -330,7 +330,7 @@ xChYFs0oL
 
 ::Identifiers Level 1 #041::
 Is the following a valid C++ identifier?
-ZhlE0
+n0uU68
 	{
 	=True
 	~False
@@ -338,15 +338,15 @@ ZhlE0
 
 ::Identifiers Level 1 #042::
 Is the following a valid C++ identifier?
-6Jv4pk
+RttBR
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #043::
 Is the following a valid C++ identifier?
-Mg94hjkjU
+z9ORjiZq6
 	{
 	=True
 	~False
@@ -354,7 +354,7 @@ Mg94hjkjU
 
 ::Identifiers Level 1 #044::
 Is the following a valid C++ identifier?
-PnD9FSyx
+C4yQw01D9
 	{
 	=True
 	~False
@@ -362,7 +362,7 @@ PnD9FSyx
 
 ::Identifiers Level 1 #045::
 Is the following a valid C++ identifier?
-5HvLAZI1
+31ZE9d
 	{
 	=False
 	~True
@@ -370,15 +370,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #046::
 Is the following a valid C++ identifier?
-57Gs34
+K5q2D0
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #047::
 Is the following a valid C++ identifier?
-rVY4NKkt
+Pszn4
 	{
 	=True
 	~False
@@ -386,7 +386,7 @@ rVY4NKkt
 
 ::Identifiers Level 1 #048::
 Is the following a valid C++ identifier?
-gXUJ72cc5
+T4SOQ7Qf
 	{
 	=True
 	~False
@@ -394,15 +394,15 @@ gXUJ72cc5
 
 ::Identifiers Level 1 #049::
 Is the following a valid C++ identifier?
-6qV4TGbw
+Mw5a68NT8
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #050::
 Is the following a valid C++ identifier?
-Uqc00
+ECxQD1YL
 	{
 	=True
 	~False
@@ -410,23 +410,23 @@ Uqc00
 
 ::Identifiers Level 1 #051::
 Is the following a valid C++ identifier?
-REol2
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #052::
-Is the following a valid C++ identifier?
-0p5wn46
+8Ot2Ur
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #052::
+Is the following a valid C++ identifier?
+HWjpM
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #053::
 Is the following a valid C++ identifier?
-YJyW9
+oCgjAR5
 	{
 	=True
 	~False
@@ -434,15 +434,15 @@ YJyW9
 
 ::Identifiers Level 1 #054::
 Is the following a valid C++ identifier?
-LEPysL2p
+5xW7Y7p
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #055::
 Is the following a valid C++ identifier?
-D31jOR6qD
+RrBZab6
 	{
 	=True
 	~False
@@ -450,7 +450,7 @@ D31jOR6qD
 
 ::Identifiers Level 1 #056::
 Is the following a valid C++ identifier?
-X0KXr
+Sn7XoX3O
 	{
 	=True
 	~False
@@ -458,31 +458,31 @@ X0KXr
 
 ::Identifiers Level 1 #057::
 Is the following a valid C++ identifier?
-sSMCc
+63lTMhEKA
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #058::
+Is the following a valid C++ identifier?
+z6PGDS
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #058::
-Is the following a valid C++ identifier?
-882EZZ6W8
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 1 #059::
 Is the following a valid C++ identifier?
-35rmq9zf
+uUGhik0n
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #060::
 Is the following a valid C++ identifier?
-i41Xs
+B5F9dBEP
 	{
 	=True
 	~False
@@ -490,7 +490,7 @@ i41Xs
 
 ::Identifiers Level 1 #061::
 Is the following a valid C++ identifier?
-RRDNs0
+A26JNH
 	{
 	=True
 	~False
@@ -498,7 +498,7 @@ RRDNs0
 
 ::Identifiers Level 1 #062::
 Is the following a valid C++ identifier?
-uOT1uoP
+vOhez
 	{
 	=True
 	~False
@@ -506,23 +506,23 @@ uOT1uoP
 
 ::Identifiers Level 1 #063::
 Is the following a valid C++ identifier?
-XW2hYw
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #064::
-Is the following a valid C++ identifier?
-6Vvi0GD
+4pcNd
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #064::
+Is the following a valid C++ identifier?
+uFlVmqJm
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #065::
 Is the following a valid C++ identifier?
-R9lmrxJf
+k1h8k209L
 	{
 	=True
 	~False
@@ -530,15 +530,15 @@ R9lmrxJf
 
 ::Identifiers Level 1 #066::
 Is the following a valid C++ identifier?
-ES6B4TDhb
+36lxd
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #067::
 Is the following a valid C++ identifier?
-bRtZfy7
+DXQRQH4L
 	{
 	=True
 	~False
@@ -546,31 +546,31 @@ bRtZfy7
 
 ::Identifiers Level 1 #068::
 Is the following a valid C++ identifier?
-5HWE7G
+ud6q3
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #069::
 Is the following a valid C++ identifier?
-43Ohvgo48
+JQXdCu
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #070::
 Is the following a valid C++ identifier?
-29nyKPEA
+Hf44aXA
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #071::
 Is the following a valid C++ identifier?
-SY3xzfH
+Ph6FYv
 	{
 	=True
 	~False
@@ -578,7 +578,7 @@ SY3xzfH
 
 ::Identifiers Level 1 #072::
 Is the following a valid C++ identifier?
-Sqrd4LCD
+aBev98dtL
 	{
 	=True
 	~False
@@ -586,7 +586,7 @@ Sqrd4LCD
 
 ::Identifiers Level 1 #073::
 Is the following a valid C++ identifier?
-j97R1TS
+wzNtPMcj9
 	{
 	=True
 	~False
@@ -594,7 +594,7 @@ j97R1TS
 
 ::Identifiers Level 1 #074::
 Is the following a valid C++ identifier?
-4cOpu0We
+4zNGX
 	{
 	=False
 	~True
@@ -602,7 +602,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #075::
 Is the following a valid C++ identifier?
-aMIyCJO
+xt7ZEnwo
 	{
 	=True
 	~False
@@ -610,7 +610,7 @@ aMIyCJO
 
 ::Identifiers Level 1 #076::
 Is the following a valid C++ identifier?
-OnV3v9c
+mwqFO
 	{
 	=True
 	~False
@@ -618,23 +618,23 @@ OnV3v9c
 
 ::Identifiers Level 1 #077::
 Is the following a valid C++ identifier?
-bo1kGVr
+14Ann3bGu
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #078::
 Is the following a valid C++ identifier?
-LzbuzJM6
+698KS7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #079::
 Is the following a valid C++ identifier?
-NJr58gZ
+uw1fzqm
 	{
 	=True
 	~False
@@ -642,7 +642,7 @@ NJr58gZ
 
 ::Identifiers Level 1 #080::
 Is the following a valid C++ identifier?
-QHNbtXZ1d
+sHkeXPt
 	{
 	=True
 	~False
@@ -650,7 +650,7 @@ QHNbtXZ1d
 
 ::Identifiers Level 1 #081::
 Is the following a valid C++ identifier?
-lKR2GST0
+gBC1eL
 	{
 	=True
 	~False
@@ -658,7 +658,7 @@ lKR2GST0
 
 ::Identifiers Level 1 #082::
 Is the following a valid C++ identifier?
-e81NOxE5
+tNUXzRY
 	{
 	=True
 	~False
@@ -666,7 +666,7 @@ e81NOxE5
 
 ::Identifiers Level 1 #083::
 Is the following a valid C++ identifier?
-k1iAKq1
+EJ8U1UY
 	{
 	=True
 	~False
@@ -674,7 +674,7 @@ k1iAKq1
 
 ::Identifiers Level 1 #084::
 Is the following a valid C++ identifier?
-G9Rz52i9
+i5nD1s
 	{
 	=True
 	~False
@@ -682,7 +682,7 @@ G9Rz52i9
 
 ::Identifiers Level 1 #085::
 Is the following a valid C++ identifier?
-OlZkrTgZ
+zb597Z
 	{
 	=True
 	~False
@@ -690,7 +690,7 @@ OlZkrTgZ
 
 ::Identifiers Level 1 #086::
 Is the following a valid C++ identifier?
-LOb20S
+Y8WX0Gml
 	{
 	=True
 	~False
@@ -698,7 +698,7 @@ LOb20S
 
 ::Identifiers Level 1 #087::
 Is the following a valid C++ identifier?
-z1IOBW
+a2t8mZkYd
 	{
 	=True
 	~False
@@ -706,7 +706,7 @@ z1IOBW
 
 ::Identifiers Level 1 #088::
 Is the following a valid C++ identifier?
-jbIJT
+EedaAx
 	{
 	=True
 	~False
@@ -714,15 +714,15 @@ jbIJT
 
 ::Identifiers Level 1 #089::
 Is the following a valid C++ identifier?
-JK9Dbz91
+6DI5E
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #090::
 Is the following a valid C++ identifier?
-o5sBGB
+roqiCxu
 	{
 	=True
 	~False
@@ -730,23 +730,23 @@ o5sBGB
 
 ::Identifiers Level 1 #091::
 Is the following a valid C++ identifier?
-AaXE6KGpD
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #092::
-Is the following a valid C++ identifier?
-3scNkG
+719Uh
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #092::
+Is the following a valid C++ identifier?
+NonEPi9a
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #093::
 Is the following a valid C++ identifier?
-xY2FN17m
+c4Pn47
 	{
 	=True
 	~False
@@ -754,7 +754,7 @@ xY2FN17m
 
 ::Identifiers Level 1 #094::
 Is the following a valid C++ identifier?
-fGidFOaH
+P41hY
 	{
 	=True
 	~False
@@ -762,7 +762,7 @@ fGidFOaH
 
 ::Identifiers Level 1 #095::
 Is the following a valid C++ identifier?
-6GB3Oiiq
+8Es2Aji6y
 	{
 	=False
 	~True
@@ -770,31 +770,31 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #096::
 Is the following a valid C++ identifier?
-gN586Rx1v
+2Qdgww1n
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #097::
+Is the following a valid C++ identifier?
+lJs67
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #097::
-Is the following a valid C++ identifier?
-1C3Rh4
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 1 #098::
 Is the following a valid C++ identifier?
-1k0en
+yWu09N
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #099::
 Is the following a valid C++ identifier?
-T4tQli
+Od7uLQo
 	{
 	=True
 	~False
@@ -802,23 +802,23 @@ T4tQli
 
 ::Identifiers Level 1 #100::
 Is the following a valid C++ identifier?
-4Fh07J
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #101::
-Is the following a valid C++ identifier?
-EKKX2Z
+EIpfBt
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #101::
+Is the following a valid C++ identifier?
+5ss2IN
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #102::
 Is the following a valid C++ identifier?
-HYt1V
+GLQo2
 	{
 	=True
 	~False
@@ -826,7 +826,7 @@ HYt1V
 
 ::Identifiers Level 1 #103::
 Is the following a valid C++ identifier?
-ITDkGpTrJ
+G2uaafFu
 	{
 	=True
 	~False
@@ -834,31 +834,31 @@ ITDkGpTrJ
 
 ::Identifiers Level 1 #104::
 Is the following a valid C++ identifier?
-YFQTlc34
+0lv51k
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #105::
+Is the following a valid C++ identifier?
+uD6l9
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #105::
-Is the following a valid C++ identifier?
-5C0a40HS
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 1 #106::
 Is the following a valid C++ identifier?
-509a53
+J3U0DzYSe
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #107::
 Is the following a valid C++ identifier?
-685p89w
+5L4td6N5p
 	{
 	=False
 	~True
@@ -866,7 +866,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #108::
 Is the following a valid C++ identifier?
-GFWENsC
+PnnYOs
 	{
 	=True
 	~False
@@ -874,7 +874,7 @@ GFWENsC
 
 ::Identifiers Level 1 #109::
 Is the following a valid C++ identifier?
-NKDWQ3e4J
+AJdV39D5
 	{
 	=True
 	~False
@@ -882,23 +882,23 @@ NKDWQ3e4J
 
 ::Identifiers Level 1 #110::
 Is the following a valid C++ identifier?
-9k5EXPA
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #111::
-Is the following a valid C++ identifier?
-Ykbk8lo7j
+XsKlBR
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #111::
+Is the following a valid C++ identifier?
+1qWdIB2k
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #112::
 Is the following a valid C++ identifier?
-GBrzld23
+oY9YLH8x0
 	{
 	=True
 	~False
@@ -906,15 +906,15 @@ GBrzld23
 
 ::Identifiers Level 1 #113::
 Is the following a valid C++ identifier?
-a37BV8
+7Xs41MXn
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #114::
 Is the following a valid C++ identifier?
-T44Bzy
+kDvhXliOG
 	{
 	=True
 	~False
@@ -922,7 +922,7 @@ T44Bzy
 
 ::Identifiers Level 1 #115::
 Is the following a valid C++ identifier?
-YhVsTdB
+EdqMcxdS
 	{
 	=True
 	~False
@@ -930,7 +930,7 @@ YhVsTdB
 
 ::Identifiers Level 1 #116::
 Is the following a valid C++ identifier?
-JsBIKN
+TKCC93V
 	{
 	=True
 	~False
@@ -938,23 +938,23 @@ JsBIKN
 
 ::Identifiers Level 1 #117::
 Is the following a valid C++ identifier?
-EkLmp
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #118::
-Is the following a valid C++ identifier?
-14yyKinJX
+0XMR8
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #118::
+Is the following a valid C++ identifier?
+lng56
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #119::
 Is the following a valid C++ identifier?
-bVDvfY
+XRWeAz7
 	{
 	=True
 	~False
@@ -962,15 +962,15 @@ bVDvfY
 
 ::Identifiers Level 1 #120::
 Is the following a valid C++ identifier?
-jETpdHF4
+1akP7S
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #121::
 Is the following a valid C++ identifier?
-VI0Fy
+GVncy
 	{
 	=True
 	~False
@@ -978,7 +978,7 @@ VI0Fy
 
 ::Identifiers Level 1 #122::
 Is the following a valid C++ identifier?
-e0R04Y
+UB1A5R
 	{
 	=True
 	~False
@@ -986,15 +986,15 @@ e0R04Y
 
 ::Identifiers Level 1 #123::
 Is the following a valid C++ identifier?
-CvjFqPg
+64xWlvjV2
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #124::
 Is the following a valid C++ identifier?
-5hyLp
+6xXhV0t
 	{
 	=False
 	~True
@@ -1002,23 +1002,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #125::
 Is the following a valid C++ identifier?
-lel7Cg
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #126::
-Is the following a valid C++ identifier?
-56GX5
+8IJsA
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #126::
+Is the following a valid C++ identifier?
+eJ056Q
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #127::
 Is the following a valid C++ identifier?
-PJ0MBFj
+OwGiKKJ4i
 	{
 	=True
 	~False
@@ -1026,39 +1026,39 @@ PJ0MBFj
 
 ::Identifiers Level 1 #128::
 Is the following a valid C++ identifier?
-7qcR6ED15
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #129::
-Is the following a valid C++ identifier?
-s090v8
+Uf2qXV9
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #130::
+::Identifiers Level 1 #129::
 Is the following a valid C++ identifier?
-6MPtvcLf
+75QhiyAJ
 	{
 	=False
 	~True
+	}
+
+::Identifiers Level 1 #130::
+Is the following a valid C++ identifier?
+z8Bmsq0
+	{
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #131::
 Is the following a valid C++ identifier?
-3nKCAR3Dy
+KXjNP
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #132::
 Is the following a valid C++ identifier?
-ctc1O7nmU
+Rwr0r7
 	{
 	=True
 	~False
@@ -1066,7 +1066,7 @@ ctc1O7nmU
 
 ::Identifiers Level 1 #133::
 Is the following a valid C++ identifier?
-d8WtJ7nhl
+f6w5M9Y4x
 	{
 	=True
 	~False
@@ -1074,7 +1074,7 @@ d8WtJ7nhl
 
 ::Identifiers Level 1 #134::
 Is the following a valid C++ identifier?
-3CT9ScM
+0s2M6Xm
 	{
 	=False
 	~True
@@ -1082,23 +1082,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #135::
 Is the following a valid C++ identifier?
-J3dIQOG
+1L85tV8de
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #136::
 Is the following a valid C++ identifier?
-cfUIc7
+51QjchsD7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #137::
 Is the following a valid C++ identifier?
-BulRVq04
+RKN30FxzE
 	{
 	=True
 	~False
@@ -1106,7 +1106,7 @@ BulRVq04
 
 ::Identifiers Level 1 #138::
 Is the following a valid C++ identifier?
-Am817W
+e2lWTsip
 	{
 	=True
 	~False
@@ -1114,31 +1114,31 @@ Am817W
 
 ::Identifiers Level 1 #139::
 Is the following a valid C++ identifier?
-A8h1zr5
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #140::
-Is the following a valid C++ identifier?
-3ia7i4
+6Xt0bO8dy
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 1 #141::
+::Identifiers Level 1 #140::
 Is the following a valid C++ identifier?
-x7B8QM
+kRhi79
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #141::
+Is the following a valid C++ identifier?
+1q7UY
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #142::
 Is the following a valid C++ identifier?
-mLGswy7
+h7cXp6k1F
 	{
 	=True
 	~False
@@ -1146,7 +1146,7 @@ mLGswy7
 
 ::Identifiers Level 1 #143::
 Is the following a valid C++ identifier?
-d3MYzV0
+RYLlid1t
 	{
 	=True
 	~False
@@ -1154,39 +1154,39 @@ d3MYzV0
 
 ::Identifiers Level 1 #144::
 Is the following a valid C++ identifier?
-L5kE7
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #145::
-Is the following a valid C++ identifier?
-sNdmJObV7
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #146::
-Is the following a valid C++ identifier?
-00ezNcct
+31a2e2Ld3
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 1 #147::
+::Identifiers Level 1 #145::
 Is the following a valid C++ identifier?
-bI04Z
+44Qx7iN
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #146::
+Is the following a valid C++ identifier?
+pH23o
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #147::
+Is the following a valid C++ identifier?
+9167qDPZd
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #148::
 Is the following a valid C++ identifier?
-wX5k7
+J1YU9
 	{
 	=True
 	~False
@@ -1194,7 +1194,7 @@ wX5k7
 
 ::Identifiers Level 1 #149::
 Is the following a valid C++ identifier?
-4tMix3B
+9anJ48z
 	{
 	=False
 	~True
@@ -1202,7 +1202,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #150::
 Is the following a valid C++ identifier?
-gPOdQP
+m9cqaSM
 	{
 	=True
 	~False
@@ -1210,23 +1210,23 @@ gPOdQP
 
 ::Identifiers Level 1 #151::
 Is the following a valid C++ identifier?
-1K4nS4SlN
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #152::
-Is the following a valid C++ identifier?
-UNNqS7Zd
+oLQmG
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #152::
+Is the following a valid C++ identifier?
+4dbtYCF5
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #153::
 Is the following a valid C++ identifier?
-OoV0UA7V7
+JZQWMwB
 	{
 	=True
 	~False
@@ -1234,7 +1234,7 @@ OoV0UA7V7
 
 ::Identifiers Level 1 #154::
 Is the following a valid C++ identifier?
-EHc2HN
+DEom8rOew
 	{
 	=True
 	~False
@@ -1242,7 +1242,7 @@ EHc2HN
 
 ::Identifiers Level 1 #155::
 Is the following a valid C++ identifier?
-sg01v5aNH
+WrcXrtFW4
 	{
 	=True
 	~False
@@ -1250,7 +1250,7 @@ sg01v5aNH
 
 ::Identifiers Level 1 #156::
 Is the following a valid C++ identifier?
-3rgXtD
+8Rm2c
 	{
 	=False
 	~True
@@ -1258,7 +1258,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #157::
 Is the following a valid C++ identifier?
-3ODoN
+9nDey
 	{
 	=False
 	~True
@@ -1266,15 +1266,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #158::
 Is the following a valid C++ identifier?
-0VJm9
+lBcPNNef
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #159::
 Is the following a valid C++ identifier?
-Qu3sxndC
+HJWA2z
 	{
 	=True
 	~False
@@ -1282,7 +1282,7 @@ Qu3sxndC
 
 ::Identifiers Level 1 #160::
 Is the following a valid C++ identifier?
-ny9dFow
+qAdxg
 	{
 	=True
 	~False
@@ -1290,15 +1290,15 @@ ny9dFow
 
 ::Identifiers Level 1 #161::
 Is the following a valid C++ identifier?
-MZcuAWIE
+1QO2DCZvj
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #162::
 Is the following a valid C++ identifier?
-QZSKf
+yGqZ5MA
 	{
 	=True
 	~False
@@ -1306,15 +1306,15 @@ QZSKf
 
 ::Identifiers Level 1 #163::
 Is the following a valid C++ identifier?
-3pZ8I3
+E13nuJro
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #164::
 Is the following a valid C++ identifier?
-LKtlDze6
+uCh377
 	{
 	=True
 	~False
@@ -1322,15 +1322,15 @@ LKtlDze6
 
 ::Identifiers Level 1 #165::
 Is the following a valid C++ identifier?
-gTngZ
+19gz8
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #166::
 Is the following a valid C++ identifier?
-SL7VVbGZ
+rvZ40DyGJ
 	{
 	=True
 	~False
@@ -1338,7 +1338,7 @@ SL7VVbGZ
 
 ::Identifiers Level 1 #167::
 Is the following a valid C++ identifier?
-I8Cvh
+P146n
 	{
 	=True
 	~False
@@ -1346,15 +1346,15 @@ I8Cvh
 
 ::Identifiers Level 1 #168::
 Is the following a valid C++ identifier?
-LoO1oS0W
+2kC8k
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #169::
 Is the following a valid C++ identifier?
-1cTIFEJy
+4Fs887kt
 	{
 	=False
 	~True
@@ -1362,7 +1362,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #170::
 Is the following a valid C++ identifier?
-Wc220W7YX
+ogg37N
 	{
 	=True
 	~False
@@ -1370,15 +1370,15 @@ Wc220W7YX
 
 ::Identifiers Level 1 #171::
 Is the following a valid C++ identifier?
-7b2qxUH
+Xdudf0Rxl
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #172::
 Is the following a valid C++ identifier?
-BVF6bD
+ri553YOe
 	{
 	=True
 	~False
@@ -1386,7 +1386,7 @@ BVF6bD
 
 ::Identifiers Level 1 #173::
 Is the following a valid C++ identifier?
-p289I
+l5ZWnM
 	{
 	=True
 	~False
@@ -1394,15 +1394,15 @@ p289I
 
 ::Identifiers Level 1 #174::
 Is the following a valid C++ identifier?
-14aVd
+FFWi2tf95
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #175::
 Is the following a valid C++ identifier?
-Oc8jJhv0
+IXlLTc
 	{
 	=True
 	~False
@@ -1410,15 +1410,15 @@ Oc8jJhv0
 
 ::Identifiers Level 1 #176::
 Is the following a valid C++ identifier?
-16BjU2Kw1
+k59mE9
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #177::
 Is the following a valid C++ identifier?
-H4Cs2
+AwPmXbiTo
 	{
 	=True
 	~False
@@ -1426,7 +1426,7 @@ H4Cs2
 
 ::Identifiers Level 1 #178::
 Is the following a valid C++ identifier?
-B2pPMis
+aXHDK9
 	{
 	=True
 	~False
@@ -1434,7 +1434,7 @@ B2pPMis
 
 ::Identifiers Level 1 #179::
 Is the following a valid C++ identifier?
-6u2i9CGh9
+4f62m5a
 	{
 	=False
 	~True
@@ -1442,7 +1442,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #180::
 Is the following a valid C++ identifier?
-eROsR4B
+XrhZ8M
 	{
 	=True
 	~False
@@ -1450,15 +1450,15 @@ eROsR4B
 
 ::Identifiers Level 1 #181::
 Is the following a valid C++ identifier?
-w66w8
+8Vz2gC
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #182::
 Is the following a valid C++ identifier?
-uVMT106
+Pgr6K
 	{
 	=True
 	~False
@@ -1466,7 +1466,7 @@ uVMT106
 
 ::Identifiers Level 1 #183::
 Is the following a valid C++ identifier?
-MQPP9
+AT63bWe3
 	{
 	=True
 	~False
@@ -1474,7 +1474,7 @@ MQPP9
 
 ::Identifiers Level 1 #184::
 Is the following a valid C++ identifier?
-R7eylrxie
+dwFCPo
 	{
 	=True
 	~False
@@ -1482,7 +1482,7 @@ R7eylrxie
 
 ::Identifiers Level 1 #185::
 Is the following a valid C++ identifier?
-xyGDqR
+sWg6Qe
 	{
 	=True
 	~False
@@ -1490,7 +1490,7 @@ xyGDqR
 
 ::Identifiers Level 1 #186::
 Is the following a valid C++ identifier?
-NkMyV2ihc
+aPucbIVOr
 	{
 	=True
 	~False
@@ -1498,7 +1498,7 @@ NkMyV2ihc
 
 ::Identifiers Level 1 #187::
 Is the following a valid C++ identifier?
-V4UFTqzb
+X7B83h
 	{
 	=True
 	~False
@@ -1506,31 +1506,31 @@ V4UFTqzb
 
 ::Identifiers Level 1 #188::
 Is the following a valid C++ identifier?
-Cz9Td
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #189::
-Is the following a valid C++ identifier?
-1jDMW
+6OpKyAjGw
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 1 #190::
+::Identifiers Level 1 #189::
 Is the following a valid C++ identifier?
-nvljw
+xf6lycN
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #190::
+Is the following a valid C++ identifier?
+6n3T3jy5
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #191::
 Is the following a valid C++ identifier?
-PQzQ0m
+Gd5CdU
 	{
 	=True
 	~False
@@ -1538,7 +1538,7 @@ PQzQ0m
 
 ::Identifiers Level 1 #192::
 Is the following a valid C++ identifier?
-bLhHyo
+nOF606IZ
 	{
 	=True
 	~False
@@ -1546,7 +1546,7 @@ bLhHyo
 
 ::Identifiers Level 1 #193::
 Is the following a valid C++ identifier?
-nt82xlS3P
+UKqGg
 	{
 	=True
 	~False
@@ -1554,15 +1554,15 @@ nt82xlS3P
 
 ::Identifiers Level 1 #194::
 Is the following a valid C++ identifier?
-347Ob2Y
+Yt2l1
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #195::
 Is the following a valid C++ identifier?
-9uXvsaeY
+3iA681v
 	{
 	=False
 	~True
@@ -1570,7 +1570,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #196::
 Is the following a valid C++ identifier?
-o5cfJh1
+fVqLG9T
 	{
 	=True
 	~False
@@ -1578,7 +1578,7 @@ o5cfJh1
 
 ::Identifiers Level 1 #197::
 Is the following a valid C++ identifier?
-OK0wc77
+Zwoga
 	{
 	=True
 	~False
@@ -1586,7 +1586,7 @@ OK0wc77
 
 ::Identifiers Level 1 #198::
 Is the following a valid C++ identifier?
-ix920mIU
+xB2Y4Xr5y
 	{
 	=True
 	~False
@@ -1594,7 +1594,7 @@ ix920mIU
 
 ::Identifiers Level 1 #199::
 Is the following a valid C++ identifier?
-2p7Dg
+69ULihmI
 	{
 	=False
 	~True
@@ -1602,7 +1602,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #200::
 Is the following a valid C++ identifier?
-H8kqiKd8
+ojOTltx5
 	{
 	=True
 	~False
@@ -1610,7 +1610,7 @@ H8kqiKd8
 
 ::Identifiers Level 1 #201::
 Is the following a valid C++ identifier?
-UDlapbcn
+mU2xB
 	{
 	=True
 	~False
@@ -1618,7 +1618,7 @@ UDlapbcn
 
 ::Identifiers Level 1 #202::
 Is the following a valid C++ identifier?
-c3F2WTV8
+LhXDft7
 	{
 	=True
 	~False
@@ -1626,7 +1626,7 @@ c3F2WTV8
 
 ::Identifiers Level 1 #203::
 Is the following a valid C++ identifier?
-8gbJ9l1m4
+6cd96IhX
 	{
 	=False
 	~True
@@ -1634,7 +1634,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 1 #204::
 Is the following a valid C++ identifier?
-b7BKddfi
+PICAPq
 	{
 	=True
 	~False
@@ -1642,23 +1642,23 @@ b7BKddfi
 
 ::Identifiers Level 1 #205::
 Is the following a valid C++ identifier?
-tx13bCpV
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #206::
-Is the following a valid C++ identifier?
-2mRzv
+80NbT
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #206::
+Is the following a valid C++ identifier?
+NgF4z2PL
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #207::
 Is the following a valid C++ identifier?
-Pp5BP0R
+ZLm5Z57
 	{
 	=True
 	~False
@@ -1666,15 +1666,15 @@ Pp5BP0R
 
 ::Identifiers Level 1 #208::
 Is the following a valid C++ identifier?
-5sxLaFH
+CSHz00BF
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #209::
 Is the following a valid C++ identifier?
-GGNpOL7m0
+pdVZY7
 	{
 	=True
 	~False
@@ -1682,15 +1682,15 @@ GGNpOL7m0
 
 ::Identifiers Level 1 #210::
 Is the following a valid C++ identifier?
-D4VgkGrgg
+9ed9WXTo
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #211::
 Is the following a valid C++ identifier?
-oMp6dg
+R7t06z9w
 	{
 	=True
 	~False
@@ -1698,15 +1698,15 @@ oMp6dg
 
 ::Identifiers Level 1 #212::
 Is the following a valid C++ identifier?
-6RzLGxeK
+C49J8f4B
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #213::
 Is the following a valid C++ identifier?
-tsBZRA692
+Kzo4k
 	{
 	=True
 	~False
@@ -1714,7 +1714,7 @@ tsBZRA692
 
 ::Identifiers Level 1 #214::
 Is the following a valid C++ identifier?
-bA8gwj
+rX4Up1
 	{
 	=True
 	~False
@@ -1722,7 +1722,7 @@ bA8gwj
 
 ::Identifiers Level 1 #215::
 Is the following a valid C++ identifier?
-joNtVD5LE
+zXwPJ
 	{
 	=True
 	~False
@@ -1730,23 +1730,23 @@ joNtVD5LE
 
 ::Identifiers Level 1 #216::
 Is the following a valid C++ identifier?
-0J9DGCM
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #217::
-Is the following a valid C++ identifier?
-LpTIHq
+UB3B3dMZ
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #217::
+Is the following a valid C++ identifier?
+4Wl3f245
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #218::
 Is the following a valid C++ identifier?
-JJN9354
+rP6moBzI
 	{
 	=True
 	~False
@@ -1754,15 +1754,15 @@ JJN9354
 
 ::Identifiers Level 1 #219::
 Is the following a valid C++ identifier?
-ua5uVAN4D
+493L8s
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #220::
 Is the following a valid C++ identifier?
-fl0ZP
+f1JdOlxpK
 	{
 	=True
 	~False
@@ -1770,23 +1770,23 @@ fl0ZP
 
 ::Identifiers Level 1 #221::
 Is the following a valid C++ identifier?
-37xX28
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 1 #222::
-Is the following a valid C++ identifier?
-X8E7JHM
+j8Pba
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 1 #222::
+Is the following a valid C++ identifier?
+35UdfR
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 1 #223::
 Is the following a valid C++ identifier?
-vHoId
+Hyja5t
 	{
 	=True
 	~False
@@ -1794,15 +1794,15 @@ vHoId
 
 ::Identifiers Level 1 #224::
 Is the following a valid C++ identifier?
-8cy8O
+o7ImV59Yt
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #225::
 Is the following a valid C++ identifier?
-oXWhPaER8
+wKvgM
 	{
 	=True
 	~False
@@ -1810,23 +1810,23 @@ oXWhPaER8
 
 ::Identifiers Level 1 #226::
 Is the following a valid C++ identifier?
-24254Z7XY
+xDOVOjcx9
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #227::
 Is the following a valid C++ identifier?
-7o293ra
+YmKY08wT
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #228::
 Is the following a valid C++ identifier?
-P7G8Aq
+mQ15GH1O
 	{
 	=True
 	~False
@@ -1834,23 +1834,23 @@ P7G8Aq
 
 ::Identifiers Level 1 #229::
 Is the following a valid C++ identifier?
-YY7x6
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 1 #230::
-Is the following a valid C++ identifier?
-7A06E895
+9bdz12Pm
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 1 #230::
+Is the following a valid C++ identifier?
+mYG6Y8
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 1 #231::
 Is the following a valid C++ identifier?
-hXWwj
+ZOm30T3o
 	{
 	=True
 	~False
@@ -1858,7 +1858,7 @@ hXWwj
 
 ::Identifiers Level 1 #232::
 Is the following a valid C++ identifier?
-tiMGD
+lywT29tq
 	{
 	=True
 	~False
@@ -1866,7 +1866,7 @@ tiMGD
 
 ::Identifiers Level 1 #233::
 Is the following a valid C++ identifier?
-I1CHv01XT
+noIqvX
 	{
 	=True
 	~False
@@ -1874,7 +1874,7 @@ I1CHv01XT
 
 ::Identifiers Level 1 #234::
 Is the following a valid C++ identifier?
-TlrK52wqI
+MHj7a5H
 	{
 	=True
 	~False
@@ -1882,7 +1882,7 @@ TlrK52wqI
 
 ::Identifiers Level 1 #235::
 Is the following a valid C++ identifier?
-XRyFhcDL
+sPR009nl
 	{
 	=True
 	~False
@@ -1890,15 +1890,15 @@ XRyFhcDL
 
 ::Identifiers Level 1 #236::
 Is the following a valid C++ identifier?
-YR08qFdW
+4yFa7hC
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 1 #237::
 Is the following a valid C++ identifier?
-o3KN8v5C
+J2xlbe
 	{
 	=True
 	~False
@@ -1906,7 +1906,7 @@ o3KN8v5C
 
 ::Identifiers Level 1 #238::
 Is the following a valid C++ identifier?
-toAwMGk
+G3E1AgY
 	{
 	=True
 	~False
@@ -1914,7 +1914,7 @@ toAwMGk
 
 ::Identifiers Level 1 #239::
 Is the following a valid C++ identifier?
-wwMSq0
+lqC8H
 	{
 	=True
 	~False
@@ -1922,7 +1922,7 @@ wwMSq0
 
 ::Identifiers Level 1 #240::
 Is the following a valid C++ identifier?
-OTTKF8
+Qb2h2IWs
 	{
 	=True
 	~False
@@ -1930,39 +1930,39 @@ OTTKF8
 
 ::Identifiers Level 1 #241::
 Is the following a valid C++ identifier?
-v2rGXoqoY
+1PPV28
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 1 #242::
+Is the following a valid C++ identifier?
+Erk212SZQ
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 1 #242::
-Is the following a valid C++ identifier?
-0QZHrS1
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 1 #243::
 Is the following a valid C++ identifier?
-771odN8a
+NkU2p
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #244::
 Is the following a valid C++ identifier?
-59MgZ1y
+L7YBa
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 1 #245::
 Is the following a valid C++ identifier?
-UHjurqxoR
+IFm3X83
 	{
 	=True
 	~False
@@ -1970,7 +1970,7 @@ UHjurqxoR
 
 ::Identifiers Level 1 #246::
 Is the following a valid C++ identifier?
-M1zFd76
+ui0Czxs
 	{
 	=True
 	~False
@@ -1978,7 +1978,7 @@ M1zFd76
 
 ::Identifiers Level 1 #247::
 Is the following a valid C++ identifier?
-Mf6Lde
+Zocf2
 	{
 	=True
 	~False
@@ -1986,7 +1986,7 @@ Mf6Lde
 
 ::Identifiers Level 1 #248::
 Is the following a valid C++ identifier?
-Ysuyn
+Ndlf2Bk
 	{
 	=True
 	~False
@@ -1994,33 +1994,33 @@ Ysuyn
 
 ::Identifiers Level 1 #249::
 Is the following a valid C++ identifier?
-AvKckwSV
+8OghKq
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 $CATEGORY: $course$ / Examples / Identifiers2
 
 ::Identifiers Level 2 #250::
 Is the following a valid C++ identifier?
-Q7Z5ot9a
+06LDXq
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #251::
 Is the following a valid C++ identifier?
-D8zdx6
+1XZ46Brj9
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #252::
 Is the following a valid C++ identifier?
-BB9tmH
+HM1mc
 	{
 	=True
 	~False
@@ -2028,7 +2028,7 @@ BB9tmH
 
 ::Identifiers Level 2 #253::
 Is the following a valid C++ identifier?
-kig06i46P
+bKd0P0C
 	{
 	=True
 	~False
@@ -2036,15 +2036,15 @@ kig06i46P
 
 ::Identifiers Level 2 #254::
 Is the following a valid C++ identifier?
-1S93oEzz
+TD7U0E
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #255::
 Is the following a valid C++ identifier?
-2BVEDPJYF
+9FjxSel4y
 	{
 	=False
 	~True
@@ -2052,23 +2052,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #256::
 Is the following a valid C++ identifier?
-17ldlz
+MzTL9lT1z
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #257::
 Is the following a valid C++ identifier?
-0hFgiv
+n7rgK
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #258::
 Is the following a valid C++ identifier?
-Dd7MFik7Z
+Ai7svD
 	{
 	=True
 	~False
@@ -2076,7 +2076,7 @@ Dd7MFik7Z
 
 ::Identifiers Level 2 #259::
 Is the following a valid C++ identifier?
-e1O3gb
+KJ1Ve
 	{
 	=True
 	~False
@@ -2084,47 +2084,47 @@ e1O3gb
 
 ::Identifiers Level 2 #260::
 Is the following a valid C++ identifier?
-7MsX09Ch
+faGzoUi
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #261::
 Is the following a valid C++ identifier?
-CDjnZ5
+2pXjT
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #262::
 Is the following a valid C++ identifier?
-SW6gG1S7
+8GC2DL
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 2 #263::
+Is the following a valid C++ identifier?
+OWlIM
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 2 #263::
-Is the following a valid C++ identifier?
-3SvnxmDu
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 2 #264::
 Is the following a valid C++ identifier?
-3WqoWSiO
+UOnCa
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #265::
 Is the following a valid C++ identifier?
-ekG0F
+zbUu9c0
 	{
 	=True
 	~False
@@ -2132,7 +2132,7 @@ ekG0F
 
 ::Identifiers Level 2 #266::
 Is the following a valid C++ identifier?
-zkt3Nn45M
+ub47k61gt
 	{
 	=True
 	~False
@@ -2140,7 +2140,7 @@ zkt3Nn45M
 
 ::Identifiers Level 2 #267::
 Is the following a valid C++ identifier?
-jIRfg
+IPQ3c
 	{
 	=True
 	~False
@@ -2148,15 +2148,15 @@ jIRfg
 
 ::Identifiers Level 2 #268::
 Is the following a valid C++ identifier?
-56mvH
+iff62TK7i
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #269::
 Is the following a valid C++ identifier?
-9AcmH608s
+3KZ9459eh
 	{
 	=False
 	~True
@@ -2164,23 +2164,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #270::
 Is the following a valid C++ identifier?
-0sQGpOd
+yKrc8
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #271::
 Is the following a valid C++ identifier?
-3fz1pg
+xgdJ0EtNZ
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #272::
 Is the following a valid C++ identifier?
-j92s09a
+ZX3TMQP8a
 	{
 	=True
 	~False
@@ -2188,7 +2188,7 @@ j92s09a
 
 ::Identifiers Level 2 #273::
 Is the following a valid C++ identifier?
-nKjdnR
+BQdPV0k
 	{
 	=True
 	~False
@@ -2196,7 +2196,7 @@ nKjdnR
 
 ::Identifiers Level 2 #274::
 Is the following a valid C++ identifier?
-uEe4lMLM
+bFcnM4
 	{
 	=True
 	~False
@@ -2204,7 +2204,7 @@ uEe4lMLM
 
 ::Identifiers Level 2 #275::
 Is the following a valid C++ identifier?
-w9C6Th5RO
+gqlKX
 	{
 	=True
 	~False
@@ -2212,23 +2212,23 @@ w9C6Th5RO
 
 ::Identifiers Level 2 #276::
 Is the following a valid C++ identifier?
-j0WbeBXa
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 2 #277::
-Is the following a valid C++ identifier?
-1O2BWDm
+2ymX3p8
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 2 #277::
+Is the following a valid C++ identifier?
+Pl04N
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 2 #278::
 Is the following a valid C++ identifier?
-LF9x2Drz
+HJP15zK4v
 	{
 	=True
 	~False
@@ -2236,7 +2236,7 @@ LF9x2Drz
 
 ::Identifiers Level 2 #279::
 Is the following a valid C++ identifier?
-zWsdFf
+eMJHEG
 	{
 	=True
 	~False
@@ -2244,7 +2244,7 @@ zWsdFf
 
 ::Identifiers Level 2 #280::
 Is the following a valid C++ identifier?
-WK4DsSk6
+H25ehG47
 	{
 	=True
 	~False
@@ -2252,7 +2252,7 @@ WK4DsSk6
 
 ::Identifiers Level 2 #281::
 Is the following a valid C++ identifier?
-yzHGL
+m396kEt
 	{
 	=True
 	~False
@@ -2260,15 +2260,15 @@ yzHGL
 
 ::Identifiers Level 2 #282::
 Is the following a valid C++ identifier?
-kprTBJ1b
+7fB9h
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #283::
 Is the following a valid C++ identifier?
-Pa3HN
+W8t939XT
 	{
 	=True
 	~False
@@ -2276,7 +2276,7 @@ Pa3HN
 
 ::Identifiers Level 2 #284::
 Is the following a valid C++ identifier?
-DNZsG
+GkjOZ1t
 	{
 	=True
 	~False
@@ -2284,15 +2284,15 @@ DNZsG
 
 ::Identifiers Level 2 #285::
 Is the following a valid C++ identifier?
-Q3rFg0p
+0ZhUvbm3
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #286::
 Is the following a valid C++ identifier?
-8m8ubIQ
+6JTkp
 	{
 	=False
 	~True
@@ -2300,7 +2300,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #287::
 Is the following a valid C++ identifier?
-l2M3nadxs
+q0ziaV5y
 	{
 	=True
 	~False
@@ -2308,7 +2308,7 @@ l2M3nadxs
 
 ::Identifiers Level 2 #288::
 Is the following a valid C++ identifier?
-AS6Zs
+b2uyg4
 	{
 	=True
 	~False
@@ -2316,23 +2316,23 @@ AS6Zs
 
 ::Identifiers Level 2 #289::
 Is the following a valid C++ identifier?
-TWgwk
+2al3jt
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #290::
 Is the following a valid C++ identifier?
-yIzso0ta
+12q6lm7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #291::
 Is the following a valid C++ identifier?
-DXxH6r7K
+E0Xl0lTw
 	{
 	=True
 	~False
@@ -2340,15 +2340,15 @@ DXxH6r7K
 
 ::Identifiers Level 2 #292::
 Is the following a valid C++ identifier?
-7iBsa
+jmFz75hKd
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #293::
 Is the following a valid C++ identifier?
-aIiQdYV4t
+i9bey0
 	{
 	=True
 	~False
@@ -2356,7 +2356,7 @@ aIiQdYV4t
 
 ::Identifiers Level 2 #294::
 Is the following a valid C++ identifier?
-9S3q4N
+08A73e6o
 	{
 	=False
 	~True
@@ -2364,7 +2364,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #295::
 Is the following a valid C++ identifier?
-7MFko9Kz
+22wRC5o
 	{
 	=False
 	~True
@@ -2372,7 +2372,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #296::
 Is the following a valid C++ identifier?
-C3G5f
+Ce1UnVN
 	{
 	=True
 	~False
@@ -2380,7 +2380,7 @@ C3G5f
 
 ::Identifiers Level 2 #297::
 Is the following a valid C++ identifier?
-mmKS9f0
+E9CwL
 	{
 	=True
 	~False
@@ -2388,7 +2388,7 @@ mmKS9f0
 
 ::Identifiers Level 2 #298::
 Is the following a valid C++ identifier?
-sGtVKQB
+ZoizE57
 	{
 	=True
 	~False
@@ -2396,7 +2396,7 @@ sGtVKQB
 
 ::Identifiers Level 2 #299::
 Is the following a valid C++ identifier?
-oQwMJ0
+rHcfDp
 	{
 	=True
 	~False
@@ -2404,15 +2404,15 @@ oQwMJ0
 
 ::Identifiers Level 2 #300::
 Is the following a valid C++ identifier?
-MfS9pUOUc
+5cw6V
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #301::
 Is the following a valid C++ identifier?
-KNctQh
+C4Y0Pk
 	{
 	=True
 	~False
@@ -2420,7 +2420,7 @@ KNctQh
 
 ::Identifiers Level 2 #302::
 Is the following a valid C++ identifier?
-ZcyAraUu
+LJRX3
 	{
 	=True
 	~False
@@ -2428,7 +2428,7 @@ ZcyAraUu
 
 ::Identifiers Level 2 #303::
 Is the following a valid C++ identifier?
-L0AssMf
+QsxwLb
 	{
 	=True
 	~False
@@ -2436,7 +2436,7 @@ L0AssMf
 
 ::Identifiers Level 2 #304::
 Is the following a valid C++ identifier?
-qu58I
+DXXt0OzR
 	{
 	=True
 	~False
@@ -2444,15 +2444,15 @@ qu58I
 
 ::Identifiers Level 2 #305::
 Is the following a valid C++ identifier?
-hJToy6
+9HxvvjORw
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #306::
 Is the following a valid C++ identifier?
-RZYHot4O
+FWKTz2xW
 	{
 	=True
 	~False
@@ -2460,7 +2460,7 @@ RZYHot4O
 
 ::Identifiers Level 2 #307::
 Is the following a valid C++ identifier?
-XRCvj0
+rAKU0DC6p
 	{
 	=True
 	~False
@@ -2468,15 +2468,15 @@ XRCvj0
 
 ::Identifiers Level 2 #308::
 Is the following a valid C++ identifier?
-yhTBWSb
+8UZV5YzX
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #309::
 Is the following a valid C++ identifier?
-1n4yFnW
+8QfYC
 	{
 	=False
 	~True
@@ -2484,7 +2484,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #310::
 Is the following a valid C++ identifier?
-rcGQiTqV
+zyFXX
 	{
 	=True
 	~False
@@ -2492,7 +2492,7 @@ rcGQiTqV
 
 ::Identifiers Level 2 #311::
 Is the following a valid C++ identifier?
-e3L0W8
+U4FL6Y
 	{
 	=True
 	~False
@@ -2500,7 +2500,7 @@ e3L0W8
 
 ::Identifiers Level 2 #312::
 Is the following a valid C++ identifier?
-c2gzod4PZ
+dLCTJSJ6
 	{
 	=True
 	~False
@@ -2508,15 +2508,15 @@ c2gzod4PZ
 
 ::Identifiers Level 2 #313::
 Is the following a valid C++ identifier?
-Ic0eI
+6GGQS
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #314::
 Is the following a valid C++ identifier?
-BSNq4Z
+qSKxkuTJO
 	{
 	=True
 	~False
@@ -2524,7 +2524,7 @@ BSNq4Z
 
 ::Identifiers Level 2 #315::
 Is the following a valid C++ identifier?
-CV92hk
+sVL1F
 	{
 	=True
 	~False
@@ -2532,15 +2532,15 @@ CV92hk
 
 ::Identifiers Level 2 #316::
 Is the following a valid C++ identifier?
-agxBw1sa
+0F8e9QmOq
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #317::
 Is the following a valid C++ identifier?
-do95V8S
+qRY8e0DG
 	{
 	=True
 	~False
@@ -2548,15 +2548,15 @@ do95V8S
 
 ::Identifiers Level 2 #318::
 Is the following a valid C++ identifier?
-imoRAb
+5IcbSnRO
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #319::
 Is the following a valid C++ identifier?
-My19OIQOY
+Rejo3X5a
 	{
 	=True
 	~False
@@ -2564,15 +2564,15 @@ My19OIQOY
 
 ::Identifiers Level 2 #320::
 Is the following a valid C++ identifier?
-uGMtC
+4Qj5YP3
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #321::
 Is the following a valid C++ identifier?
-OZHvcVv
+TP3Tp
 	{
 	=True
 	~False
@@ -2580,23 +2580,23 @@ OZHvcVv
 
 ::Identifiers Level 2 #322::
 Is the following a valid C++ identifier?
-Bjp7W6Uu
+5jLr5F8Bx
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #323::
 Is the following a valid C++ identifier?
-wCiV1
+6bcDHOt
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #324::
 Is the following a valid C++ identifier?
-B83I95FY
+oyX3nnP
 	{
 	=True
 	~False
@@ -2604,7 +2604,7 @@ B83I95FY
 
 ::Identifiers Level 2 #325::
 Is the following a valid C++ identifier?
-u4X9G5
+F0zv5V
 	{
 	=True
 	~False
@@ -2612,7 +2612,7 @@ u4X9G5
 
 ::Identifiers Level 2 #326::
 Is the following a valid C++ identifier?
-yfaVgI
+wYjzcbdW0
 	{
 	=True
 	~False
@@ -2620,7 +2620,7 @@ yfaVgI
 
 ::Identifiers Level 2 #327::
 Is the following a valid C++ identifier?
-Xu88E
+QYHg2j
 	{
 	=True
 	~False
@@ -2628,15 +2628,15 @@ Xu88E
 
 ::Identifiers Level 2 #328::
 Is the following a valid C++ identifier?
-7320X7P
+OLD3dtMJc
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #329::
 Is the following a valid C++ identifier?
-ldBrYg4Q
+Qd0mKow2
 	{
 	=True
 	~False
@@ -2644,7 +2644,7 @@ ldBrYg4Q
 
 ::Identifiers Level 2 #330::
 Is the following a valid C++ identifier?
-Bgvk9rpoa
+suSjQ
 	{
 	=True
 	~False
@@ -2652,15 +2652,15 @@ Bgvk9rpoa
 
 ::Identifiers Level 2 #331::
 Is the following a valid C++ identifier?
-hM1er
+93tp0mtpC
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #332::
 Is the following a valid C++ identifier?
-zj7EtSuVU
+w4cmb
 	{
 	=True
 	~False
@@ -2668,7 +2668,7 @@ zj7EtSuVU
 
 ::Identifiers Level 2 #333::
 Is the following a valid C++ identifier?
-fAyra1rT
+j8cd68
 	{
 	=True
 	~False
@@ -2676,7 +2676,7 @@ fAyra1rT
 
 ::Identifiers Level 2 #334::
 Is the following a valid C++ identifier?
-iDwagAixf
+WVr6Mw
 	{
 	=True
 	~False
@@ -2684,15 +2684,15 @@ iDwagAixf
 
 ::Identifiers Level 2 #335::
 Is the following a valid C++ identifier?
-CM06ArvX
+2oGbUw2f
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #336::
 Is the following a valid C++ identifier?
-wB285xY
+D7iWd
 	{
 	=True
 	~False
@@ -2700,23 +2700,23 @@ wB285xY
 
 ::Identifiers Level 2 #337::
 Is the following a valid C++ identifier?
-0G5r35dRa
+rQi2st7mE
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #338::
 Is the following a valid C++ identifier?
-52fd4mm
+aq2z8r
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #339::
 Is the following a valid C++ identifier?
-FyX4dwEDz
+WndOo
 	{
 	=True
 	~False
@@ -2724,7 +2724,7 @@ FyX4dwEDz
 
 ::Identifiers Level 2 #340::
 Is the following a valid C++ identifier?
-fDT9m
+ecNVi1yYi
 	{
 	=True
 	~False
@@ -2732,15 +2732,15 @@ fDT9m
 
 ::Identifiers Level 2 #341::
 Is the following a valid C++ identifier?
-9L7IOmGi
+he8bhN1ng
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #342::
 Is the following a valid C++ identifier?
-pk02uSy
+wnS2f
 	{
 	=True
 	~False
@@ -2748,31 +2748,31 @@ pk02uSy
 
 ::Identifiers Level 2 #343::
 Is the following a valid C++ identifier?
-wX6W3
+8fOPOalJ
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 2 #344::
+Is the following a valid C++ identifier?
+w7Vmx
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 2 #344::
-Is the following a valid C++ identifier?
-3jTrl
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 2 #345::
 Is the following a valid C++ identifier?
-1EEw55
+G04vuGy0
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #346::
 Is the following a valid C++ identifier?
-SA7ZrH3
+AdHyM
 	{
 	=True
 	~False
@@ -2780,7 +2780,7 @@ SA7ZrH3
 
 ::Identifiers Level 2 #347::
 Is the following a valid C++ identifier?
-y8e83w
+Pbb2uMLM
 	{
 	=True
 	~False
@@ -2788,31 +2788,31 @@ y8e83w
 
 ::Identifiers Level 2 #348::
 Is the following a valid C++ identifier?
-0JUuQ
+xZaXHe
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #349::
 Is the following a valid C++ identifier?
-43z17Cd
+sslgV
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #350::
 Is the following a valid C++ identifier?
-2Z42nVzCq
+J9VTY6lT
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #351::
 Is the following a valid C++ identifier?
-YD3f5l2bK
+lgxp1
 	{
 	=True
 	~False
@@ -2820,7 +2820,7 @@ YD3f5l2bK
 
 ::Identifiers Level 2 #352::
 Is the following a valid C++ identifier?
-xU1GL67my
+YC74EB9
 	{
 	=True
 	~False
@@ -2828,15 +2828,15 @@ xU1GL67my
 
 ::Identifiers Level 2 #353::
 Is the following a valid C++ identifier?
-6jNQ8R1
+fcHXK5K
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #354::
 Is the following a valid C++ identifier?
-8IE4unyO1
+1iHHq
 	{
 	=False
 	~True
@@ -2844,7 +2844,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #355::
 Is the following a valid C++ identifier?
-Ev56ej4EF
+LJGUm
 	{
 	=True
 	~False
@@ -2852,15 +2852,15 @@ Ev56ej4EF
 
 ::Identifiers Level 2 #356::
 Is the following a valid C++ identifier?
-5ibAj9
+u7kbhrm
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #357::
 Is the following a valid C++ identifier?
-KWr0e
+YiEF9rfgz
 	{
 	=True
 	~False
@@ -2868,7 +2868,7 @@ KWr0e
 
 ::Identifiers Level 2 #358::
 Is the following a valid C++ identifier?
-x1zCdxb
+PNLe3N
 	{
 	=True
 	~False
@@ -2876,15 +2876,15 @@ x1zCdxb
 
 ::Identifiers Level 2 #359::
 Is the following a valid C++ identifier?
-UzXUB
+55dxJ
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #360::
 Is the following a valid C++ identifier?
-Xsi0Udh
+ZUsRNr5
 	{
 	=True
 	~False
@@ -2892,7 +2892,7 @@ Xsi0Udh
 
 ::Identifiers Level 2 #361::
 Is the following a valid C++ identifier?
-6b60Am
+6Qyf0op
 	{
 	=False
 	~True
@@ -2900,15 +2900,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #362::
 Is the following a valid C++ identifier?
-6JB0N3eD8
+FIdOoM
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #363::
 Is the following a valid C++ identifier?
-f9cYY35
+Q6i43He
 	{
 	=True
 	~False
@@ -2916,15 +2916,15 @@ f9cYY35
 
 ::Identifiers Level 2 #364::
 Is the following a valid C++ identifier?
-2u65u
+P61ZHp
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #365::
 Is the following a valid C++ identifier?
-Xsn1j
+pWgXHf
 	{
 	=True
 	~False
@@ -2932,7 +2932,7 @@ Xsn1j
 
 ::Identifiers Level 2 #366::
 Is the following a valid C++ identifier?
-wTEkTDVWD
+MU4hs
 	{
 	=True
 	~False
@@ -2940,15 +2940,15 @@ wTEkTDVWD
 
 ::Identifiers Level 2 #367::
 Is the following a valid C++ identifier?
-29MGPerB
+aZAtxC7
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #368::
 Is the following a valid C++ identifier?
-ktcRMFj51
+YvtbNnA3D
 	{
 	=True
 	~False
@@ -2956,31 +2956,31 @@ ktcRMFj51
 
 ::Identifiers Level 2 #369::
 Is the following a valid C++ identifier?
-3Q8njoSf
+q2N54
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 2 #370::
+Is the following a valid C++ identifier?
+11js4
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 2 #370::
-Is the following a valid C++ identifier?
-yK56hkHm
-	{
-	=True
-	~False
-	}
-
 ::Identifiers Level 2 #371::
 Is the following a valid C++ identifier?
-O6G21CZn7
+9EJfZvD
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #372::
 Is the following a valid C++ identifier?
-J2xdtF
+YtYK3D6e
 	{
 	=True
 	~False
@@ -2988,7 +2988,7 @@ J2xdtF
 
 ::Identifiers Level 2 #373::
 Is the following a valid C++ identifier?
-rAX3T
+o9t5AF
 	{
 	=True
 	~False
@@ -2996,7 +2996,7 @@ rAX3T
 
 ::Identifiers Level 2 #374::
 Is the following a valid C++ identifier?
-YZxlzE
+wRP5th
 	{
 	=True
 	~False
@@ -3004,7 +3004,7 @@ YZxlzE
 
 ::Identifiers Level 2 #375::
 Is the following a valid C++ identifier?
-RyZl9v
+WF0sZir
 	{
 	=True
 	~False
@@ -3012,7 +3012,7 @@ RyZl9v
 
 ::Identifiers Level 2 #376::
 Is the following a valid C++ identifier?
-PPHBYS
+j4dLK
 	{
 	=True
 	~False
@@ -3020,7 +3020,7 @@ PPHBYS
 
 ::Identifiers Level 2 #377::
 Is the following a valid C++ identifier?
-pzbWB
+hI9q15y0
 	{
 	=True
 	~False
@@ -3028,7 +3028,7 @@ pzbWB
 
 ::Identifiers Level 2 #378::
 Is the following a valid C++ identifier?
-l2BWa2n
+ar6c5jgf
 	{
 	=True
 	~False
@@ -3036,15 +3036,15 @@ l2BWa2n
 
 ::Identifiers Level 2 #379::
 Is the following a valid C++ identifier?
-9QOjxP
+wMGPY
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #380::
 Is the following a valid C++ identifier?
-jzbYJ
+i3Yebm
 	{
 	=True
 	~False
@@ -3052,7 +3052,7 @@ jzbYJ
 
 ::Identifiers Level 2 #381::
 Is the following a valid C++ identifier?
-hOrpw
+tPra92CKh
 	{
 	=True
 	~False
@@ -3060,15 +3060,15 @@ hOrpw
 
 ::Identifiers Level 2 #382::
 Is the following a valid C++ identifier?
-32kXK
+HxBSA
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #383::
 Is the following a valid C++ identifier?
-l1a2r0
+y49pqd
 	{
 	=True
 	~False
@@ -3076,39 +3076,39 @@ l1a2r0
 
 ::Identifiers Level 2 #384::
 Is the following a valid C++ identifier?
-74qMzojW
+IInJx7a
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #385::
 Is the following a valid C++ identifier?
-5isp90V
+aJ4B7t0L
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #386::
 Is the following a valid C++ identifier?
-1bsd3oiY
+uRHY7bn5
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #387::
 Is the following a valid C++ identifier?
-3O4UuzUq
+nAE95aX0
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #388::
 Is the following a valid C++ identifier?
-sOIdC
+qOZNbz3d
 	{
 	=True
 	~False
@@ -3116,23 +3116,23 @@ sOIdC
 
 ::Identifiers Level 2 #389::
 Is the following a valid C++ identifier?
-5rH7fxK
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #390::
-Is the following a valid C++ identifier?
-mRU6ZV
+eJa6fNu
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 2 #390::
+Is the following a valid C++ identifier?
+1Je58tp
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 2 #391::
 Is the following a valid C++ identifier?
-lP828yKM
+X7V6JC
 	{
 	=True
 	~False
@@ -3140,7 +3140,7 @@ lP828yKM
 
 ::Identifiers Level 2 #392::
 Is the following a valid C++ identifier?
-D99LX
+gGKgLm
 	{
 	=True
 	~False
@@ -3148,7 +3148,7 @@ D99LX
 
 ::Identifiers Level 2 #393::
 Is the following a valid C++ identifier?
-edv3316X
+p0I4z20E4
 	{
 	=True
 	~False
@@ -3156,15 +3156,15 @@ edv3316X
 
 ::Identifiers Level 2 #394::
 Is the following a valid C++ identifier?
-2Sn7Ttel
+az0SYN6
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #395::
 Is the following a valid C++ identifier?
-3qL2Mk8f9
+3FiEh7s6l
 	{
 	=False
 	~True
@@ -3172,7 +3172,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #396::
 Is the following a valid C++ identifier?
-b00VBQ
+dn8CqtT
 	{
 	=True
 	~False
@@ -3180,7 +3180,7 @@ b00VBQ
 
 ::Identifiers Level 2 #397::
 Is the following a valid C++ identifier?
-Bhryrws
+rU0IK
 	{
 	=True
 	~False
@@ -3188,7 +3188,7 @@ Bhryrws
 
 ::Identifiers Level 2 #398::
 Is the following a valid C++ identifier?
-y751gmW
+JGzYc67
 	{
 	=True
 	~False
@@ -3196,15 +3196,15 @@ y751gmW
 
 ::Identifiers Level 2 #399::
 Is the following a valid C++ identifier?
-nyZs43
+7hdDS7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #400::
 Is the following a valid C++ identifier?
-Pjn32nQ5
+X8xwd
 	{
 	=True
 	~False
@@ -3212,39 +3212,39 @@ Pjn32nQ5
 
 ::Identifiers Level 2 #401::
 Is the following a valid C++ identifier?
-7mS7oOXC
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #402::
-Is the following a valid C++ identifier?
-tIH0Z29Wc
+qEI9v
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 2 #403::
+::Identifiers Level 2 #402::
 Is the following a valid C++ identifier?
-2dRPGrRx4
+8H8kX
 	{
 	=False
 	~True
+	}
+
+::Identifiers Level 2 #403::
+Is the following a valid C++ identifier?
+pmBdGL
+	{
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #404::
 Is the following a valid C++ identifier?
-54fHlsE
+rlomU9Jd
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #405::
 Is the following a valid C++ identifier?
-pGMAz3fR
+byQ9iOTrJ
 	{
 	=True
 	~False
@@ -3252,7 +3252,7 @@ pGMAz3fR
 
 ::Identifiers Level 2 #406::
 Is the following a valid C++ identifier?
-tPdv1yq
+jiI6oQMt
 	{
 	=True
 	~False
@@ -3260,31 +3260,31 @@ tPdv1yq
 
 ::Identifiers Level 2 #407::
 Is the following a valid C++ identifier?
-1h57am6W
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #408::
-Is the following a valid C++ identifier?
-qnPgq7
+drOiqp1
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 2 #409::
+::Identifiers Level 2 #408::
 Is the following a valid C++ identifier?
-9BMVulm
+29j4Xbwi
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 2 #409::
+Is the following a valid C++ identifier?
+K0iRFy4
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 2 #410::
 Is the following a valid C++ identifier?
-eyAUFbtl
+J0J2omx4N
 	{
 	=True
 	~False
@@ -3292,7 +3292,7 @@ eyAUFbtl
 
 ::Identifiers Level 2 #411::
 Is the following a valid C++ identifier?
-Z92bW
+jhrKr
 	{
 	=True
 	~False
@@ -3300,15 +3300,15 @@ Z92bW
 
 ::Identifiers Level 2 #412::
 Is the following a valid C++ identifier?
-ztoNb18L
+4TBfqU
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #413::
 Is the following a valid C++ identifier?
-xakiF38OI
+YOrZgVnoo
 	{
 	=True
 	~False
@@ -3316,7 +3316,7 @@ xakiF38OI
 
 ::Identifiers Level 2 #414::
 Is the following a valid C++ identifier?
-0ZW74Ja
+1OyAf8wS
 	{
 	=False
 	~True
@@ -3324,15 +3324,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #415::
 Is the following a valid C++ identifier?
-CLxR86H
+15rw6
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #416::
 Is the following a valid C++ identifier?
-ME7mV8
+Mwi5h
 	{
 	=True
 	~False
@@ -3340,7 +3340,7 @@ ME7mV8
 
 ::Identifiers Level 2 #417::
 Is the following a valid C++ identifier?
-YBz01D
+Gtig4
 	{
 	=True
 	~False
@@ -3348,7 +3348,7 @@ YBz01D
 
 ::Identifiers Level 2 #418::
 Is the following a valid C++ identifier?
-XenIl6
+Cax7rZ
 	{
 	=True
 	~False
@@ -3356,7 +3356,7 @@ XenIl6
 
 ::Identifiers Level 2 #419::
 Is the following a valid C++ identifier?
-pmNMffnQ
+WI6Tg8IMc
 	{
 	=True
 	~False
@@ -3364,23 +3364,23 @@ pmNMffnQ
 
 ::Identifiers Level 2 #420::
 Is the following a valid C++ identifier?
-0WOF3vTWF
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #421::
-Is the following a valid C++ identifier?
-pQIQt3O
+j62Za
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 2 #421::
+Is the following a valid C++ identifier?
+3AnmzSX
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 2 #422::
 Is the following a valid C++ identifier?
-o98lOKZZ
+Vd7ZT4Pr
 	{
 	=True
 	~False
@@ -3388,15 +3388,15 @@ o98lOKZZ
 
 ::Identifiers Level 2 #423::
 Is the following a valid C++ identifier?
-8HxEz
+Qg9tY6d
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #424::
 Is the following a valid C++ identifier?
-7OdUDvmiQ
+7qpQc6
 	{
 	=False
 	~True
@@ -3404,15 +3404,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #425::
 Is the following a valid C++ identifier?
-UJMI59mPR
+4GEqWF7Q7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #426::
 Is the following a valid C++ identifier?
-jOA25V
+OKfms7T17
 	{
 	=True
 	~False
@@ -3420,15 +3420,15 @@ jOA25V
 
 ::Identifiers Level 2 #427::
 Is the following a valid C++ identifier?
-FGJfPX
+8iiy8OLj2
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #428::
 Is the following a valid C++ identifier?
-ZE6lv1K
+Pf0iX
 	{
 	=True
 	~False
@@ -3436,23 +3436,23 @@ ZE6lv1K
 
 ::Identifiers Level 2 #429::
 Is the following a valid C++ identifier?
-HljZ3
+3xSHYohh
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #430::
 Is the following a valid C++ identifier?
-Jpi8Ki
+0FYZccAmj
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #431::
 Is the following a valid C++ identifier?
-K4lmf4
+omSe7nR
 	{
 	=True
 	~False
@@ -3460,7 +3460,7 @@ K4lmf4
 
 ::Identifiers Level 2 #432::
 Is the following a valid C++ identifier?
-xol4U92
+CwOz3Obz
 	{
 	=True
 	~False
@@ -3468,7 +3468,7 @@ xol4U92
 
 ::Identifiers Level 2 #433::
 Is the following a valid C++ identifier?
-Xc0zs4bZr
+ZzjcVb
 	{
 	=True
 	~False
@@ -3476,7 +3476,7 @@ Xc0zs4bZr
 
 ::Identifiers Level 2 #434::
 Is the following a valid C++ identifier?
-kB2E7
+FVSdJ
 	{
 	=True
 	~False
@@ -3484,7 +3484,7 @@ kB2E7
 
 ::Identifiers Level 2 #435::
 Is the following a valid C++ identifier?
-YnQSv4O
+RH3i80uWN
 	{
 	=True
 	~False
@@ -3492,7 +3492,7 @@ YnQSv4O
 
 ::Identifiers Level 2 #436::
 Is the following a valid C++ identifier?
-KzU53ih
+aawUU5CB1
 	{
 	=True
 	~False
@@ -3500,23 +3500,23 @@ KzU53ih
 
 ::Identifiers Level 2 #437::
 Is the following a valid C++ identifier?
-p22IyeY1
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 2 #438::
-Is the following a valid C++ identifier?
-6Fq0fZ3
+0F5EDodD2
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 2 #438::
+Is the following a valid C++ identifier?
+MxgXhKVz
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 2 #439::
 Is the following a valid C++ identifier?
-mG4ZbKMf4
+G8He74
 	{
 	=True
 	~False
@@ -3524,7 +3524,7 @@ mG4ZbKMf4
 
 ::Identifiers Level 2 #440::
 Is the following a valid C++ identifier?
-79950i4
+495EbP75
 	{
 	=False
 	~True
@@ -3532,7 +3532,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #441::
 Is the following a valid C++ identifier?
-o5U1Pfa
+JLex3
 	{
 	=True
 	~False
@@ -3540,7 +3540,7 @@ o5U1Pfa
 
 ::Identifiers Level 2 #442::
 Is the following a valid C++ identifier?
-f6npW
+YoO6Mur9
 	{
 	=True
 	~False
@@ -3548,15 +3548,15 @@ f6npW
 
 ::Identifiers Level 2 #443::
 Is the following a valid C++ identifier?
-6TwwjD
+kk4v3u8
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #444::
 Is the following a valid C++ identifier?
-LH7o3C
+QcWOPBF8W
 	{
 	=True
 	~False
@@ -3564,7 +3564,7 @@ LH7o3C
 
 ::Identifiers Level 2 #445::
 Is the following a valid C++ identifier?
-cfznoD
+dO6XiSy
 	{
 	=True
 	~False
@@ -3572,7 +3572,7 @@ cfznoD
 
 ::Identifiers Level 2 #446::
 Is the following a valid C++ identifier?
-B2DG3Y
+T0pYv3z
 	{
 	=True
 	~False
@@ -3580,7 +3580,7 @@ B2DG3Y
 
 ::Identifiers Level 2 #447::
 Is the following a valid C++ identifier?
-lWxu0CFPX
+XOBaH
 	{
 	=True
 	~False
@@ -3588,15 +3588,15 @@ lWxu0CFPX
 
 ::Identifiers Level 2 #448::
 Is the following a valid C++ identifier?
-Jn3qTmD
+1koy4
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #449::
 Is the following a valid C++ identifier?
-VvrYt06
+G750IIBc
 	{
 	=True
 	~False
@@ -3604,23 +3604,23 @@ VvrYt06
 
 ::Identifiers Level 2 #450::
 Is the following a valid C++ identifier?
-48Jm54
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #451::
-Is the following a valid C++ identifier?
-II4CI
+bPEKzp6iv
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 2 #451::
+Is the following a valid C++ identifier?
+2Er5cL
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 2 #452::
 Is the following a valid C++ identifier?
-mLVy2KK4
+H7WXW
 	{
 	=True
 	~False
@@ -3628,39 +3628,39 @@ mLVy2KK4
 
 ::Identifiers Level 2 #453::
 Is the following a valid C++ identifier?
-7RxGt1O
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #454::
-Is the following a valid C++ identifier?
-0or6Y
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 2 #455::
-Is the following a valid C++ identifier?
-ZS75DZTy
+ie8y2HMZB
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 2 #456::
+::Identifiers Level 2 #454::
 Is the following a valid C++ identifier?
-89RnpFu
+NE3QJL9
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 2 #455::
+Is the following a valid C++ identifier?
+9SeAiR
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 2 #456::
+Is the following a valid C++ identifier?
+yaXYbA
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 2 #457::
 Is the following a valid C++ identifier?
-zrx00
+X32ydBauq
 	{
 	=True
 	~False
@@ -3668,15 +3668,15 @@ zrx00
 
 ::Identifiers Level 2 #458::
 Is the following a valid C++ identifier?
-d2Jm4a
+6ry1buv
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #459::
 Is the following a valid C++ identifier?
-o6aXYrg5
+yTtWg
 	{
 	=True
 	~False
@@ -3684,7 +3684,7 @@ o6aXYrg5
 
 ::Identifiers Level 2 #460::
 Is the following a valid C++ identifier?
-Rgs7AWCy
+KcnyUk79x
 	{
 	=True
 	~False
@@ -3692,23 +3692,23 @@ Rgs7AWCy
 
 ::Identifiers Level 2 #461::
 Is the following a valid C++ identifier?
-BuNTu62t
+9bVezs
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #462::
 Is the following a valid C++ identifier?
-rK5U5
+6PhBuEz
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #463::
 Is the following a valid C++ identifier?
-NlsYFTEq
+TLlpE
 	{
 	=True
 	~False
@@ -3716,7 +3716,7 @@ NlsYFTEq
 
 ::Identifiers Level 2 #464::
 Is the following a valid C++ identifier?
-X6rqR38ak
+YYT1TaF
 	{
 	=True
 	~False
@@ -3724,7 +3724,7 @@ X6rqR38ak
 
 ::Identifiers Level 2 #465::
 Is the following a valid C++ identifier?
-YulE9
+Tfz2Oen
 	{
 	=True
 	~False
@@ -3732,7 +3732,7 @@ YulE9
 
 ::Identifiers Level 2 #466::
 Is the following a valid C++ identifier?
-6cC1Wa
+91R7BVdf
 	{
 	=False
 	~True
@@ -3740,7 +3740,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #467::
 Is the following a valid C++ identifier?
-cRwXDJ
+fNrB01
 	{
 	=True
 	~False
@@ -3748,7 +3748,7 @@ cRwXDJ
 
 ::Identifiers Level 2 #468::
 Is the following a valid C++ identifier?
-XGCE6mS
+yFe47
 	{
 	=True
 	~False
@@ -3756,7 +3756,7 @@ XGCE6mS
 
 ::Identifiers Level 2 #469::
 Is the following a valid C++ identifier?
-47g1JQ7Q0
+0og21VNw
 	{
 	=False
 	~True
@@ -3764,7 +3764,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #470::
 Is the following a valid C++ identifier?
-jngO0pn
+L01frlt
 	{
 	=True
 	~False
@@ -3772,7 +3772,7 @@ jngO0pn
 
 ::Identifiers Level 2 #471::
 Is the following a valid C++ identifier?
-UPk916Ho
+ofn98loUz
 	{
 	=True
 	~False
@@ -3780,7 +3780,7 @@ UPk916Ho
 
 ::Identifiers Level 2 #472::
 Is the following a valid C++ identifier?
-MhcEe
+JYP09u
 	{
 	=True
 	~False
@@ -3788,15 +3788,15 @@ MhcEe
 
 ::Identifiers Level 2 #473::
 Is the following a valid C++ identifier?
-Lxk2fzSZj
+4BlZdj
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #474::
 Is the following a valid C++ identifier?
-4nv2n
+4nbJ5Me
 	{
 	=False
 	~True
@@ -3804,7 +3804,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #475::
 Is the following a valid C++ identifier?
-lvUyrY
+ZNme5GNN
 	{
 	=True
 	~False
@@ -3812,7 +3812,7 @@ lvUyrY
 
 ::Identifiers Level 2 #476::
 Is the following a valid C++ identifier?
-S4VaAyCB
+vdKjYqog6
 	{
 	=True
 	~False
@@ -3820,7 +3820,7 @@ S4VaAyCB
 
 ::Identifiers Level 2 #477::
 Is the following a valid C++ identifier?
-a5xx1
+vg5mFo6i0
 	{
 	=True
 	~False
@@ -3828,15 +3828,15 @@ a5xx1
 
 ::Identifiers Level 2 #478::
 Is the following a valid C++ identifier?
-qhlxK
+4T361g
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #479::
 Is the following a valid C++ identifier?
-kjuB5
+H8WYOO8
 	{
 	=True
 	~False
@@ -3844,15 +3844,15 @@ kjuB5
 
 ::Identifiers Level 2 #480::
 Is the following a valid C++ identifier?
-2Y3BwYdz
+T32Tk
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #481::
 Is the following a valid C++ identifier?
-IbnPUp6
+avTBS
 	{
 	=True
 	~False
@@ -3860,7 +3860,7 @@ IbnPUp6
 
 ::Identifiers Level 2 #482::
 Is the following a valid C++ identifier?
-AYqD33a
+IQjc0T8
 	{
 	=True
 	~False
@@ -3868,7 +3868,7 @@ AYqD33a
 
 ::Identifiers Level 2 #483::
 Is the following a valid C++ identifier?
-g9wFeTk
+o03gHz6RI
 	{
 	=True
 	~False
@@ -3876,7 +3876,7 @@ g9wFeTk
 
 ::Identifiers Level 2 #484::
 Is the following a valid C++ identifier?
-T9KmiVDM
+DznEi4
 	{
 	=True
 	~False
@@ -3884,7 +3884,7 @@ T9KmiVDM
 
 ::Identifiers Level 2 #485::
 Is the following a valid C++ identifier?
-iiip8l5
+PYxe183
 	{
 	=True
 	~False
@@ -3892,7 +3892,7 @@ iiip8l5
 
 ::Identifiers Level 2 #486::
 Is the following a valid C++ identifier?
-NlMXZ
+bDToQNz
 	{
 	=True
 	~False
@@ -3900,15 +3900,15 @@ NlMXZ
 
 ::Identifiers Level 2 #487::
 Is the following a valid C++ identifier?
-K7jLzY
+7ZKMmMvd
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #488::
 Is the following a valid C++ identifier?
-9JH9l
+4SwRU
 	{
 	=False
 	~True
@@ -3916,7 +3916,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 2 #489::
 Is the following a valid C++ identifier?
-XjQ46WB
+cUUw6raew
 	{
 	=True
 	~False
@@ -3924,7 +3924,7 @@ XjQ46WB
 
 ::Identifiers Level 2 #490::
 Is the following a valid C++ identifier?
-nWdaEJ
+Njm0yr
 	{
 	=True
 	~False
@@ -3932,7 +3932,7 @@ nWdaEJ
 
 ::Identifiers Level 2 #491::
 Is the following a valid C++ identifier?
-FcMfwI
+s4e87
 	{
 	=True
 	~False
@@ -3940,7 +3940,7 @@ FcMfwI
 
 ::Identifiers Level 2 #492::
 Is the following a valid C++ identifier?
-rNIK0ECM
+xX3B5MK
 	{
 	=True
 	~False
@@ -3948,31 +3948,31 @@ rNIK0ECM
 
 ::Identifiers Level 2 #493::
 Is the following a valid C++ identifier?
-nGs1u7bW
+6t42ec
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #494::
 Is the following a valid C++ identifier?
-G75X7ABzd
+2vSbWPJT7
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #495::
 Is the following a valid C++ identifier?
-gD0dac
+3W50PC
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 2 #496::
 Is the following a valid C++ identifier?
-mN0U2T
+e1X6R
 	{
 	=True
 	~False
@@ -3980,41 +3980,41 @@ mN0U2T
 
 ::Identifiers Level 2 #497::
 Is the following a valid C++ identifier?
-1OeeYYQrA
+S0gwuX
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #498::
 Is the following a valid C++ identifier?
-6HBmb8
+d9GeG
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 2 #499::
 Is the following a valid C++ identifier?
-sEr1aXp
+92peS9x
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 $CATEGORY: $course$ / Examples / Identifiers3
 
 ::Identifiers Level 3 #500::
 Is the following a valid C++ identifier?
-_0MQu?P
+VT_YIsKIg
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #501::
 Is the following a valid C++ identifier?
-@w_ANE_u_
+rJK!Bsz?
 	{
 	=False
 	~True
@@ -4022,23 +4022,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #502::
 Is the following a valid C++ identifier?
-_A4c_U@
+R6s89_Y
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #503::
 Is the following a valid C++ identifier?
-wS083?l
+gX5AVa_Pv
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #504::
 Is the following a valid C++ identifier?
-Y?XSzYqu
+&ix!cvFG
 	{
 	=False
 	~True
@@ -4046,31 +4046,31 @@ Y?XSzYqu
 
 ::Identifiers Level 3 #505::
 Is the following a valid C++ identifier?
-bn_0Ta
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #506::
-Is the following a valid C++ identifier?
-9q5#_x_
+!?Kjoa
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #507::
+::Identifiers Level 3 #506::
 Is the following a valid C++ identifier?
-cytdO
+_63pV
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #507::
+Is the following a valid C++ identifier?
+tuHgOY5#
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #508::
 Is the following a valid C++ identifier?
-t_J_n_@
+nt1urG?s
 	{
 	=False
 	~True
@@ -4078,15 +4078,15 @@ t_J_n_@
 
 ::Identifiers Level 3 #509::
 Is the following a valid C++ identifier?
-P509Ktbr
+#w&CHg2
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #510::
 Is the following a valid C++ identifier?
-Aa?7gl
+B!@&Pc
 	{
 	=False
 	~True
@@ -4094,7 +4094,7 @@ Aa?7gl
 
 ::Identifiers Level 3 #511::
 Is the following a valid C++ identifier?
-B7TH4
+mqa_g
 	{
 	=True
 	~False
@@ -4102,7 +4102,7 @@ B7TH4
 
 ::Identifiers Level 3 #512::
 Is the following a valid C++ identifier?
-RGwB_b_?_
+_Q!7_HA_
 	{
 	=False
 	~True
@@ -4110,7 +4110,7 @@ RGwB_b_?_
 
 ::Identifiers Level 3 #513::
 Is the following a valid C++ identifier?
-2P_E@9
+NJ_bwN@
 	{
 	=False
 	~True
@@ -4118,23 +4118,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #514::
 Is the following a valid C++ identifier?
-WJ70G5
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #515::
-Is the following a valid C++ identifier?
-t4VX&9_
+3_1?mB&
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #515::
+Is the following a valid C++ identifier?
+YJHG6LX
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #516::
 Is the following a valid C++ identifier?
-iE2vI95
+D_m_j8g7
 	{
 	=True
 	~False
@@ -4142,31 +4142,31 @@ iE2vI95
 
 ::Identifiers Level 3 #517::
 Is the following a valid C++ identifier?
-.L5cRL
+NvU7ea3
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 3 #518::
+Is the following a valid C++ identifier?
+5!SsVtc_
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #518::
-Is the following a valid C++ identifier?
-_5_ruc9_8
-	{
-	=True
-	~False
-	}
-
 ::Identifiers Level 3 #519::
 Is the following a valid C++ identifier?
-LxO600
+DEuKDjl1#
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #520::
 Is the following a valid C++ identifier?
-2K4e7&da4
+&c8ta8C_K
 	{
 	=False
 	~True
@@ -4174,31 +4174,31 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #521::
 Is the following a valid C++ identifier?
-bt85z3
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #522::
-Is the following a valid C++ identifier?
-K3Pd9
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #523::
-Is the following a valid C++ identifier?
-#zE0pkJWl
+62PhRGewT
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #522::
+Is the following a valid C++ identifier?
+ICTVW!
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #523::
+Is the following a valid C++ identifier?
+_Ni8L
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #524::
 Is the following a valid C++ identifier?
-6TDVd_
+eaa08.B
 	{
 	=False
 	~True
@@ -4206,15 +4206,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #525::
 Is the following a valid C++ identifier?
-DN#8&
+G_3l4L
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #526::
 Is the following a valid C++ identifier?
-_ci081t3_
+yifz05O
 	{
 	=True
 	~False
@@ -4222,7 +4222,7 @@ _ci081t3_
 
 ::Identifiers Level 3 #527::
 Is the following a valid C++ identifier?
-j?_Kc_
+WsV?wOba
 	{
 	=False
 	~True
@@ -4230,15 +4230,15 @@ j?_Kc_
 
 ::Identifiers Level 3 #528::
 Is the following a valid C++ identifier?
-JkK_4L
+!7.0I8
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #529::
 Is the following a valid C++ identifier?
-51.RJrOF@
+d_0&qy?F_
 	{
 	=False
 	~True
@@ -4246,15 +4246,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #530::
 Is the following a valid C++ identifier?
-F5#R4o!
+LN_cKRy1N
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #531::
 Is the following a valid C++ identifier?
-qEU2j@X2
+2F6hIU
 	{
 	=False
 	~True
@@ -4262,7 +4262,7 @@ qEU2j@X2
 
 ::Identifiers Level 3 #532::
 Is the following a valid C++ identifier?
-gI_sYg4G
+Z59_o_0gP
 	{
 	=True
 	~False
@@ -4270,7 +4270,7 @@ gI_sYg4G
 
 ::Identifiers Level 3 #533::
 Is the following a valid C++ identifier?
-0YZQ9k_?
+4S?pf
 	{
 	=False
 	~True
@@ -4278,15 +4278,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #534::
 Is the following a valid C++ identifier?
-P!D&@
+oZ6XQ
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #535::
 Is the following a valid C++ identifier?
-dav_8DaP1
+v44_cRZ5
 	{
 	=True
 	~False
@@ -4294,15 +4294,15 @@ dav_8DaP1
 
 ::Identifiers Level 3 #536::
 Is the following a valid C++ identifier?
-ASr9lQ
+!79q25
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #537::
 Is the following a valid C++ identifier?
-9r8__#r&h
+?K_m9
 	{
 	=False
 	~True
@@ -4310,23 +4310,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #538::
 Is the following a valid C++ identifier?
-v70wKsc
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #539::
-Is the following a valid C++ identifier?
-14IGjW!H
+OJ!?YU
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #539::
+Is the following a valid C++ identifier?
+LxI5fB7
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #540::
 Is the following a valid C++ identifier?
-_9?_6Q4
+5g_q@C4A
 	{
 	=False
 	~True
@@ -4334,7 +4334,7 @@ _9?_6Q4
 
 ::Identifiers Level 3 #541::
 Is the following a valid C++ identifier?
-#H9_Q_q
+4HNcP#_Vb
 	{
 	=False
 	~True
@@ -4342,7 +4342,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #542::
 Is the following a valid C++ identifier?
-ygtwK#hZf
+#.NM_AK
 	{
 	=False
 	~True
@@ -4350,31 +4350,31 @@ ygtwK#hZf
 
 ::Identifiers Level 3 #543::
 Is the following a valid C++ identifier?
-_a_Iz0p
+86F1TMp
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #544::
 Is the following a valid C++ identifier?
-CZ48Becu
+4.3Q2j0J
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #545::
 Is the following a valid C++ identifier?
-_kn7rPp9B
+Y5O#nlb
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #546::
 Is the following a valid C++ identifier?
-5O_3JO__b
+.3ljMh
 	{
 	=False
 	~True
@@ -4382,15 +4382,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #547::
 Is the following a valid C++ identifier?
-G3oQdW
+t_!Plsw
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #548::
 Is the following a valid C++ identifier?
-9E?Sgm.h@
+7cHW6
 	{
 	=False
 	~True
@@ -4398,7 +4398,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #549::
 Is the following a valid C++ identifier?
-VtTmP8l
+_fVn_
 	{
 	=True
 	~False
@@ -4406,7 +4406,7 @@ VtTmP8l
 
 ::Identifiers Level 3 #550::
 Is the following a valid C++ identifier?
-d7dMnt
+t3GKh4__
 	{
 	=True
 	~False
@@ -4414,7 +4414,7 @@ d7dMnt
 
 ::Identifiers Level 3 #551::
 Is the following a valid C++ identifier?
-hJT&I0?.d
+0VuUs
 	{
 	=False
 	~True
@@ -4422,15 +4422,15 @@ hJT&I0?.d
 
 ::Identifiers Level 3 #552::
 Is the following a valid C++ identifier?
-wn_g0P
+!XG_W13A2
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #553::
 Is the following a valid C++ identifier?
-&GrYuF0__
+V!r9!
 	{
 	=False
 	~True
@@ -4438,15 +4438,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #554::
 Is the following a valid C++ identifier?
-sS_4_9W5b
+7_rt5i!?J
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #555::
 Is the following a valid C++ identifier?
-q845!
+80_J.0
 	{
 	=False
 	~True
@@ -4454,39 +4454,39 @@ q845!
 
 ::Identifiers Level 3 #556::
 Is the following a valid C++ identifier?
-1c_ih_
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #557::
-Is the following a valid C++ identifier?
-_e@l8G_cE
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #558::
-Is the following a valid C++ identifier?
-JEv_N_1P
+ATrwwx9
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 3 #559::
+::Identifiers Level 3 #557::
 Is the following a valid C++ identifier?
-7UT_sk2f5
+O5HC2nQ
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 3 #558::
+Is the following a valid C++ identifier?
+H_P3!7Q
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #559::
+Is the following a valid C++ identifier?
+weCoN_
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #560::
 Is the following a valid C++ identifier?
-r4sJG_2Qe
+_TxjP
 	{
 	=True
 	~False
@@ -4494,7 +4494,7 @@ r4sJG_2Qe
 
 ::Identifiers Level 3 #561::
 Is the following a valid C++ identifier?
-0UVHZ
+6lO_Jl6_k
 	{
 	=False
 	~True
@@ -4502,7 +4502,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #562::
 Is the following a valid C++ identifier?
-&C_.1!3_
+09q4qn_B
 	{
 	=False
 	~True
@@ -4510,7 +4510,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #563::
 Is the following a valid C++ identifier?
-!_K.2HK_
+x#__06z
 	{
 	=False
 	~True
@@ -4518,15 +4518,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #564::
 Is the following a valid C++ identifier?
-txLo@
+T_OpB8x_5
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #565::
 Is the following a valid C++ identifier?
-18XW1_7B
+4C04X
 	{
 	=False
 	~True
@@ -4534,7 +4534,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #566::
 Is the following a valid C++ identifier?
-lJa_bFg4
+_uOGP
 	{
 	=True
 	~False
@@ -4542,7 +4542,7 @@ lJa_bFg4
 
 ::Identifiers Level 3 #567::
 Is the following a valid C++ identifier?
-_xef&F@
+_Z?_M
 	{
 	=False
 	~True
@@ -4550,7 +4550,7 @@ _xef&F@
 
 ::Identifiers Level 3 #568::
 Is the following a valid C++ identifier?
-Hr?T91
+9_KmH
 	{
 	=False
 	~True
@@ -4558,7 +4558,7 @@ Hr?T91
 
 ::Identifiers Level 3 #569::
 Is the following a valid C++ identifier?
-IVf_o24
+Y2GG_
 	{
 	=True
 	~False
@@ -4566,7 +4566,7 @@ IVf_o24
 
 ::Identifiers Level 3 #570::
 Is the following a valid C++ identifier?
-4_joGNp_R
+H!ve7&
 	{
 	=False
 	~True
@@ -4574,15 +4574,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #571::
 Is the following a valid C++ identifier?
-i_2X?
+h40xU8
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #572::
 Is the following a valid C++ identifier?
-2r6IxO016
+5.FX2rN3
 	{
 	=False
 	~True
@@ -4590,7 +4590,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #573::
 Is the following a valid C++ identifier?
-.eH7zt8T
+aLH!?h
 	{
 	=False
 	~True
@@ -4598,7 +4598,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #574::
 Is the following a valid C++ identifier?
-u3zddaex2
+EbCXFz
 	{
 	=True
 	~False
@@ -4606,23 +4606,23 @@ u3zddaex2
 
 ::Identifiers Level 3 #575::
 Is the following a valid C++ identifier?
-XOGW&
+nypSS0F1
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #576::
 Is the following a valid C++ identifier?
-UzZ&n_u1
+JL_D_Z3g
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #577::
 Is the following a valid C++ identifier?
-5eRik6
+1y_w63x
 	{
 	=False
 	~True
@@ -4630,15 +4630,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #578::
 Is the following a valid C++ identifier?
-T4KQ&?L8
+bT6T59
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #579::
 Is the following a valid C++ identifier?
-18_?b
+a#@!I
 	{
 	=False
 	~True
@@ -4646,7 +4646,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #580::
 Is the following a valid C++ identifier?
-UhT_#iv
+kj4@&2
 	{
 	=False
 	~True
@@ -4654,55 +4654,55 @@ UhT_#iv
 
 ::Identifiers Level 3 #581::
 Is the following a valid C++ identifier?
-__o_l
+9jbjfAx
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #582::
 Is the following a valid C++ identifier?
-v3&6h
+N3pqtE
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #583::
 Is the following a valid C++ identifier?
-0dgd_k.
+E9qLg30d
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #584::
 Is the following a valid C++ identifier?
-_o_l9nQ7k
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #585::
-Is the following a valid C++ identifier?
-.8_M_y
+RO?S7b.Nu
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #586::
+::Identifiers Level 3 #585::
 Is the following a valid C++ identifier?
-I8x9BR
+w3Cin9AI
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #586::
+Is the following a valid C++ identifier?
+S@._fl6E
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #587::
 Is the following a valid C++ identifier?
-J_6MzR#Ik
+&ySfto3gn
 	{
 	=False
 	~True
@@ -4710,7 +4710,7 @@ J_6MzR#Ik
 
 ::Identifiers Level 3 #588::
 Is the following a valid C++ identifier?
-88yK5U_E
+._!.X
 	{
 	=False
 	~True
@@ -4718,15 +4718,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #589::
 Is the following a valid C++ identifier?
-_h_mqZ9
+m?&jq&W
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #590::
 Is the following a valid C++ identifier?
-khaqibS
+jXeLu_
 	{
 	=True
 	~False
@@ -4734,7 +4734,7 @@ khaqibS
 
 ::Identifiers Level 3 #591::
 Is the following a valid C++ identifier?
-rP0pm
+Nm9fx
 	{
 	=True
 	~False
@@ -4742,7 +4742,7 @@ rP0pm
 
 ::Identifiers Level 3 #592::
 Is the following a valid C++ identifier?
-_TLvw9
+hy1H_3
 	{
 	=True
 	~False
@@ -4750,31 +4750,31 @@ _TLvw9
 
 ::Identifiers Level 3 #593::
 Is the following a valid C++ identifier?
-g?1vIo_@D
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #594::
-Is the following a valid C++ identifier?
-kks81xqC
+QI9xR
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 3 #595::
+::Identifiers Level 3 #594::
 Is the following a valid C++ identifier?
-1p_Ac.
+2isMg
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #595::
+Is the following a valid C++ identifier?
+z2t2PLJII
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #596::
 Is the following a valid C++ identifier?
-hNPKfF.
+63gp8ed
 	{
 	=False
 	~True
@@ -4782,7 +4782,7 @@ hNPKfF.
 
 ::Identifiers Level 3 #597::
 Is the following a valid C++ identifier?
-6?_z6d
+92FSXV?Pm
 	{
 	=False
 	~True
@@ -4790,23 +4790,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #598::
 Is the following a valid C++ identifier?
-_Mnj7
+_#_oHCs
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #599::
 Is the following a valid C++ identifier?
-aj4_u74
+3eTLW
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #600::
 Is the following a valid C++ identifier?
-o9uLgz
+Wwf0B_rMz
 	{
 	=True
 	~False
@@ -4814,7 +4814,7 @@ o9uLgz
 
 ::Identifiers Level 3 #601::
 Is the following a valid C++ identifier?
-727YV5&.
+rurh._lS
 	{
 	=False
 	~True
@@ -4822,7 +4822,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #602::
 Is the following a valid C++ identifier?
-k3?_!Nm
+9?Vkx2
 	{
 	=False
 	~True
@@ -4830,23 +4830,23 @@ k3?_!Nm
 
 ::Identifiers Level 3 #603::
 Is the following a valid C++ identifier?
-@R_c!
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #604::
-Is the following a valid C++ identifier?
-Pt6gY
+_h1doQr
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #604::
+Is the following a valid C++ identifier?
+rc1?p1fv
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #605::
 Is the following a valid C++ identifier?
-P@c_2J__
+3C__d
 	{
 	=False
 	~True
@@ -4854,7 +4854,7 @@ P@c_2J__
 
 ::Identifiers Level 3 #606::
 Is the following a valid C++ identifier?
-1d9!m8
+p&yRS_FF
 	{
 	=False
 	~True
@@ -4862,7 +4862,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #607::
 Is the following a valid C++ identifier?
-_9NzVPT
+nr7heg0oV
 	{
 	=True
 	~False
@@ -4870,7 +4870,7 @@ _9NzVPT
 
 ::Identifiers Level 3 #608::
 Is the following a valid C++ identifier?
-U_0moPbp
+U07Wy
 	{
 	=True
 	~False
@@ -4878,39 +4878,39 @@ U_0moPbp
 
 ::Identifiers Level 3 #609::
 Is the following a valid C++ identifier?
-JP7kW
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #610::
-Is the following a valid C++ identifier?
-@!_3G_is
+Tg.nMD
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #611::
+::Identifiers Level 3 #610::
 Is the following a valid C++ identifier?
-Lg_5g
+QG_D7
 	{
 	=True
 	~False
+	}
+
+::Identifiers Level 3 #611::
+Is the following a valid C++ identifier?
+1N_54aYMR
+	{
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #612::
 Is the following a valid C++ identifier?
-m132TL
+r4xIE.t&
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #613::
 Is the following a valid C++ identifier?
-ui0sq!&R
+43Y7b?j
 	{
 	=False
 	~True
@@ -4918,7 +4918,7 @@ ui0sq!&R
 
 ::Identifiers Level 3 #614::
 Is the following a valid C++ identifier?
-cGe&E_v
+bYf?uv6
 	{
 	=False
 	~True
@@ -4926,15 +4926,15 @@ cGe&E_v
 
 ::Identifiers Level 3 #615::
 Is the following a valid C++ identifier?
-O&gv0!..
+zI4JGL
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #616::
 Is the following a valid C++ identifier?
-_#y3WZ
+_@2W8AASv
 	{
 	=False
 	~True
@@ -4942,7 +4942,7 @@ _#y3WZ
 
 ::Identifiers Level 3 #617::
 Is the following a valid C++ identifier?
-5eeN#
+TvTP#pq9
 	{
 	=False
 	~True
@@ -4950,23 +4950,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #618::
 Is the following a valid C++ identifier?
-D7J70z_
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #619::
-Is the following a valid C++ identifier?
-1_6gX
+wh?2g9
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #619::
+Is the following a valid C++ identifier?
+ijc7J3X
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #620::
 Is the following a valid C++ identifier?
-L47TlPh
+B69JR__G
 	{
 	=True
 	~False
@@ -4974,7 +4974,7 @@ L47TlPh
 
 ::Identifiers Level 3 #621::
 Is the following a valid C++ identifier?
-WAfFN.
+zp#_E3
 	{
 	=False
 	~True
@@ -4982,7 +4982,7 @@ WAfFN.
 
 ::Identifiers Level 3 #622::
 Is the following a valid C++ identifier?
-?d9clil2
+8A0X!qj
 	{
 	=False
 	~True
@@ -4990,7 +4990,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #623::
 Is the following a valid C++ identifier?
-NI_2@_127
+KJkpc#
 	{
 	=False
 	~True
@@ -4998,7 +4998,7 @@ NI_2@_127
 
 ::Identifiers Level 3 #624::
 Is the following a valid C++ identifier?
-._D_NK__
+Q6_&_
 	{
 	=False
 	~True
@@ -5006,7 +5006,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #625::
 Is the following a valid C++ identifier?
-!ozeO_
+bZZ!dzlX_
 	{
 	=False
 	~True
@@ -5014,7 +5014,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #626::
 Is the following a valid C++ identifier?
-!A_aWs
+&@T?_4
 	{
 	=False
 	~True
@@ -5022,7 +5022,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #627::
 Is the following a valid C++ identifier?
-78r11E
+0by?n_#U
 	{
 	=False
 	~True
@@ -5030,15 +5030,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #628::
 Is the following a valid C++ identifier?
-r&IeJuA#O
+F_e0QxS3
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #629::
 Is the following a valid C++ identifier?
-ZJ6#yp#
+i6##jOr
 	{
 	=False
 	~True
@@ -5046,7 +5046,7 @@ ZJ6#yp#
 
 ::Identifiers Level 3 #630::
 Is the following a valid C++ identifier?
-3H6wB9U@_
+_GJN.
 	{
 	=False
 	~True
@@ -5054,15 +5054,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #631::
 Is the following a valid C++ identifier?
-WcZ3cEyj
+_v@r__
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #632::
 Is the following a valid C++ identifier?
-65J448x_?
+5_.H&.
 	{
 	=False
 	~True
@@ -5070,31 +5070,31 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #633::
 Is the following a valid C++ identifier?
-1C46Jx1#Q
+gawSY
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #634::
 Is the following a valid C++ identifier?
-bp!_#2
+GYIlw
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #635::
 Is the following a valid C++ identifier?
-BKYZi_m@5
+r84Lb7
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #636::
 Is the following a valid C++ identifier?
-t4.c5H
+@j7C52Gq_
 	{
 	=False
 	~True
@@ -5102,23 +5102,23 @@ t4.c5H
 
 ::Identifiers Level 3 #637::
 Is the following a valid C++ identifier?
-_0EO7l2xN
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #638::
-Is the following a valid C++ identifier?
-i9TA1N.80
+5m!by
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #638::
+Is the following a valid C++ identifier?
+kr488x
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #639::
 Is the following a valid C++ identifier?
-Bh?f2
+I57W4E?
 	{
 	=False
 	~True
@@ -5126,7 +5126,7 @@ Bh?f2
 
 ::Identifiers Level 3 #640::
 Is the following a valid C++ identifier?
-kvm5si
+hFkv_
 	{
 	=True
 	~False
@@ -5134,7 +5134,7 @@ kvm5si
 
 ::Identifiers Level 3 #641::
 Is the following a valid C++ identifier?
-?_g_siq
+5@12UK
 	{
 	=False
 	~True
@@ -5142,7 +5142,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #642::
 Is the following a valid C++ identifier?
-goNC@l
+X.42UCD
 	{
 	=False
 	~True
@@ -5150,7 +5150,7 @@ goNC@l
 
 ::Identifiers Level 3 #643::
 Is the following a valid C++ identifier?
-FA_s3u
+j95Q3F
 	{
 	=True
 	~False
@@ -5158,7 +5158,7 @@ FA_s3u
 
 ::Identifiers Level 3 #644::
 Is the following a valid C++ identifier?
-g1hg#6
+6uEE_G_
 	{
 	=False
 	~True
@@ -5166,7 +5166,7 @@ g1hg#6
 
 ::Identifiers Level 3 #645::
 Is the following a valid C++ identifier?
-zQW?LhfIB
+3_XKOPu
 	{
 	=False
 	~True
@@ -5174,15 +5174,15 @@ zQW?LhfIB
 
 ::Identifiers Level 3 #646::
 Is the following a valid C++ identifier?
-U7l4?67VO
+w5r9Cgb
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #647::
 Is the following a valid C++ identifier?
-9tM6rk?hn
+ky.ixPlu
 	{
 	=False
 	~True
@@ -5190,7 +5190,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #648::
 Is the following a valid C++ identifier?
-#tFW7
+6hWR2
 	{
 	=False
 	~True
@@ -5198,39 +5198,39 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #649::
 Is the following a valid C++ identifier?
-h7pK6bH7
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #650::
-Is the following a valid C++ identifier?
-Xy___
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #651::
-Is the following a valid C++ identifier?
-L_8b.7OSK
+VV_@NOi_4
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #652::
+::Identifiers Level 3 #650::
 Is the following a valid C++ identifier?
-_Ft8ip_E
+v!..h
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #651::
+Is the following a valid C++ identifier?
+XES46_VZ
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #652::
+Is the following a valid C++ identifier?
+7u?Tk3z
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #653::
 Is the following a valid C++ identifier?
-KFuM&&
+.L#nz
 	{
 	=False
 	~True
@@ -5238,31 +5238,31 @@ KFuM&&
 
 ::Identifiers Level 3 #654::
 Is the following a valid C++ identifier?
-l4LMtj
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #655::
-Is the following a valid C++ identifier?
-yagq3___F
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #656::
-Is the following a valid C++ identifier?
-6&7aT
+Jq_ly1O!#
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #655::
+Is the following a valid C++ identifier?
+1XI@X?
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #656::
+Is the following a valid C++ identifier?
+zTnf5XJT
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #657::
 Is the following a valid C++ identifier?
-slQZa
+K0op0
 	{
 	=True
 	~False
@@ -5270,31 +5270,31 @@ slQZa
 
 ::Identifiers Level 3 #658::
 Is the following a valid C++ identifier?
-1O5i9L
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #659::
-Is the following a valid C++ identifier?
-CK_sx38
+P6_Qq1x
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 3 #660::
+::Identifiers Level 3 #659::
 Is the following a valid C++ identifier?
-zI_e#_e2
+x&dDzVM_
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #660::
+Is the following a valid C++ identifier?
+UF7Fpz
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #661::
 Is the following a valid C++ identifier?
-L_lX_MXCz
+O9xRKw0
 	{
 	=True
 	~False
@@ -5302,7 +5302,7 @@ L_lX_MXCz
 
 ::Identifiers Level 3 #662::
 Is the following a valid C++ identifier?
-9V7yr.gqE
+Kw@._
 	{
 	=False
 	~True
@@ -5310,7 +5310,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #663::
 Is the following a valid C++ identifier?
-Jnat6nPB
+UTfR_4y
 	{
 	=True
 	~False
@@ -5318,23 +5318,23 @@ Jnat6nPB
 
 ::Identifiers Level 3 #664::
 Is the following a valid C++ identifier?
-8u2_.X_
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #665::
-Is the following a valid C++ identifier?
-trWJcc
+H7PfI
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #665::
+Is the following a valid C++ identifier?
+2_9#F
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #666::
 Is the following a valid C++ identifier?
-OE0h_93_c
+uJ3Jrz6s
 	{
 	=True
 	~False
@@ -5342,7 +5342,7 @@ OE0h_93_c
 
 ::Identifiers Level 3 #667::
 Is the following a valid C++ identifier?
-22p_@r_
+jbH!0DJ
 	{
 	=False
 	~True
@@ -5350,15 +5350,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #668::
 Is the following a valid C++ identifier?
-zFgKx2
+.zprhug
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #669::
 Is the following a valid C++ identifier?
-1o_Ov
+6wPARV!_
 	{
 	=False
 	~True
@@ -5366,7 +5366,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #670::
 Is the following a valid C++ identifier?
-b?T.IwQ
+lE.WH_w
 	{
 	=False
 	~True
@@ -5374,7 +5374,7 @@ b?T.IwQ
 
 ::Identifiers Level 3 #671::
 Is the following a valid C++ identifier?
-9bD6J@T9b
+5gded1U
 	{
 	=False
 	~True
@@ -5382,7 +5382,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #672::
 Is the following a valid C++ identifier?
-9#W_2A4#@
+?hJwiW
 	{
 	=False
 	~True
@@ -5390,15 +5390,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #673::
 Is the following a valid C++ identifier?
-CH8K4!v8
+HZ64HnAl
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #674::
 Is the following a valid C++ identifier?
-_9WJW_p#4
+OBx0tD&
 	{
 	=False
 	~True
@@ -5406,15 +5406,15 @@ _9WJW_p#4
 
 ::Identifiers Level 3 #675::
 Is the following a valid C++ identifier?
-Ha_I__N
+7U&VWD_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #676::
 Is the following a valid C++ identifier?
-_jp8u
+gQyzA_h__
 	{
 	=True
 	~False
@@ -5422,23 +5422,23 @@ _jp8u
 
 ::Identifiers Level 3 #677::
 Is the following a valid C++ identifier?
-a87UvrIa
+.wR_e94?1
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #678::
 Is the following a valid C++ identifier?
-CIO0h5_
+W0#1Q7j0
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #679::
 Is the following a valid C++ identifier?
-wHt_32
+_jGP_r6pI
 	{
 	=True
 	~False
@@ -5446,31 +5446,31 @@ wHt_32
 
 ::Identifiers Level 3 #680::
 Is the following a valid C++ identifier?
-UBWag0Cby
+30ZG!yE3q
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #681::
+Is the following a valid C++ identifier?
+_uTqiSxDN
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 3 #681::
-Is the following a valid C++ identifier?
-wq#U0USm_
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 3 #682::
 Is the following a valid C++ identifier?
-kEN0u.
+O0_4yOa
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #683::
 Is the following a valid C++ identifier?
-w8.11
+ITiTB@@8f
 	{
 	=False
 	~True
@@ -5478,7 +5478,7 @@ w8.11
 
 ::Identifiers Level 3 #684::
 Is the following a valid C++ identifier?
-_p@Q1dR8
+1_B!!rk
 	{
 	=False
 	~True
@@ -5486,23 +5486,23 @@ _p@Q1dR8
 
 ::Identifiers Level 3 #685::
 Is the following a valid C++ identifier?
-s3e#?c7
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #686::
-Is the following a valid C++ identifier?
-Yf2NZJQ
+G1SR8YY
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #686::
+Is the following a valid C++ identifier?
+e7J!dF
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #687::
 Is the following a valid C++ identifier?
-Punv_dK5Q
+pq9XF2
 	{
 	=True
 	~False
@@ -5510,15 +5510,15 @@ Punv_dK5Q
 
 ::Identifiers Level 3 #688::
 Is the following a valid C++ identifier?
-_KwL!
+PW_XC
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #689::
 Is the following a valid C++ identifier?
-X8KS7
+i86wV
 	{
 	=True
 	~False
@@ -5526,7 +5526,7 @@ X8KS7
 
 ::Identifiers Level 3 #690::
 Is the following a valid C++ identifier?
-@_9L@s?
+l&JX_In
 	{
 	=False
 	~True
@@ -5534,79 +5534,79 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #691::
 Is the following a valid C++ identifier?
-j_45GZlz_
+f@5E_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #692::
 Is the following a valid C++ identifier?
-tOgA62E
+3Kqh&R_j
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #693::
 Is the following a valid C++ identifier?
-l0Jj#Gle
+_RW1DP
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #694::
 Is the following a valid C++ identifier?
-h5AOL_
+P?3P@T5_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #695::
 Is the following a valid C++ identifier?
-MR8zWJS5A
+cf!0x
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #696::
 Is the following a valid C++ identifier?
-8_v_J.
+IGxwEc
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #697::
 Is the following a valid C++ identifier?
-sV5FYZbYf
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #698::
-Is the following a valid C++ identifier?
-T41GQ#Oj
+YHtgf&
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 3 #699::
+::Identifiers Level 3 #698::
 Is the following a valid C++ identifier?
-Leni17
+_A493s9
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #699::
+Is the following a valid C++ identifier?
+bv?Jel
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #700::
 Is the following a valid C++ identifier?
-5Ik8lB
+W!k4z1
 	{
 	=False
 	~True
@@ -5614,47 +5614,47 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #701::
 Is the following a valid C++ identifier?
-u83p1
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #702::
-Is the following a valid C++ identifier?
-M_3GB
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #703::
-Is the following a valid C++ identifier?
-_IhLO05
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #704::
-Is the following a valid C++ identifier?
-BRMp_u2
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 3 #705::
-Is the following a valid C++ identifier?
-C&_Vh6x&d
+fbZ!4I!
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 3 #702::
+Is the following a valid C++ identifier?
+.#2ml
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #703::
+Is the following a valid C++ identifier?
+4.1BNmUWh
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #704::
+Is the following a valid C++ identifier?
+4PZrI7l#.
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 3 #705::
+Is the following a valid C++ identifier?
+__HPeCPv
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 3 #706::
 Is the following a valid C++ identifier?
-J2#FJQUp
+4zt2_06#J
 	{
 	=False
 	~True
@@ -5662,23 +5662,23 @@ J2#FJQUp
 
 ::Identifiers Level 3 #707::
 Is the following a valid C++ identifier?
-8Z.4yX8IS
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #708::
-Is the following a valid C++ identifier?
-XpDJc5j_
+G0ihS
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #708::
+Is the following a valid C++ identifier?
+me2f&5yB0
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #709::
 Is the following a valid C++ identifier?
-3m6f5_!tR
+UMsv@Gv9
 	{
 	=False
 	~True
@@ -5686,7 +5686,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #710::
 Is the following a valid C++ identifier?
-6_Y&ABG
+W5@0q
 	{
 	=False
 	~True
@@ -5694,7 +5694,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #711::
 Is the following a valid C++ identifier?
-H_Xt3J
+pNUrXj
 	{
 	=True
 	~False
@@ -5702,7 +5702,7 @@ H_Xt3J
 
 ::Identifiers Level 3 #712::
 Is the following a valid C++ identifier?
-MyTOh4U#
+!#XSo
 	{
 	=False
 	~True
@@ -5710,7 +5710,7 @@ MyTOh4U#
 
 ::Identifiers Level 3 #713::
 Is the following a valid C++ identifier?
-6c.p5qH
+!Ql82S
 	{
 	=False
 	~True
@@ -5718,23 +5718,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #714::
 Is the following a valid C++ identifier?
-54mq_4@_W
+wik57
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #715::
 Is the following a valid C++ identifier?
-J1!R_@5
+oT7c_hny
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #716::
 Is the following a valid C++ identifier?
-9P_C0
+KCXaV7N?
 	{
 	=False
 	~True
@@ -5742,15 +5742,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #717::
 Is the following a valid C++ identifier?
-_&X&BF&z@
+d18_SsBq
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #718::
 Is the following a valid C++ identifier?
-3I2F_yrle
+t@Ml_2
 	{
 	=False
 	~True
@@ -5758,7 +5758,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #719::
 Is the following a valid C++ identifier?
-RH!UlumH
+0nj3CJ
 	{
 	=False
 	~True
@@ -5766,7 +5766,7 @@ RH!UlumH
 
 ::Identifiers Level 3 #720::
 Is the following a valid C++ identifier?
-4tur7lF3
+q3HS@Rdd_
 	{
 	=False
 	~True
@@ -5774,7 +5774,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #721::
 Is the following a valid C++ identifier?
-4?2f?OH@&
+S#0_Ze_y
 	{
 	=False
 	~True
@@ -5782,7 +5782,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #722::
 Is the following a valid C++ identifier?
-3_8UsarFP
+QS!CRm
 	{
 	=False
 	~True
@@ -5790,23 +5790,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #723::
 Is the following a valid C++ identifier?
-E_V7_
+s?TOKCtC_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #724::
 Is the following a valid C++ identifier?
-LEEQ7s_
+_T_2!fZ7_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 3 #725::
 Is the following a valid C++ identifier?
-i@o7_p6_!
+AS!_&_
 	{
 	=False
 	~True
@@ -5814,31 +5814,31 @@ i@o7_p6_!
 
 ::Identifiers Level 3 #726::
 Is the following a valid C++ identifier?
-Y.!hD_
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #727::
-Is the following a valid C++ identifier?
-!I_#do
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #728::
-Is the following a valid C++ identifier?
-_Uc7I5
+xGtZG
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #727::
+Is the following a valid C++ identifier?
+Ji5DF_HCD
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 3 #728::
+Is the following a valid C++ identifier?
+6#Fm7
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #729::
 Is the following a valid C++ identifier?
-1WO6_r9
+83mwya43L
 	{
 	=False
 	~True
@@ -5846,7 +5846,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #730::
 Is the following a valid C++ identifier?
-niFpiyx4_
+I7HH24G
 	{
 	=True
 	~False
@@ -5854,31 +5854,31 @@ niFpiyx4_
 
 ::Identifiers Level 3 #731::
 Is the following a valid C++ identifier?
-xW.n?HW#
+v3qqc8oSi
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #732::
 Is the following a valid C++ identifier?
-sEVnA.__
+pS3HaRR
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #733::
 Is the following a valid C++ identifier?
-k!7mO.
+uXsTSEIK
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #734::
 Is the following a valid C++ identifier?
-_&YegL3bX
+.i!eq
 	{
 	=False
 	~True
@@ -5886,7 +5886,7 @@ _&YegL3bX
 
 ::Identifiers Level 3 #735::
 Is the following a valid C++ identifier?
-_YDwZY1_5
+_PD5A
 	{
 	=True
 	~False
@@ -5894,23 +5894,23 @@ _YDwZY1_5
 
 ::Identifiers Level 3 #736::
 Is the following a valid C++ identifier?
-#86__3
+IAX0vkP_9
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #737::
 Is the following a valid C++ identifier?
-@7gtv&_
+A41Y6bQZn
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #738::
 Is the following a valid C++ identifier?
-BVkyg8L
+SV_H4qFgd
 	{
 	=True
 	~False
@@ -5918,7 +5918,7 @@ BVkyg8L
 
 ::Identifiers Level 3 #739::
 Is the following a valid C++ identifier?
-8_f@S3P
+s_1kMA.0
 	{
 	=False
 	~True
@@ -5926,7 +5926,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 3 #740::
 Is the following a valid C++ identifier?
-J3R2j
+D2m0R_AU
 	{
 	=True
 	~False
@@ -5934,7 +5934,7 @@ J3R2j
 
 ::Identifiers Level 3 #741::
 Is the following a valid C++ identifier?
-rPSVkR
+d4_0IpG
 	{
 	=True
 	~False
@@ -5942,15 +5942,15 @@ rPSVkR
 
 ::Identifiers Level 3 #742::
 Is the following a valid C++ identifier?
-nz?6_MK1
+qSEwZYsRh
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #743::
 Is the following a valid C++ identifier?
-mHN7#wb?@
+1IA9YuR_
 	{
 	=False
 	~True
@@ -5958,31 +5958,31 @@ mHN7#wb?@
 
 ::Identifiers Level 3 #744::
 Is the following a valid C++ identifier?
-PZMRX#Lt
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #745::
-Is the following a valid C++ identifier?
-!!0Wvtx9
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 3 #746::
-Is the following a valid C++ identifier?
-Lm_uGf
+o7M_i9rGK
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 3 #745::
+Is the following a valid C++ identifier?
+_cYNWLa
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 3 #746::
+Is the following a valid C++ identifier?
+1zj!4ZPVn
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 3 #747::
 Is the following a valid C++ identifier?
-__u43Qix
+oAq06Y2v
 	{
 	=True
 	~False
@@ -5990,15 +5990,15 @@ __u43Qix
 
 ::Identifiers Level 3 #748::
 Is the following a valid C++ identifier?
-_!1e0C_
+_2Y2t
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 3 #749::
 Is the following a valid C++ identifier?
-7Jv_LTQ7
+797lWm
 	{
 	=False
 	~True
@@ -6008,7 +6008,7 @@ $CATEGORY: $course$ / Examples / Identifiers4
 
 ::Identifiers Level 4 #750::
 Is the following a valid C++ identifier?
-ozT!eq@J
+1I6g_t?
 	{
 	=False
 	~True
@@ -6016,7 +6016,7 @@ ozT!eq@J
 
 ::Identifiers Level 4 #751::
 Is the following a valid C++ identifier?
-iR_sy8_
+n_wO1t
 	{
 	=True
 	~False
@@ -6024,15 +6024,15 @@ iR_sy8_
 
 ::Identifiers Level 4 #752::
 Is the following a valid C++ identifier?
-JIf__u7b
+K_4R!oH
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #753::
 Is the following a valid C++ identifier?
-a13YDj4
+_h_7L
 	{
 	=True
 	~False
@@ -6040,15 +6040,15 @@ a13YDj4
 
 ::Identifiers Level 4 #754::
 Is the following a valid C++ identifier?
-TWzp.E
+_B8_cg
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #755::
 Is the following a valid C++ identifier?
-o?uPi
+2llvz
 	{
 	=False
 	~True
@@ -6056,7 +6056,7 @@ o?uPi
 
 ::Identifiers Level 4 #756::
 Is the following a valid C++ identifier?
-30_Rxa.
+6_Nf7f
 	{
 	=False
 	~True
@@ -6064,7 +6064,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #757::
 Is the following a valid C++ identifier?
-liowICES
+OYKxOBydN
 	{
 	=True
 	~False
@@ -6072,7 +6072,7 @@ liowICES
 
 ::Identifiers Level 4 #758::
 Is the following a valid C++ identifier?
-c.__HSJkN
+uy6OnH&B
 	{
 	=False
 	~True
@@ -6080,7 +6080,7 @@ c.__HSJkN
 
 ::Identifiers Level 4 #759::
 Is the following a valid C++ identifier?
-BTv8!o2Y3
+P1C_l@
 	{
 	=False
 	~True
@@ -6088,15 +6088,15 @@ BTv8!o2Y3
 
 ::Identifiers Level 4 #760::
 Is the following a valid C++ identifier?
-YxNk_4K_.
+Ggq7_
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #761::
 Is the following a valid C++ identifier?
-_tOqF
+_0Y1_
 	{
 	=True
 	~False
@@ -6104,7 +6104,7 @@ _tOqF
 
 ::Identifiers Level 4 #762::
 Is the following a valid C++ identifier?
-2n_!FR1!c
+3M_?_03k2
 	{
 	=False
 	~True
@@ -6112,15 +6112,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #763::
 Is the following a valid C++ identifier?
-ZXb4uFT4
+7@K43.59
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #764::
 Is the following a valid C++ identifier?
-7Px!NY
+.v7&a_T
 	{
 	=False
 	~True
@@ -6128,15 +6128,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #765::
 Is the following a valid C++ identifier?
-_KH3n5U
+fM_#i3yK
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #766::
 Is the following a valid C++ identifier?
-CVSbI&Z
+5n325ATa
 	{
 	=False
 	~True
@@ -6144,31 +6144,31 @@ CVSbI&Z
 
 ::Identifiers Level 4 #767::
 Is the following a valid C++ identifier?
-RS_lUbQee
+Fsse_0#
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #768::
 Is the following a valid C++ identifier?
-DfsEd
+GJS#T4T
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #769::
 Is the following a valid C++ identifier?
-YFCiLS7x5
+1Zc__GF_4
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #770::
 Is the following a valid C++ identifier?
-g@G0p@wxG
+DL3xz.Mg
 	{
 	=False
 	~True
@@ -6176,31 +6176,31 @@ g@G0p@wxG
 
 ::Identifiers Level 4 #771::
 Is the following a valid C++ identifier?
-spF4F
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #772::
-Is the following a valid C++ identifier?
-TFcMTCapO
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #773::
-Is the following a valid C++ identifier?
-#vhRN3e.
+wE.26
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #772::
+Is the following a valid C++ identifier?
+KCH!oE1
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #773::
+Is the following a valid C++ identifier?
+MarO59a
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #774::
 Is the following a valid C++ identifier?
-_Mm_R
+OC8u5
 	{
 	=True
 	~False
@@ -6208,15 +6208,15 @@ _Mm_R
 
 ::Identifiers Level 4 #775::
 Is the following a valid C++ identifier?
-_BKCFl
+w_U@xDeN
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #776::
 Is the following a valid C++ identifier?
-R0rDA
+WjYRdPbJ
 	{
 	=True
 	~False
@@ -6224,7 +6224,7 @@ R0rDA
 
 ::Identifiers Level 4 #777::
 Is the following a valid C++ identifier?
-N_2_#_
+qgE@m_V
 	{
 	=False
 	~True
@@ -6232,15 +6232,15 @@ N_2_#_
 
 ::Identifiers Level 4 #778::
 Is the following a valid C++ identifier?
-cN8gw#P
+i9o7w6h1
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #779::
 Is the following a valid C++ identifier?
-Sqr_is
+_zvaG
 	{
 	=True
 	~False
@@ -6248,7 +6248,7 @@ Sqr_is
 
 ::Identifiers Level 4 #780::
 Is the following a valid C++ identifier?
-G2_X&
+3P2__16ur
 	{
 	=False
 	~True
@@ -6256,7 +6256,7 @@ G2_X&
 
 ::Identifiers Level 4 #781::
 Is the following a valid C++ identifier?
-lDr2&j
+o7S6iq!3m
 	{
 	=False
 	~True
@@ -6264,47 +6264,47 @@ lDr2&j
 
 ::Identifiers Level 4 #782::
 Is the following a valid C++ identifier?
-1AY#uZ&
+oWNUb9f_C
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #783::
 Is the following a valid C++ identifier?
-gzMxxry
+5n6__fan
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #784::
 Is the following a valid C++ identifier?
-Cs_gO_
+M_4_i!
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #785::
+Is the following a valid C++ identifier?
+D_cUI_
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #785::
-Is the following a valid C++ identifier?
-!e2p#
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 4 #786::
 Is the following a valid C++ identifier?
-_jGQ#6Qa
+_0A3S6SrX
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #787::
 Is the following a valid C++ identifier?
-6KH77wZ
+mqV_py?A
 	{
 	=False
 	~True
@@ -6312,15 +6312,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #788::
 Is the following a valid C++ identifier?
-LKbULh
+0An1gX
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #789::
 Is the following a valid C++ identifier?
-?Cl6A7
+3i_RCkY7a
 	{
 	=False
 	~True
@@ -6328,15 +6328,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #790::
 Is the following a valid C++ identifier?
-2E_SiB9g
+_RcDdPG2
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #791::
 Is the following a valid C++ identifier?
-SU!##Y0
+ATG_Wu._D
 	{
 	=False
 	~True
@@ -6344,7 +6344,7 @@ SU!##Y0
 
 ::Identifiers Level 4 #792::
 Is the following a valid C++ identifier?
-w2_?B27q
+L@4_hq
 	{
 	=False
 	~True
@@ -6352,31 +6352,31 @@ w2_?B27q
 
 ::Identifiers Level 4 #793::
 Is the following a valid C++ identifier?
-AOVxuUHhV
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #794::
-Is the following a valid C++ identifier?
-ZHvtP4E
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #795::
-Is the following a valid C++ identifier?
-gcs!7_07_
+EV_Uv@c
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #794::
+Is the following a valid C++ identifier?
+2@REe12#
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #795::
+Is the following a valid C++ identifier?
+_HjFFnR
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #796::
 Is the following a valid C++ identifier?
-KFu!6G
+_C6w&
 	{
 	=False
 	~True
@@ -6384,7 +6384,7 @@ KFu!6G
 
 ::Identifiers Level 4 #797::
 Is the following a valid C++ identifier?
-8na09w?
+97yuNA550
 	{
 	=False
 	~True
@@ -6392,15 +6392,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #798::
 Is the following a valid C++ identifier?
-JXr9_P
+6Uo1@
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #799::
 Is the following a valid C++ identifier?
-A_X_1gWI_
+Xm_7ghu
 	{
 	=True
 	~False
@@ -6408,7 +6408,7 @@ A_X_1gWI_
 
 ::Identifiers Level 4 #800::
 Is the following a valid C++ identifier?
-rKp0m2RN
+n_pw1d_tK
 	{
 	=True
 	~False
@@ -6416,7 +6416,7 @@ rKp0m2RN
 
 ::Identifiers Level 4 #801::
 Is the following a valid C++ identifier?
-xgzh_2
+xJxtLe38z
 	{
 	=True
 	~False
@@ -6424,23 +6424,23 @@ xgzh_2
 
 ::Identifiers Level 4 #802::
 Is the following a valid C++ identifier?
-.D_5hu6
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #803::
-Is the following a valid C++ identifier?
-_KU_4
+v_rg2_TV
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #803::
+Is the following a valid C++ identifier?
+67i2Cw
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #804::
 Is the following a valid C++ identifier?
-_L1zz4
+_B1_7nr
 	{
 	=True
 	~False
@@ -6448,7 +6448,7 @@ _L1zz4
 
 ::Identifiers Level 4 #805::
 Is the following a valid C++ identifier?
-g@Aa&0L
+L0h2@1
 	{
 	=False
 	~True
@@ -6456,7 +6456,7 @@ g@Aa&0L
 
 ::Identifiers Level 4 #806::
 Is the following a valid C++ identifier?
-._ottW
+4_DUwh
 	{
 	=False
 	~True
@@ -6464,23 +6464,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #807::
 Is the following a valid C++ identifier?
-!82&m
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #808::
-Is the following a valid C++ identifier?
-vK_k9__
+dqnuz_RI
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #808::
+Is the following a valid C++ identifier?
+&GVFg
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #809::
 Is the following a valid C++ identifier?
-Ar0#4z
+8Z3l.CT_
 	{
 	=False
 	~True
@@ -6488,7 +6488,7 @@ Ar0#4z
 
 ::Identifiers Level 4 #810::
 Is the following a valid C++ identifier?
-!6Mhi
+0Hlfd
 	{
 	=False
 	~True
@@ -6496,7 +6496,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #811::
 Is the following a valid C++ identifier?
-zkq._Q
+1tIZ&
 	{
 	=False
 	~True
@@ -6504,7 +6504,7 @@ zkq._Q
 
 ::Identifiers Level 4 #812::
 Is the following a valid C++ identifier?
-.Cv2DM_y6
+ZTSL?o
 	{
 	=False
 	~True
@@ -6512,15 +6512,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #813::
 Is the following a valid C++ identifier?
-8_C?Yhh4
+vipSH8
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #814::
 Is the following a valid C++ identifier?
-H_.4c
+HLpjcI!
 	{
 	=False
 	~True
@@ -6528,7 +6528,7 @@ H_.4c
 
 ::Identifiers Level 4 #815::
 Is the following a valid C++ identifier?
-!_2I#
+iv_5._YUF
 	{
 	=False
 	~True
@@ -6536,39 +6536,39 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #816::
 Is the following a valid C++ identifier?
-9_PdCabr
+sF_N_H
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #817::
 Is the following a valid C++ identifier?
-6___e14
+cH8QfC
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #818::
 Is the following a valid C++ identifier?
-&.3HP!3
+j1W7w
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #819::
 Is the following a valid C++ identifier?
-__l!r_Qsf
+qr8_3g
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #820::
 Is the following a valid C++ identifier?
-DNmM_e
+Gv__D
 	{
 	=True
 	~False
@@ -6576,23 +6576,23 @@ DNmM_e
 
 ::Identifiers Level 4 #821::
 Is the following a valid C++ identifier?
-U2Q4Y!
+nPm_EC
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #822::
 Is the following a valid C++ identifier?
-H@D50HO
+Kr18m3q
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #823::
 Is the following a valid C++ identifier?
-5ffdT#kz_
+jS.9.bZf@
 	{
 	=False
 	~True
@@ -6600,55 +6600,55 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #824::
 Is the following a valid C++ identifier?
-nAq1H
+.j4_7ZR55
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #825::
 Is the following a valid C++ identifier?
-jM!pH1w6
+t2_pHr9jc
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #826::
 Is the following a valid C++ identifier?
-DY8OjL
+6H8G_n0x9
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #827::
 Is the following a valid C++ identifier?
-DrIox4
+.5j_t1a0
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #828::
+Is the following a valid C++ identifier?
+FI0a_ztm
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #828::
-Is the following a valid C++ identifier?
-&2Hj4
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 4 #829::
 Is the following a valid C++ identifier?
-@fkWl8m6t
+_m__b
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #830::
 Is the following a valid C++ identifier?
-EGI#C2d_3
+2Ap63J#
 	{
 	=False
 	~True
@@ -6656,15 +6656,15 @@ EGI#C2d_3
 
 ::Identifiers Level 4 #831::
 Is the following a valid C++ identifier?
-1Z#_HgO
+jh_c_sNmG
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #832::
 Is the following a valid C++ identifier?
-!XP4xGVf
+#Hq4y1
 	{
 	=False
 	~True
@@ -6672,7 +6672,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #833::
 Is the following a valid C++ identifier?
-zdT9Mpqv
+T5e_cEq
 	{
 	=True
 	~False
@@ -6680,7 +6680,7 @@ zdT9Mpqv
 
 ::Identifiers Level 4 #834::
 Is the following a valid C++ identifier?
-_5Lc79
+wSBQNa__7
 	{
 	=True
 	~False
@@ -6688,7 +6688,7 @@ _5Lc79
 
 ::Identifiers Level 4 #835::
 Is the following a valid C++ identifier?
-_zF0PLBy6
+_OB4Lm
 	{
 	=True
 	~False
@@ -6696,23 +6696,23 @@ _zF0PLBy6
 
 ::Identifiers Level 4 #836::
 Is the following a valid C++ identifier?
-g0qXV
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #837::
-Is the following a valid C++ identifier?
-2IO2_U
+bVH6Snjx?
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #837::
+Is the following a valid C++ identifier?
+zKhLM11pw
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #838::
 Is the following a valid C++ identifier?
-IC2t5!
+I5?dYp2
 	{
 	=False
 	~True
@@ -6720,7 +6720,7 @@ IC2t5!
 
 ::Identifiers Level 4 #839::
 Is the following a valid C++ identifier?
-?Kzn66e
+ZsZ_d?
 	{
 	=False
 	~True
@@ -6728,39 +6728,39 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #840::
 Is the following a valid C++ identifier?
-JMcKC
+!MdKK#
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #841::
 Is the following a valid C++ identifier?
-qQq@DN
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #842::
-Is the following a valid C++ identifier?
-v0iiz
+o734wvV
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #843::
+::Identifiers Level 4 #842::
 Is the following a valid C++ identifier?
-&J3x!wr7
+__#F06
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #843::
+Is the following a valid C++ identifier?
+M563oA3
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #844::
 Is the following a valid C++ identifier?
-c!Q_N9t2
+Ly_.Q
 	{
 	=False
 	~True
@@ -6768,7 +6768,7 @@ c!Q_N9t2
 
 ::Identifiers Level 4 #845::
 Is the following a valid C++ identifier?
-5qXgyL_r
+TJ5&ysdg3
 	{
 	=False
 	~True
@@ -6776,7 +6776,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #846::
 Is the following a valid C++ identifier?
-nbDuVpQk
+WROceD
 	{
 	=True
 	~False
@@ -6784,23 +6784,23 @@ nbDuVpQk
 
 ::Identifiers Level 4 #847::
 Is the following a valid C++ identifier?
-6!QZzl@I
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #848::
-Is the following a valid C++ identifier?
-Bs05k
+d7s74X
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #848::
+Is the following a valid C++ identifier?
+N9._z_oQ5
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #849::
 Is the following a valid C++ identifier?
-H5hy6Z
+o5_nP6HW_
 	{
 	=True
 	~False
@@ -6808,7 +6808,7 @@ H5hy6Z
 
 ::Identifiers Level 4 #850::
 Is the following a valid C++ identifier?
-9XcC7Q.Z
+tZI6AF!A@
 	{
 	=False
 	~True
@@ -6816,23 +6816,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #851::
 Is the following a valid C++ identifier?
-Z_g7_xFR
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #852::
-Is the following a valid C++ identifier?
-8rQp.!G
+H__p@
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #852::
+Is the following a valid C++ identifier?
+w_Rxj5M_I
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #853::
 Is the following a valid C++ identifier?
-39s&7lY
+96_6z814K
 	{
 	=False
 	~True
@@ -6840,15 +6840,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #854::
 Is the following a valid C++ identifier?
-i#C2Q&7U_
+R_wIW_iV
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #855::
 Is the following a valid C++ identifier?
-QaO5u_
+K_lwLDm0R
 	{
 	=True
 	~False
@@ -6856,7 +6856,7 @@ QaO5u_
 
 ::Identifiers Level 4 #856::
 Is the following a valid C++ identifier?
-G?G617
+R__s2MG&l
 	{
 	=False
 	~True
@@ -6864,7 +6864,7 @@ G?G617
 
 ::Identifiers Level 4 #857::
 Is the following a valid C++ identifier?
-&lvz33
+_5sdMv#
 	{
 	=False
 	~True
@@ -6872,15 +6872,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #858::
 Is the following a valid C++ identifier?
-gj6R96Ns_
+sazb7&bq
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #859::
 Is the following a valid C++ identifier?
-2GVn1_
+&4i27M0
 	{
 	=False
 	~True
@@ -6888,47 +6888,47 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #860::
 Is the following a valid C++ identifier?
-__E5_z
+XZU_1FwW&
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #861::
 Is the following a valid C++ identifier?
-v6JFrO
+H.QD_2&
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #862::
 Is the following a valid C++ identifier?
-Svn3kl3e4
+2.w.Q_k8U
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #863::
 Is the following a valid C++ identifier?
-Py_FXMf2w
+9BR6!YL
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #864::
 Is the following a valid C++ identifier?
-p5zitg
+0oh?n
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #865::
 Is the following a valid C++ identifier?
-r_eC9w&
+4F16Y.RL
 	{
 	=False
 	~True
@@ -6936,7 +6936,7 @@ r_eC9w&
 
 ::Identifiers Level 4 #866::
 Is the following a valid C++ identifier?
-q.8H9kR
+_S?IDq8vB
 	{
 	=False
 	~True
@@ -6944,31 +6944,31 @@ q.8H9kR
 
 ::Identifiers Level 4 #867::
 Is the following a valid C++ identifier?
-otITC
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #868::
-Is the following a valid C++ identifier?
-IKdAljRzO
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #869::
-Is the following a valid C++ identifier?
-__#13Qt
+zGt&4UwA
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #868::
+Is the following a valid C++ identifier?
+Rt#.vs_5L
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #869::
+Is the following a valid C++ identifier?
+Tkp7mG
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #870::
 Is the following a valid C++ identifier?
-s2f.41_
+h1PUj.6
 	{
 	=False
 	~True
@@ -6976,31 +6976,31 @@ s2f.41_
 
 ::Identifiers Level 4 #871::
 Is the following a valid C++ identifier?
-TtzN4
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #872::
-Is the following a valid C++ identifier?
-g1z16
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #873::
-Is the following a valid C++ identifier?
-!tUpTu1
+b8?p4V
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #872::
+Is the following a valid C++ identifier?
+.So5rbY
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #873::
+Is the following a valid C++ identifier?
+p8gBb
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #874::
 Is the following a valid C++ identifier?
-pB73.DX
+5l_z.v
 	{
 	=False
 	~True
@@ -7008,7 +7008,7 @@ pB73.DX
 
 ::Identifiers Level 4 #875::
 Is the following a valid C++ identifier?
-9zNf_
+?3ibs
 	{
 	=False
 	~True
@@ -7016,7 +7016,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #876::
 Is the following a valid C++ identifier?
-0NhJ_#
+LCGMj?
 	{
 	=False
 	~True
@@ -7024,15 +7024,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #877::
 Is the following a valid C++ identifier?
-8H.zxF
+hiXDLE
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #878::
 Is the following a valid C++ identifier?
-0_Dssx
+!_z_B_k
 	{
 	=False
 	~True
@@ -7040,7 +7040,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #879::
 Is the following a valid C++ identifier?
-@_cVW
+!nrgOkp
 	{
 	=False
 	~True
@@ -7048,23 +7048,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #880::
 Is the following a valid C++ identifier?
-6XqljOlR
+N0ZZ1m00N
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #881::
 Is the following a valid C++ identifier?
-7_!!8G
+Z6_ppr
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #882::
 Is the following a valid C++ identifier?
-5.t1nr!
+@FD?KQ_9
 	{
 	=False
 	~True
@@ -7072,7 +7072,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #883::
 Is the following a valid C++ identifier?
-0GpN_R__6
+6!0dH42_V
 	{
 	=False
 	~True
@@ -7080,7 +7080,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #884::
 Is the following a valid C++ identifier?
-GDF0s
+U_4aU
 	{
 	=True
 	~False
@@ -7088,15 +7088,15 @@ GDF0s
 
 ::Identifiers Level 4 #885::
 Is the following a valid C++ identifier?
-J5J?.CHT_
+P_J6ka
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #886::
 Is the following a valid C++ identifier?
-N_v3R
+C_ETtUZ
 	{
 	=True
 	~False
@@ -7104,31 +7104,31 @@ N_v3R
 
 ::Identifiers Level 4 #887::
 Is the following a valid C++ identifier?
-_VwHl12
+W_25!
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #888::
 Is the following a valid C++ identifier?
-c_360Ab
+@iu6m_D?
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #889::
 Is the following a valid C++ identifier?
-o1_2OL
+Ze!p1
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #890::
 Is the following a valid C++ identifier?
-h4Jcyj_
+bE_sP5B_F
 	{
 	=True
 	~False
@@ -7136,7 +7136,7 @@ h4Jcyj_
 
 ::Identifiers Level 4 #891::
 Is the following a valid C++ identifier?
-_?0_MMVf
+7CROU0.
 	{
 	=False
 	~True
@@ -7144,7 +7144,7 @@ _?0_MMVf
 
 ::Identifiers Level 4 #892::
 Is the following a valid C++ identifier?
-Wbs_A?__
+IyP0W_&R
 	{
 	=False
 	~True
@@ -7152,39 +7152,39 @@ Wbs_A?__
 
 ::Identifiers Level 4 #893::
 Is the following a valid C++ identifier?
-iJ7pY
+_v7?LOT
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #894::
+Is the following a valid C++ identifier?
+Wr_c_m6
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #894::
-Is the following a valid C++ identifier?
-9se_g_i_U
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 4 #895::
 Is the following a valid C++ identifier?
-BbWz_V?_F
+u__CoF2NC
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #896::
 Is the following a valid C++ identifier?
-_#KjkA
+A3_G4_
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #897::
 Is the following a valid C++ identifier?
-QEc_QP_
+NlyRn
 	{
 	=True
 	~False
@@ -7192,23 +7192,23 @@ QEc_QP_
 
 ::Identifiers Level 4 #898::
 Is the following a valid C++ identifier?
-n_JEh9
+8_&c4!1OM
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #899::
 Is the following a valid C++ identifier?
-Gop_MHk7_
+dx@8YnA
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #900::
 Is the following a valid C++ identifier?
-_53ri9s!
+q!Cksypo
 	{
 	=False
 	~True
@@ -7216,23 +7216,23 @@ _53ri9s!
 
 ::Identifiers Level 4 #901::
 Is the following a valid C++ identifier?
-6_ION?
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #902::
-Is the following a valid C++ identifier?
-E1_RfsU
+_XIt3r
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #902::
+Is the following a valid C++ identifier?
+!__oZDIi
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #903::
 Is the following a valid C++ identifier?
-dGH8n6W
+__fFSGR
 	{
 	=True
 	~False
@@ -7240,7 +7240,7 @@ dGH8n6W
 
 ::Identifiers Level 4 #904::
 Is the following a valid C++ identifier?
-3m_C4g1Ti
+lzV!t4
 	{
 	=False
 	~True
@@ -7248,39 +7248,39 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #905::
 Is the following a valid C++ identifier?
-Xm_7A__Rm
+@uK6yJ__
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #906::
 Is the following a valid C++ identifier?
-ru&s_##
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #907::
-Is the following a valid C++ identifier?
-JWHC#!D9q
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #908::
-Is the following a valid C++ identifier?
-aDiXH7X5
+EkFzcz
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #907::
+Is the following a valid C++ identifier?
+nPPw4_l_s
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 4 #908::
+Is the following a valid C++ identifier?
+C_P#3F
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #909::
 Is the following a valid C++ identifier?
-93OK0
+#vg9N
 	{
 	=False
 	~True
@@ -7288,31 +7288,31 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #910::
 Is the following a valid C++ identifier?
-pOEr4_rIV
+9re_@
+	{
+	=False
+	~True
+	}
+
+::Identifiers Level 4 #911::
+Is the following a valid C++ identifier?
+DP8tFBr
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #911::
-Is the following a valid C++ identifier?
-gj9mc@
-	{
-	=False
-	~True
-	}
-
 ::Identifiers Level 4 #912::
 Is the following a valid C++ identifier?
-16fcZ#MH
+_13dM
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #913::
 Is the following a valid C++ identifier?
-82_jkrL
+4V_f_z32.
 	{
 	=False
 	~True
@@ -7320,15 +7320,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #914::
 Is the following a valid C++ identifier?
-7Rz3v
+R3n3D8WC
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #915::
 Is the following a valid C++ identifier?
-a_ub4
+IsAt9lQ
 	{
 	=True
 	~False
@@ -7336,15 +7336,15 @@ a_ub4
 
 ::Identifiers Level 4 #916::
 Is the following a valid C++ identifier?
-_WGSE
+MNY!l
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #917::
 Is the following a valid C++ identifier?
-w@fsyS7M
+fCbPhu?V
 	{
 	=False
 	~True
@@ -7352,7 +7352,7 @@ w@fsyS7M
 
 ::Identifiers Level 4 #918::
 Is the following a valid C++ identifier?
-?_G&X
+3S_@3xR
 	{
 	=False
 	~True
@@ -7360,7 +7360,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #919::
 Is the following a valid C++ identifier?
-?D_G__
+#_6_D_
 	{
 	=False
 	~True
@@ -7368,15 +7368,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #920::
 Is the following a valid C++ identifier?
-xo20D5n
+?___9ak
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #921::
 Is the following a valid C++ identifier?
-Ia_L#@?4V
+6_I_xb@S4
 	{
 	=False
 	~True
@@ -7384,7 +7384,7 @@ Ia_L#@?4V
 
 ::Identifiers Level 4 #922::
 Is the following a valid C++ identifier?
-&KUh!m
+O&FM0y
 	{
 	=False
 	~True
@@ -7392,7 +7392,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #923::
 Is the following a valid C++ identifier?
-_4_xZ_9
+Gvk33en
 	{
 	=True
 	~False
@@ -7400,7 +7400,7 @@ _4_xZ_9
 
 ::Identifiers Level 4 #924::
 Is the following a valid C++ identifier?
-F_4k095E
+a_iLX4O
 	{
 	=True
 	~False
@@ -7408,31 +7408,31 @@ F_4k095E
 
 ::Identifiers Level 4 #925::
 Is the following a valid C++ identifier?
-71goe8
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #926::
-Is the following a valid C++ identifier?
-J4NCAz
+LQVSVX
 	{
 	=True
 	~False
 	}
 
-::Identifiers Level 4 #927::
+::Identifiers Level 4 #926::
 Is the following a valid C++ identifier?
-2@8AY
+9B1Y&5Xi
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #927::
+Is the following a valid C++ identifier?
+I_f__y
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #928::
 Is the following a valid C++ identifier?
-AiB#3R
+x_Y_7?aX
 	{
 	=False
 	~True
@@ -7440,7 +7440,7 @@ AiB#3R
 
 ::Identifiers Level 4 #929::
 Is the following a valid C++ identifier?
-N#Q2LIw
+F?56s.5j1
 	{
 	=False
 	~True
@@ -7448,23 +7448,23 @@ N#Q2LIw
 
 ::Identifiers Level 4 #930::
 Is the following a valid C++ identifier?
-8GHGrd2
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #931::
-Is the following a valid C++ identifier?
-_fs7KJkL
+DXEzfj8f
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #931::
+Is the following a valid C++ identifier?
+htjhcdk#
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #932::
 Is the following a valid C++ identifier?
-kT6&v8_RZ
+1#9j!
 	{
 	=False
 	~True
@@ -7472,7 +7472,7 @@ kT6&v8_RZ
 
 ::Identifiers Level 4 #933::
 Is the following a valid C++ identifier?
-IgoP2#_
+TKm@X
 	{
 	=False
 	~True
@@ -7480,7 +7480,7 @@ IgoP2#_
 
 ::Identifiers Level 4 #934::
 Is the following a valid C++ identifier?
-?3QST
+!1Yp6zk8
 	{
 	=False
 	~True
@@ -7488,23 +7488,23 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #935::
 Is the following a valid C++ identifier?
-YirbEJx8
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #936::
-Is the following a valid C++ identifier?
-&P_s.U
+X!738W
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #936::
+Is the following a valid C++ identifier?
+___hc5
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #937::
 Is the following a valid C++ identifier?
-e&_px
+VGi!3&Hy_
 	{
 	=False
 	~True
@@ -7512,7 +7512,7 @@ e&_px
 
 ::Identifiers Level 4 #938::
 Is the following a valid C++ identifier?
-_et&h_lT&
+m#O.p_
 	{
 	=False
 	~True
@@ -7520,15 +7520,15 @@ _et&h_lT&
 
 ::Identifiers Level 4 #939::
 Is the following a valid C++ identifier?
-GzEWZ
+@d386L
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #940::
 Is the following a valid C++ identifier?
-vRs#56E4!
+gf_P.
 	{
 	=False
 	~True
@@ -7536,7 +7536,7 @@ vRs#56E4!
 
 ::Identifiers Level 4 #941::
 Is the following a valid C++ identifier?
-XY!AO
+O#T6__jd
 	{
 	=False
 	~True
@@ -7544,7 +7544,7 @@ XY!AO
 
 ::Identifiers Level 4 #942::
 Is the following a valid C++ identifier?
-0fO!ErSLU
+2l6z6M5b
 	{
 	=False
 	~True
@@ -7552,7 +7552,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #943::
 Is the following a valid C++ identifier?
-Wh4_u1!_
+2H.27!?tG
 	{
 	=False
 	~True
@@ -7560,7 +7560,7 @@ Wh4_u1!_
 
 ::Identifiers Level 4 #944::
 Is the following a valid C++ identifier?
-LH!9R
+z7PX&p
 	{
 	=False
 	~True
@@ -7568,39 +7568,39 @@ LH!9R
 
 ::Identifiers Level 4 #945::
 Is the following a valid C++ identifier?
-__2Ie2Z_0
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #946::
-Is the following a valid C++ identifier?
-R3ZYg&Gde
+dGW&Q5
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 4 #947::
+::Identifiers Level 4 #946::
 Is the following a valid C++ identifier?
-zoCN7_0F
+jxIt2E
 	{
 	=True
 	~False
+	}
+
+::Identifiers Level 4 #947::
+Is the following a valid C++ identifier?
+2K!I1
+	{
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #948::
 Is the following a valid C++ identifier?
-H2hPhSj
+_#52K9_x8
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #949::
 Is the following a valid C++ identifier?
-og!HTE_j
+@7!9g7
 	{
 	=False
 	~True
@@ -7608,23 +7608,23 @@ og!HTE_j
 
 ::Identifiers Level 4 #950::
 Is the following a valid C++ identifier?
-5SP5wJ2F
-	{
-	=False
-	~True
-	}
-
-::Identifiers Level 4 #951::
-Is the following a valid C++ identifier?
-W7Kj_
+_e0MUh
 	{
 	=True
 	~False
 	}
 
+::Identifiers Level 4 #951::
+Is the following a valid C++ identifier?
+Eo#nH
+	{
+	=False
+	~True
+	}
+
 ::Identifiers Level 4 #952::
 Is the following a valid C++ identifier?
-eL0bE&8Xn
+o40KC0Y#
 	{
 	=False
 	~True
@@ -7632,7 +7632,7 @@ eL0bE&8Xn
 
 ::Identifiers Level 4 #953::
 Is the following a valid C++ identifier?
-d0ucKR
+_wBMiNuoA
 	{
 	=True
 	~False
@@ -7640,15 +7640,15 @@ d0ucKR
 
 ::Identifiers Level 4 #954::
 Is the following a valid C++ identifier?
-pps4C0D
+9bm__l
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #955::
 Is the following a valid C++ identifier?
-_Niv3u
+IuHqg5Gr
 	{
 	=True
 	~False
@@ -7656,7 +7656,7 @@ _Niv3u
 
 ::Identifiers Level 4 #956::
 Is the following a valid C++ identifier?
-!9?kL#l
+Fa9oh.pWF
 	{
 	=False
 	~True
@@ -7664,7 +7664,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #957::
 Is the following a valid C++ identifier?
-.Q_hP
+0L__v707
 	{
 	=False
 	~True
@@ -7672,7 +7672,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #958::
 Is the following a valid C++ identifier?
-M5jA5.r
+_RC_M#e_#
 	{
 	=False
 	~True
@@ -7680,7 +7680,7 @@ M5jA5.r
 
 ::Identifiers Level 4 #959::
 Is the following a valid C++ identifier?
-Xpy!w&D7
+o!!7YcGu
 	{
 	=False
 	~True
@@ -7688,7 +7688,7 @@ Xpy!w&D7
 
 ::Identifiers Level 4 #960::
 Is the following a valid C++ identifier?
-KlKuz_yDd
+kO3_Jh8_D
 	{
 	=True
 	~False
@@ -7696,23 +7696,23 @@ KlKuz_yDd
 
 ::Identifiers Level 4 #961::
 Is the following a valid C++ identifier?
-pnd0SJ
-	{
-	=True
-	~False
-	}
-
-::Identifiers Level 4 #962::
-Is the following a valid C++ identifier?
-_k?NLF
+Ec@VK_R
 	{
 	=False
 	~True
 	}
 
+::Identifiers Level 4 #962::
+Is the following a valid C++ identifier?
+T7wjR
+	{
+	=True
+	~False
+	}
+
 ::Identifiers Level 4 #963::
 Is the following a valid C++ identifier?
-_r&n_6
+7wVe2c
 	{
 	=False
 	~True
@@ -7720,15 +7720,15 @@ _r&n_6
 
 ::Identifiers Level 4 #964::
 Is the following a valid C++ identifier?
-CNWsjVBQ
+s_7q.Pa_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #965::
 Is the following a valid C++ identifier?
-lEP296W
+J5t_21rD
 	{
 	=True
 	~False
@@ -7736,23 +7736,23 @@ lEP296W
 
 ::Identifiers Level 4 #966::
 Is the following a valid C++ identifier?
-EdP_&_Ta
+WNTVN
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #967::
 Is the following a valid C++ identifier?
-@SxCUa28
+u5b9H
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #968::
 Is the following a valid C++ identifier?
-1VCeWiW
+9W048Av
 	{
 	=False
 	~True
@@ -7760,7 +7760,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #969::
 Is the following a valid C++ identifier?
-_2t_Ag4
+jKK4Y92
 	{
 	=True
 	~False
@@ -7768,7 +7768,7 @@ _2t_Ag4
 
 ::Identifiers Level 4 #970::
 Is the following a valid C++ identifier?
-0_ZA!?
+!292Ntl
 	{
 	=False
 	~True
@@ -7776,7 +7776,7 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #971::
 Is the following a valid C++ identifier?
-N@FuPM_#_
+bUdL_!d
 	{
 	=False
 	~True
@@ -7784,7 +7784,7 @@ N@FuPM_#_
 
 ::Identifiers Level 4 #972::
 Is the following a valid C++ identifier?
-HxQO_J
+QYJgQ__O
 	{
 	=True
 	~False
@@ -7792,7 +7792,7 @@ HxQO_J
 
 ::Identifiers Level 4 #973::
 Is the following a valid C++ identifier?
-s#ErQ
+i76ZKL!8H
 	{
 	=False
 	~True
@@ -7800,7 +7800,7 @@ s#ErQ
 
 ::Identifiers Level 4 #974::
 Is the following a valid C++ identifier?
-pg_LmdrA
+na3pu7__g
 	{
 	=True
 	~False
@@ -7808,7 +7808,7 @@ pg_LmdrA
 
 ::Identifiers Level 4 #975::
 Is the following a valid C++ identifier?
-lh&nyF&
+89Aj_F_
 	{
 	=False
 	~True
@@ -7816,7 +7816,7 @@ lh&nyF&
 
 ::Identifiers Level 4 #976::
 Is the following a valid C++ identifier?
-epV4#
+Q3L.J#8qw
 	{
 	=False
 	~True
@@ -7824,39 +7824,39 @@ epV4#
 
 ::Identifiers Level 4 #977::
 Is the following a valid C++ identifier?
-WK4&67.FE
+_we48wm
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #978::
 Is the following a valid C++ identifier?
-tC_vq_?EA
+W09d_
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #979::
 Is the following a valid C++ identifier?
-._uUgJ
+pcsE16eU
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #980::
 Is the following a valid C++ identifier?
-3&4q#9
+PJFW9erG
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #981::
 Is the following a valid C++ identifier?
-_mb8_x
+b6r7_
 	{
 	=True
 	~False
@@ -7864,7 +7864,7 @@ _mb8_x
 
 ::Identifiers Level 4 #982::
 Is the following a valid C++ identifier?
-iQ2eHV.
+0m_gr
 	{
 	=False
 	~True
@@ -7872,31 +7872,31 @@ iQ2eHV.
 
 ::Identifiers Level 4 #983::
 Is the following a valid C++ identifier?
-9TA#Wo3_A
+BxemI
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #984::
 Is the following a valid C++ identifier?
-P!#Vlg6o&
+e51vcsO
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #985::
 Is the following a valid C++ identifier?
-0ufAe
+_v46T0
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #986::
 Is the following a valid C++ identifier?
-VQgw_
+_rFWe
 	{
 	=True
 	~False
@@ -7904,7 +7904,7 @@ VQgw_
 
 ::Identifiers Level 4 #987::
 Is the following a valid C++ identifier?
-Yh#Gq49
+tvVD@4!
 	{
 	=False
 	~True
@@ -7912,7 +7912,7 @@ Yh#Gq49
 
 ::Identifiers Level 4 #988::
 Is the following a valid C++ identifier?
-35wNG&m
+98_5F
 	{
 	=False
 	~True
@@ -7920,15 +7920,15 @@ Is the following a valid C++ identifier?
 
 ::Identifiers Level 4 #989::
 Is the following a valid C++ identifier?
-7t@x_4_
+Xp56Sqr
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #990::
 Is the following a valid C++ identifier?
-t_1Dw_Y#
+E?S?BVJ
 	{
 	=False
 	~True
@@ -7936,31 +7936,31 @@ t_1Dw_Y#
 
 ::Identifiers Level 4 #991::
 Is the following a valid C++ identifier?
-V#S_qK
+g2qeAk
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 4 #992::
+Is the following a valid C++ identifier?
+4!@AU_3
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 4 #992::
-Is the following a valid C++ identifier?
-Kz6C__
-	{
-	=True
-	~False
-	}
-
 ::Identifiers Level 4 #993::
 Is the following a valid C++ identifier?
-kkGv2
+@_77y04#J
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #994::
 Is the following a valid C++ identifier?
-d!JVnPy3
+IPVU&Qb5_
 	{
 	=False
 	~True
@@ -7968,39 +7968,39 @@ d!JVnPy3
 
 ::Identifiers Level 4 #995::
 Is the following a valid C++ identifier?
-X5U&J5
+i1O1QALM
 	{
-	=False
-	~True
+	=True
+	~False
 	}
 
 ::Identifiers Level 4 #996::
 Is the following a valid C++ identifier?
-i_!22ae
+oP2_gIbJ
+	{
+	=True
+	~False
+	}
+
+::Identifiers Level 4 #997::
+Is the following a valid C++ identifier?
+&p_1SuR
 	{
 	=False
 	~True
 	}
 
-::Identifiers Level 4 #997::
-Is the following a valid C++ identifier?
-oYh4h9
-	{
-	=True
-	~False
-	}
-
 ::Identifiers Level 4 #998::
 Is the following a valid C++ identifier?
-MjlW0
+q3XfT!o_
 	{
-	=True
-	~False
+	=False
+	~True
 	}
 
 ::Identifiers Level 4 #999::
 Is the following a valid C++ identifier?
-aBtPP0?#!
+24NUe8I@
 	{
 	=False
 	~True

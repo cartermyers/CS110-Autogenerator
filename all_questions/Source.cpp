@@ -9,8 +9,8 @@
 
 #include <iostream>
 #include <ctime>
-#include "../Question Categories/question.h"	//contains <fstream> and <string>
-#include "../Question Categories/All Questions.h"
+#include "../Questions/Categories/question.h"
+#include "../Questions/Categories/all_questions.h"
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		fileOut = argv[3];
 		numQuestions = atoi(argv[4]);
 		baseDifficulty = atoi(argv[5]);
-		rangeDifficulty = atoi(argv[6]) + 1;
+		rangeDifficulty = atoi(argv[6]);
 		questionSet = atoi(argv[7]);
 	}
 	else if (argc <= 2)
@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 		baseDifficulty = stoi(deadLine);
 		getline(fileCtr, deadLine);
 		getline(fileCtr, deadLine);
-		rangeDifficulty = stoi(deadLine) + 1;
+		rangeDifficulty = stoi(deadLine);
 		getline(fileCtr, deadLine);
 		getline(fileCtr, deadLine);
 		questionSet = stoi(deadLine);
@@ -82,6 +82,9 @@ int main(int argc, char *argv[])
 		cout << "Please use the correct amount of arguments.\n";
 		return 1;
 	}
+
+	//modify the rangeDifficulty to the proper numerical format
+	rangeDifficulty = rangeDifficulty - baseDifficulty + 1;
 
 	srand(unsigned int(time(NULL)));
 
@@ -108,39 +111,51 @@ int main(int argc, char *argv[])
 		switch (questionSet)
 		{
 		case 0:
-			currQuestion = new Arrays();
+			currQuestion = new QArrays();
 			questionCategory = "Arrays";
 			break;
 		case 1:
-			currQuestion = new Loops(0);
-			questionCategory = "For Loops";
+			currQuestion = new QLoops(0, 0);
+			questionCategory = "For Loops Counting";
 			break;
 		case 2:
-			currQuestion = new Loops(2);
-			questionCategory = "Do While Loops";
+			currQuestion = new QLoops(2, 0);
+			questionCategory = "Do While Loops Counting";
 			break;
 		case 3:
-			currQuestion = new Loops(1);
-			questionCategory = "While Loops";
+			currQuestion = new QLoops(1, 0);
+			questionCategory = "While Loops Counting";
 			break;
 		case 4:
-			currQuestion = new Expressions();
-			questionCategory = "Dynamic Expressions";
+			currQuestion = new QLoops(0, 1);
+			questionCategory = "For Loops Printing";
 			break;
 		case 5:
-			currQuestion = new Functions();
-			questionCategory = "Functions";
+			currQuestion = new QLoops(2, 1);
+			questionCategory = "Do While Loops Printing";
 			break;
 		case 6:
-			currQuestion = new SwitchCases();
-			questionCategory = "Switch Cases";
+			currQuestion = new QLoops(1, 1);
+			questionCategory = "While Loops Printing";
 			break;
 		case 7:
-			currQuestion = new Identifiers();
-			questionCategory = "Identifiers";
+			currQuestion = new QExpressions();
+			questionCategory = "Dynamic Expressions";
 			break;
 		case 8:
-			currQuestion = new Conditionals();
+			currQuestion = new QFunctions();
+			questionCategory = "Functions";
+			break;
+		case 9:
+			currQuestion = new QSwitchCases();
+			questionCategory = "Switch Cases";
+			break;
+		case 10:
+			currQuestion = new QIdentifiers();
+			questionCategory = "Identifiers";
+			break;
+		case 11:
+			currQuestion = new QConditionals();
 			questionCategory = "Conditionals";
 			break;
 		default:
@@ -160,7 +175,17 @@ int main(int argc, char *argv[])
 
 		currQuestion->SetDifficulty(difficulty);
 
-		currQuestion->Generate();
+		try
+		{
+			currQuestion->Generate();
+		}
+		catch (exception &e)
+		{
+			cout << "The following error was found: " << e.what() << endl;
+			delete currQuestion;
+			currQuestion = NULL;
+			return 3;
+		}
 
 		//Writing the question to the file.
 		//Question
