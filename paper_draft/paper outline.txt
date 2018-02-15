@@ -53,10 +53,21 @@ Fututre Improvements/What's next
 EACH CATEGORY
 ********************
 
+
+These should be broken up into categories. Maybe expressions is first, loops is one, and other?
+
+
 Template for each difficulty:
 a) Here is the goal of the question (and how they differ between other difficulties)
 b) Here is an example
 c) Here are the random parts (what is important, what isn't, and how it serves the question purpose)
+ - The importance needs to be mentioned by a different name. Maybe i) essential parts of a question (that is
+ divided into ones that are randomized and ones that are not. For example) and ii) non-deterministic (or non-essential?) parts of a question?
+ Basically, essential parts add to difficulty and are used to solve the question; non-deterministic parts are randomized
+ (so they add to the individiualization or whatever) but they don't affect the essence of the question.
+ Also, for the essential randomized parts, it may be important to note the domain of generated values.
+ There are also some things that are determined by the random elements (e.g. the number of iterations a loop takes; "a - a" in an expression)
+ and these can be modified to fit inside some defined parameters (i.e. we can modify the loop members to guarantee it runs a certain amount of times)
 d) Here are the (interesting) distractor methods
 
 Arrays
@@ -71,10 +82,10 @@ int temp;
 temp = bar[4];
 bar[4] = bar[1];
 bar[1] = temp;
-c) What's important:
-	The size of the array
-	The contents
-	The first and second indices
+c) What's important (Domain):
+	The size of the array (4 : 6)
+	The contents   (unique integers 0 : 10)
+	The first and second indices (0 : (size of array) - 1)
   What's not:
 	The identifier of the array
 d) Interesting distractor methods:
@@ -92,9 +103,9 @@ int documents[6] = {3, 3, 10, 1, 1, 2};
 for (int i = 0; i < 6; i += 1)
 	{ documents[i] += 5; }
 c) Important randomization:
-    Size of array
+    Size of array (3 : 6)
     Element update offset (between 1, 5, and 10)
-    Array contents
+    Array contents (integers 0 : 10)
    What's not:
     Array identifier
 d) Interesting distractor methods:
@@ -113,12 +124,18 @@ for (int i = 1; i < 4; i = i + 1)
 {
 	cout << dogs[i] << " ";
 }
-c) What's important:
-    Size of array
-    Array contents
-    Beginning value for i
-    Loop condition (either < or <= and a random ending value)
-    Loop update (usually a small value between 1 and 3)
+c)
+Essential but not random:
+    Loop increment operator (always +=)
+What's important:
+    Size of array (0 : 6)
+    Array contents (integers 0 : 10)
+    Beginning value for i (0 : floor(size(array)) / 2)
+    Loop comparison operator (either < or <=)
+    Loop comparison operand (size(array) +/- 1)
+    Loop increment operator (1 : 2)
+
+    NOTE: each loop is guaranteed to iterate between 2 and 4 times
 Not important:
     Array identifier
 d) Interesting distractor methods:
@@ -131,6 +148,10 @@ d) Interesting distractor methods:
 
 Loops Preamble
 
+NOTE: should we also mention the "infinite loop" thing? It can be a part of the implementation, not necessary however.
+But it does add some interesting stuff, like we can have non-homogeneous answer types (string and int), and
+also methods to detect infinite loops and then change the answer accordingly.
+
 Loop Counting
 ==================
 
@@ -142,61 +163,149 @@ for (int b = 4; b < 7; b = b + 1)
 {
 	cout << '*';
 }
-c) What's Important:
-    Starting value
-    Ending value
+c)
+Essential but not random:
+    Comparison operator (always <)
+    Increment Operator (always +=)
+What's Important:
+    Starting value (2 : 10 and then scaled based on increment)
+    Ending value (start + increment * (3 : 6) + (0 : increment - 1))
     Increment (by 1, 5, or 10)
 Not important:
     Identifier
-d) Distractor 1: Right answer - 1
+d) Distractor 1: abs(Right answer - 1)
 Distractor 2: Right answer + 1
+Distractor 3 and 4: A random value that is the answer +/- 2
 
 
 Difficulty 2
 --------------------
+a) Same structure and aim as difficulty 1, but it introduces more comparison operators
+and a subtraction operator for increment.
+b)
+How many times does the '*' print?
+int j = 53;
+do
+{
+	cout << '*';
+	j = j - 5;
+} while (j >= 30);
+c)
+Essential but not random:
+
+Essential (Domain):
+    Starting value (same domain as Difficulty 1)
+    Ending value
+    Comparison operator (any of <, <=, >, >=)
+    Increment operator (either += or -=)
+    Increment (by 1, 5, or 10)
+Non-essential:
+    Identifier
+d)
 
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
+
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 
 Difficulty 4
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Loop Printing
 ==================
 
 Difficulty 1
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 2
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Expressions
 ==================
 
-Difficulty 1
+Difficulty 1-4
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
 
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
-
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 
 Functions
@@ -204,15 +313,51 @@ Functions
 
 Difficulty 1
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 2
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 
 
@@ -222,19 +367,67 @@ Switch Cases
 
 Difficulty 1
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 2
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 4
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 
 
@@ -243,19 +436,67 @@ Identifiers
 
 Difficulty 1
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 2
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 4
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 
 Conditionals
@@ -263,15 +504,64 @@ Conditionals
 
 Difficulty 1
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 2
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 3
 --------------------
+a)
+b)
+c)
+Essential but not random:
 
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
 
 Difficulty 4
 --------------------
+a)
+b)
+c)
+Essential but not random:
+
+Essential (Domain):
+
+Non-essential:
+d)
+Distractor 1:
+Distractor 2:
+Distractor 3:
+Distractor 4:
