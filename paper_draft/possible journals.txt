@@ -1,0 +1,89 @@
+Possible Conferences
+
+
+
+Special Interest Group on Computer Science Education
+(SIGCSE)
+---------------------------
+- Part of ACM
+- ~1300 attendees
+- Feb. 21 - 24, 2018 (past due date for submission)
+- Feb. 27 - Mar. 2, 2019 (deadline Aug. 31, 2018)
+    - In Minneapolis
+- See https://sigcse2018.sigcse.org/info/cfp.html for 2018 call for papers
+- More events: https://sigcse.org/sigcse/events (See below)
+
+
+Innovation and Technology in Computer Science Education
+(ITiCSE)
+---------------------------
+- Sponsored by SIGCSE
+- ~200 attendees
+- Deadline for 2018 has passed (taking place in Cyprus)
+- Call for papers: https://iticse.acm.org/Call.html
+- Could maybe apply for 2019?
+
+
+International Computing Education Research
+(ICER)
+---------------------------
+- Another ACM event
+- ~100 attendees
+- Deadline for abstract is March 30, 2018
+    - Takes place Aug. 12-16 in Helsinki
+    - See https://icer.acm.org/icer-2018/icer18-call-for-participation/
+- 2019 conference is Aug. 12-14 in Toronto
+
+
+International Conference on Computer Science & Education
+(ICCSE)
+---------------------------
+- IEEE event
+- August 8-11 in Sri Lanka
+- Deadline: Apr. 15
+- http://www.ieee-iccse.org/document/Call%20for%20Paper%20ICCSE2018-V2017122703-En.pdf
+- Last year was in Houston
+
+
+*********************************************************************************************
+
+Possible journal submissions
+
+Computer Science Education
+---------------------------
+Latex template
+7000 word limit
+
+
+Research and Practice in Technology Enhanced Learning
+---------------------------
+Latex template
+
+
+American Journal of Distance Education
+---------------------------
+12-point, double-spaced submission
+
+
+Journal of Science Education and Technology
+---------------------------
+Accepts Word manuscripts (a lot of restrictions) or Latex for math content
+30 page double-spaced limit
+
+
+Decision Sciences Journal of Innovative Education
+---------------------------
+12-point, double-spaced submission
+30 page double-spaced limit
+
+
+most have format:
+
+Title page
+Abstract
+Keywords
+Introduction
+Methods
+Results
+Discussion
+Acknowledgements, etc.
