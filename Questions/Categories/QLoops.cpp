@@ -199,10 +199,12 @@ void QLoops::NestedLoopCount(Loops* innerLoop)
 	tempWrong[0] = tempCorrect + 1;
 	tempWrong[1] = tempCorrect;
 
-	tempCorrect *= innerLoop->ComputeLoop();
+	int innerCount = innerLoop->ComputeLoop()
 
-	tempWrong[2] = tempWrong[0] * tempWrong[1];
-	tempWrong[3] = tempWrong[0] * (tempWrong[1] + 1);
+	tempCorrect *= innerCount;
+
+	tempWrong[2] = tempWrong[0] * (innerCount + 1);
+	tempWrong[3] = tempWrong[0] * innerCount;
 
 	//check answers and then get them ready to print
 	CheckUniqueAnswers(tempCorrect, tempWrong);

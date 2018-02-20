@@ -175,7 +175,7 @@ Not important:
     Identifier
 d) Distractor 1: abs(Right answer - 1)
 Distractor 2: Right answer + 1
-Distractor 3 and 4: A random value that is the answer +/- 2
+Distractor 3 and 4: A random value that is the answer +/- (2 : 4)
 
 
 Difficulty 2
@@ -201,163 +201,272 @@ Essential (Domain):
     Increment (by 1, 5, or 10)
 Non-essential:
     Identifier
-d)
+d) All same as difficulty 1.
 
 
 Difficulty 3
 --------------------
-a)
+a) Same structure and aim as difficulty 2, but it uses *= and /= instead of += and -=
 b)
+How many times does the '*' print?
+int i = 13;
+while (i >= 3)
+{
+	cout << '*';
+	i /= 2;
+}
 c)
 Essential but not random:
 
 Essential (Domain):
-
+    Starting value (1 : 4)
+    Ending value (Starting value * pow(increment, 3) + (0 : increment - 1)) or more precisely, the midpoint of the desired amount of loops
+    Comparison operator (any of <, <=, >, >=)
+    Increment operator (either *= or /=)
+    Increment (by 2 or 10)
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+    Identifier
+d) Same as difficulty 1.
 
 
 Difficulty 4
 --------------------
-a)
+a) The same structure as difficulty 2, except as a nested loop.
 b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
+How many times does the '*' print?
+for (int i = 43; i >= 20; i = i - 10)
+{
+	for (int j = 56; j > 45; j = j - 5)
+	{
+		cout << '*';
+	}
+}
+c) All same randomization methods as difficulty 2, but the identifiers are not randomized in
+this case (to easily guarantee that they are unique).
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+Distractor 1: The outer loop count + 1
+Distractor 2: The outer loop count
+Distractor 3: (The outer loop count + 1) * (The inner loop count)
+Distractor 4: (The outer loop count + 1) * (The inner loop count + 1)
 
 Loop Printing
 ==================
 
 Difficulty 1
 --------------------
-a)
+a) This question shows a loop that prints out the loop variable at each iteration.
+The purpose of this question is to show if students know the exact control structure
+and context at each iteration.
 b)
+int g = 6;
+while (g < 10)
+{
+	cout << g << ' ';
+	g += 1;
+}
 c)
 Essential but not random:
-
+    Comparison operator (<)
+    Increment operator (+=)
 Essential (Domain):
-
+    Starting value (2 : 10 then scaled based on increment)
+    Ending value (start + increment * (2 : 3) + (0 : increment - 1))
+    Increment (by 1, 5, or 10)
 Non-essential:
+    Identifier
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+Example answer: 6 7 8 9
+
+Distractor 1: The same values as the correct answer, omitting the first value (7 8 9)
+Distractor 2: The same values as the correct answer, appending one more iteration (6 7 8 9 10)
+Distractor 3: The same values as the correct answer, omitting the last value (6 7 8)
+Distractor 4: Combining distractor 1 and 2  (7 8 9 10)
 
 Difficulty 2
 --------------------
-a)
+a) Same as difficulty 1 but it introduces the -= operator
 b)
+int b = 61;
+do
+{
+	cout << b << ' ';
+	b = b - 10;
+} while (b > 20);
 c)
 Essential but not random:
 
 Essential (Domain):
-
+    Starting value (same domain as Difficulty 1)
+    Ending value
+    Comparison operator (any of <, <=, >, >=)
+    Increment operator (either += or -=)
+    Increment (by 1, 5, or 10)
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+    Identifier
+d) Same as difficulty 1.
 
 Difficulty 3
 --------------------
-a)
+a) Same as difficulty 2 but with *= and /=
 b)
+for (int c = 21; c > 4; c = c / 2)
+{
+	cout << c << ' ';
+}
 c)
 Essential but not random:
 
 Essential (Domain):
-
+    Starting value (1 : 4)
+    Ending value (Starting value * pow(increment, 3) + (0 : increment - 1)) or more precisely, the midpoint of the desired amount of loops
+    Comparison operator (any of <, <=, >, >=)
+    Increment operator (either *= or /=)
+    Increment (by 2 or 10)
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+    Identifier
+d) Same as difficulty 1.
 
 Expressions
 ==================
 
 Difficulty 1-4
 --------------------
-a)
+NOTE: All 4 difficulties use the same methods,
+the only differing factor is the number of operands in the expression.
+
+a) This is a simple question that is used at the beginning of the course
+to test students on integer operations, variable access, and some operator precedence.
 b)
+What is the variable "bar" equal to?
+int foo = 2;
+int bar = foo * 4 % 2 + 4;
 c)
 Essential but not random:
 
 Essential (Domain):
-
+    Number of operands (decided by difficulty)
+    Value of operands (2 : 10)
+    Types of operators (any of +, -, *, /, or %)
 Non-essential:
+    The two identifiers are random, but unique.
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
+Distractor 1: The expression evaluated with no order of operations
+Distractor 2: The expression evaluated with no order of operations and treated as float operands
+Distractor 3: The expression evaluated from right to left
+Distractor 4: The expression is evaluated with operands treated as floats
 
 Functions
 ==================
 
 Difficulty 1
 --------------------
-a)
+a) The objective of this question is to test how the values of variables are affected
+based on reference parameters.
 b)
+Given the following function definition:
+void Calculate(int& a, int& b, int c)
+{
+	b = a / b + c;
+}
+
+What value is printed after the following statements?
+int marks = 5;
+int matrix = 4;
+int item = 5;
+Calculate(marks, matrix, item);
+cout << matrix << endl;
+
 c)
 Essential but not random:
-
+    The number of parameters (this can be randomized, but it is simpler to
+        keep it constant)
+    Number of variables (this can be randomized, but it is simpler to keep
+        constant)
+    It should be noted that there of course must be (Number of variables) >= (Number of parameters)
+    Datatypes (all are type int)
+    The variable printed at the end of the question always corresponds to
+        the parameter assigned in the function (e.g. matrix is printed in the
+        example because it was passed in the spot of parameter b)
 Essential (Domain):
-
+    All parameters have 50/50 chance of being reference or pass-by-value
+    The expression is randomized (see expression questions for methods)
+    The parameter assigned in the function (the "reference" parameter)
 Non-essential:
+    All identifiers (variables and function)
+    Order that the variables are passed (using the example, the call could be
+        Calculate(marks, matrix, item) or Calculate(item, marks, matrix)).
+        This option can be selected or deselected in the code.
+    Order that the parameters appear in the expression (again, using the example,
+        it could be (a / b + c) or (c / b + a)).
+        This option also can be selected or deselected in the code.
+    Both of the previous two options can make the question more complicated
+        for students without changing the essence, so they are most often not used.
+        But it is good to note for future applications that this can add to a
+        significant amount of randomness.
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+Distractor 1: If the parameter is reference, then this is the original value of the variable. If not, it is the value of the function expression.
+Distractor 2: The value of the functional expression with no order of operations
+Distractor 3: The value of the variable that comes after the printed variable (e.g. item in the case above)
+Distractor 4: The value of the functional expression using float operations
 
 Difficulty 2
 --------------------
-a)
+a) This question tests type coercion as well as operations based on datatypes of parameters
 b)
+Given the following function definition:
+
+float Switch(float a, int b)
+{
+    return a - b;
+}
+What is printed from the following call?
+cout << Switch(3.5, 1.5) << endl;
 c)
 Essential but not random:
-
+    Function return type (always float to provide the most general answer)
+    Number of parameters (same reason as difficulty 1)
 Essential (Domain):
-
+    Datatypes of the parameters (either float or int, but always different)
+    Values of parameters that are passed (2 : 10 and a possibilty of ending in 0.5);
+        they are never the same)
+    Operation (never % because it is not supported by float)
 Non-essential:
+    Order that the parameters appear in the expression (see previous difficulty; also optional)
+    All identifiers
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+Distractor 1: The expression with no order of operations
+Distractor 2: The expression using the original float values
+Distractor 3: The expression using the original float values and with no order of operations
+Distractor 4: The floor of the correct answer (to provide an integer-like answer)
 
 Difficulty 3
 --------------------
-a)
+a) Another question to test type coercion, but with function return types.
+Because the return type has an option of being void, the correct answer is
+sometimes a "Run-time Error", due to the print statement.
 b)
+Given the following function definition:
+int Pow()
+{
+	return 4.5 + 1.0;
+}
+
+What is printed from the following call?
+cout << Pow() << endl;
 c)
 Essential but not random:
-
+    Number of operands (can be randomized)
 Essential (Domain):
-
+    Value of operands (1 : 10; possibility of ending in 0.5)
+    Operation (never % because its not supported by float)
+    Function return type (one of int, float, or void)
 Non-essential:
+    Identifier
 d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+Distractor 1: Expression from right to left (and float value)
+Distractor 2: Integer value if float return type; float value if integer return type
+Distractor 3: Always "Run-time Error"
+Distractor 4: If the return type is not void, it is "Run-time error". If it is, it is the float value of the expression
 
 
 
@@ -365,203 +474,138 @@ Distractor 4:
 Switch Cases
 ==================
 
+All switch cases are the same (same objective; use the same distractors),
+but they vary in their randomness of some elements (only part c is different).
+
+a) Test students' knowledge of the control structure of switch cases (including some break statements)
+b)
+What is the value of "bar" after the switch/case block?
+int bar = 4;
+switch (bar) {
+	case 2:
+		bar = 5;
+		break;
+	case 4:
+		bar = 6;
+		break;
+	case 1:
+		bar = 4;
+	case 3:
+		bar = 0;
+	case 0:
+		bar = 1;
+		break;
+}
+c) See each difficulty
+d)
+There are two cases for distractors 1 and 2.
+If there is a corresponding case to the initial value:
+
+Distractor 1: This is the value of the first case statement (this is a good distractor
+    when there is not a break statement).
+Distractor 2: This is the value of the case with the next break (i.e. the next case, following
+    the matching case, with a break statement)
+
+If there is no corresponding case:
+    (Here again, there are two cases)
+    If there is a default case:
+        Distractor 1: This is the last assignment value before the default value
+        Distractor 2: This is the last case value before the default
+
+    If there is no default case:
+        Distractor 1: Just a random assignment value from the block
+        Distractor 2: The first case value
+
+
+Distractor 3: The original value
+Distractor 4: The last assignment value in the block (which may be the default case)
+
+
 Difficulty 1
 --------------------
-a)
-b)
 c)
 Essential but not random:
-
+    Of course, the variable is always int
 Essential (Domain):
-
+    Number of cases (3 : 5)
+    All values - the initial value, the case values, and the assigned values (1 : (1 : Number of cases * 3 / 2))
+        NOTE: all assigned values are guaranteed to be unique and different from the initial value
+    There is a 50/50 chance for each case to have a break statement
+    There is also a 50/50 chance for a default case to be in the switch case
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+    Identifier
 
 Difficulty 2
 --------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+c) All same as difficulty 1, except that it guarantees that all cases have a break statement, and there
+is always a default statement.
 
 Difficulty 3
 --------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+c) All same as difficulty 1, except that there are no break statements, but there is always a default statement.
 
 Difficulty 4
 --------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+c) The same as difficulty 1, except there are no break statements, and there is no default statement.
 
 
 
 Identifiers
 ==================
 
-Difficulty 1
+NOTE: There currently is no real difference between difficulties.
+
+Difficulty 1 - 4
 --------------------
-a)
+a) A very basic question introduced at the beginning of the course. It aims to see if students know valid identifiers in c++
 b)
+Is the following a valid C++ identifier?
+Tb306wN
 c)
 Essential but not random:
 
 Essential (Domain):
-
+    The whole string is random (but it is only made of alphanumeric characters for the most part)
+        The first character has a 1 / 5 chance of being a number (and therefore invalid).
+        There is always a 1 in 10 chance for each character that it is a invalid character
+    The length of the string (5 : 9)
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
-Difficulty 2
---------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
-Difficulty 3
---------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
-Difficulty 4
---------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+d) There are no distractors for this question as it's true/false.
 
 
 Conditionals
 ==================
 
-Difficulty 1
+Difficulty 1 and 2
 --------------------
-a)
+a) This tests basic logic operators for students. This also tests some operator precedence
+    (as == and != has higher precedence than &&, which has higher precedence than ||)
 b)
+What is the result of the following logical expression?
+
+int numbers = 3;
+int marks = 8;
+(numbers >= 4) == (marks >= 10)
 c)
 Essential but not random:
-
+    Number of "sub-expressions" (that is, the expressions seen in parentheses).
+        This is always equal to the number of declared variables.
+        This is always 2 for difficulty 1 and 3 for difficulty 2.
+    Variables are always of type int.
+    The order of operands appear in the same order that they are declared in. variables
+        always come before literals.
 Essential (Domain):
-
+    Value of variables and operands (1 : 10)
+    The operators - all "sup-expressions" are only made up of 2 operands and one of (>, >=, <, <=)
+        The operators in-between the sub-expressions are one of (==, !=, ||, &&)
 Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+    Identifiers
+d) None because it is true/false.
 
-Difficulty 2
+Difficulty 3 and 4
 --------------------
-a)
+a) Same aim and structure as 1 and 2. The only difference is that the order of the operands are randomized
 b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
-Difficulty 3
---------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
-
-Difficulty 4
---------------------
-a)
-b)
-c)
-Essential but not random:
-
-Essential (Domain):
-
-Non-essential:
-d)
-Distractor 1:
-Distractor 2:
-Distractor 3:
-Distractor 4:
+int documents = 8;
+int bar = 10;
+(bar <= documents) != (10 < 9)
