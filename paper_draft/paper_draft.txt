@@ -179,3 +179,42 @@ worth discussing for their testing methods and more of a concrete introduction t
 Identifiers
 --------------------
 This first category is the simplest of all the questions here. The main objective of the question is to test students' knowledge on identifier syntax in C++.
+All difficulties are also the same, just with a differing length of string, which only contributes a small amount to the essence of the question, so we'll consider
+them all at once.
+Here is an example of the true/false question:
+
+Is the following a valid C++ identifier?
+Tb306wN
+
+The reason this question is so simple is because there are not a lot of different elements that attribute to the question; there is only the identifier.
+Furthermore, as noted before, the true/false nature of the question obviously limits the number of available answers and doesn't allow for convincing distractors.
+The entire string of the identifier is randomized. First, the length is selected (between 5 and 9 characters over all difficulties), and then each character is randomly selected from
+a group (either a numeric character, alpha character, or an invalid character). There is a 1 in 5 chance that the first character is a number (and therefore invalid)
+and a 1 in 10 chance for every character that it is an invalid character. Consequently, a string of 5 characters has a 45.9% chance of being valid, and a string of
+length 9 has a 30.1% chance of being valid.
+
+NOTE: should i add something on how this adds to difficulty? I'm not sure how to close out this section
+
+Conditional Expressions
+--------------------
+This category is also fairly simple, mostly because it is another true/false question, but it does introduce some of the structure that we will reuse in other
+categories (mostly the expression structure). The aim for this category is to have students evaluate a conditional expression, which tests logical operations
+and their precedence. It also implicitly tests variable access, but this concept should be understood by this point, and it does not affect the question greatly.
+Here is an example:
+
+What is the result of the following logical expression?
+int numbers = 3;
+int marks = 8;
+(numbers >= 4) == (marks >= 10)
+
+The only important random elements are the operand values (each is between 1 and 10) and all operators. It should first be noted that the structure of the expression
+is always in the form of (<sub-expression>) <logical operator> (<sub-expression>), where each sub-expression is of the form <variable> <comparison op> <literal>.
+Each comparison operator is chosen randomly from (>, >=, <, <=) and each logical operator is chosen randomly from (==, !=, &&, ||). Of course, the names
+of these operators do not seem apt, but they are sufficient for our conversation.
+
+Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3. And the other
+difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. For example,
+
+int documents = 8;
+int bar = 10;
+(bar <= documents) != (10 < 9)
