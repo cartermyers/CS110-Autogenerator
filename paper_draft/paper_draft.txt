@@ -151,157 +151,31 @@ Testing
 EACH CATEGORY
 ********************
 
+There are basically three types/waves of categories: introductory, loops (intermediate), and advanced. The names of these categories reference not only how
+they are implemented, but how they are presented to students. As with any course, it is imperative to test student knowledge on material as it is presented
+to ensure that learning is occurring and prerequisite concepts are understood well enough to proceed. In this section, we'll give a more in-depth explanation
+of each category, their subcategories, and how some categories are related, based on their order of relative difficulty of content and implementation.
 
-Arrays
-==================
+There are four essential components we wish to answer with each of these categories: a) what is the goal of the question; what is it asking? b) an example question
+(removed from GIFT format) for easy reference, c) what parts of the question are random? which of those parts are essential to the question (i.e. what
+parts affect the answer or structure of the question)? which of those parts are non-essential (i.e. what parts have no affect over the question whatsoever)?
+and are there any essential parts of the question that are not randomized (i.e. are there any constant factors of the question)? and lastly d) what methods
+are used to generate the distractors? It is important to ask (a) so each question can have a definitive objective, and it should be easy to note if
+certain randomness adds/hinders that objective or if the randomness does not preserve a comparable difficulty for different students.
+This basically tries to prevent elements making a question "too random". It is also important to ask (c) for a deep understanding of how the question
+is randomized -- and how some parts are kept constant -- to produce independent yet similarly difficult questions. This part answers the main
+methodology of all question generation. And as a consequence, (d) becomes relevant to ask to offer convincing distractors for a cohesive question.
 
-Difficulty 1
+The first wave we will examine is introductory questions.
+
+Introductory Questions
 --------------------
-This question aims to test if students can correctly identify explicit spots in an array.
-Here is an example.
-Here are the random parts.
-Here are the distractor methods
-
-Difficulty 2
---------------------
-This question aims to test if students can correctly see how updates (and loops) affect array access
-Here are the distractor methods
-
-Difficulty 3
---------------------
-This question aims to test if students can correctly identify spots in an array from a loop (and recognize out of bounds index errors).
-Here are the distractor methods
-
-
-Loops Preamble
-
-Loop Counting
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
-
-
-Loop Printing
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Expressions
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
-
-
-
-Functions
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-
-
-
-Switch Cases
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
-
-
-
+The categories included in this wave are identifiers, conditional expressions, and expressions. Each of these are topics are presented fairly early, and their main
+focus includes -- explicitly and implicitly -- basic ideas such as syntax, variable access, integer operations, logical operations, and operator precedence.
+Two of these categories (identifiers and conditional expressions) are simply true/false questions, so there are no sophisticated methods of generating
+distractors, and this is part of the reason these categories are considered simple (from the point of view of implementation). However, these categories are still
+worth discussing for their testing methods and more of a concrete introduction to the implementation. Let's take a detailed look at each category.
 
 Identifiers
-==================
-
-Difficulty 1
 --------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
-
-
-
-Conditionals
-==================
-
-Difficulty 1
---------------------
-
-
-Difficulty 2
---------------------
-
-
-Difficulty 3
---------------------
-
-
-Difficulty 4
---------------------
+This first category is the simplest of all the questions here. The main objective of the question is to test students' knowledge on identifier syntax in C++.

@@ -54,7 +54,22 @@ EACH CATEGORY
 ********************
 
 
-These should be broken up into categories. Maybe expressions is first, loops is one, and other?
+GROUPS:
+
+Intro:
+    1) Identifiers
+    2) Conditional Expressions
+    3) Expressions
+
+Loops:
+    1) Different types of loops (for, while, do-while)
+    2) Loops counting vs. Loops printing
+
+More advanced:
+    1) Switch Cases (kind of on its own)
+    2) Arrays (uses loops)
+    3) Functions (uses Expressions)
+
 
 
 Template for each difficulty:
