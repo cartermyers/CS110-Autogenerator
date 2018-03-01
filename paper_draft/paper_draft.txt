@@ -218,3 +218,22 @@ difference between difficulties 1 and 2 from 3 and 4 is that the latter two diff
 int documents = 8;
 int bar = 10;
 (bar <= documents) != (10 < 9)
+
+This does not offer any significant difficulty change, but it does alter a format that students may be familiar with, and does a better job of testing the variable accesses.
+
+
+Expressions
+--------------------
+This category is arguably the most important of all, as it serves as a basis for all other, more complex (sophisticated?) categories, and it is even utilized in other other categories
+(namely Functions). It still follows the basic structure as Identifiers and Conditional expressions (with simple prompts), but it introduces methods used to generate convincing distractors.
+The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to Conditional Expressions, it also
+tests minor variable accessing. Here is an example:
+
+What is the variable "bar" equal to?
+int foo = 2;
+int bar = foo * 4 % 3 + 7;
+
+Again, each difficulty does not change significantly (only the number of operands are increased), but these simple questions are sufficient for one last category for introduction.
+The main sources of randomness obviously come from the value (between 2 and 10) and number of operands (between 3 and 7 depending on difficulty). It is also important to note that
+operator precedence is implicitly tested (no parenthese are generated), but there is room to grow and generate interesting parenthetical expressions in the future that may make
+these types of questions more challenging for students. 
