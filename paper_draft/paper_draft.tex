@@ -228,9 +228,11 @@ of these operators do not seem apt, but they are sufficient for our conversation
 Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3. And the other
 difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. For example,
 
-int documents = 8;
-int bar = 10;
-(bar \textless = documents) != (10 \textless 9)
+\hfill \par
+int documents = 8; \par
+int bar = 10; \par
+(bar \textless = documents) != (10 \textless 9) \par
+\hfill \par
 
 This does not offer any significant difficulty change, but it does alter a format that students may be familiar with, and does a better job of testing the variable accesses.
 
@@ -241,14 +243,233 @@ This category is arguably the most important of all, as it serves as a basis for
 The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to Conditional Expressions, it also
 tests minor variable accessing. Here is an example:
 
-What is the variable "bar" equal to?
-int foo = 2;
-int bar = foo * 4 \% 3 + 7;
+\hfill \par
+What is the variable "bar" equal to? \par
+int foo = 2; \par
+int bar = foo * 4 \% 3 + 7; \par
+\hfill \par
 
 Again, each difficulty does not change significantly (only the number of operands are increased), but these simple questions are sufficient for one last category for introduction.
 The main sources of randomness obviously come from the value (between 2 and 10) and number of operands (between 3 and 7 depending on difficulty). It is also important to note that
-operator precedence is implicitly tested (no parenthese are generated), but there is room to grow and generate interesting parenthetical expressions in the future that may make
+operator precedence is implicitly tested (no parentheses are generated), but there is room to grow and generate interesting parenthetical expressions in the future that may make
 these types of questions more challenging for students. 
+
+The most interesting change in this category from the last is the greater possibility of answers (that is, it is not a simple true/false question) that allow for new distractor methods to be implemented. Compared to later categories, these methods are not very complex, but they focus on common mistakes made by students, which makes for a more difficult question. The main
+purpose of these distractors (and really of all distractors) is to try and generalize common mistakes for convincing answers, just as an instructor would try to create with a single question. 
+
+In this instance, the four distractor methods alter how the expression is evaluated by 1) disregarding order of operations, 2) using float values and operations, 3) evaluating the expression from
+right to left, and 4) disregarding the order of operations and using the float values (a combination of 1 and 2). These methods, while not particularly novel or sophisticated, aid the main objective 
+of the question in their deliberate misunderstanding of the main concepts. For example, any student that is unfamiliar with integer operations is certain to select the distractor provided by method 2. Of course, in some cases, certain methods would not provide a different answer than the correct one (as integer addition and float addition are similar, etc.), however different answers are still guaranteed by the unique answer checking (see Unique Answer Guarantee above).
+
+\subsection{Loops}
+
+This wave of questions is usually offered to students next, although -- implementation wise -- it doesn't have many similarities to the previous wave other than general format. Instead, loops provides 
+a general template for all of its own categories. Since we may wish to test all types of loops (we will only consider for loops, while loops, and do while loops), we can create a general base for 
+all types of loops and test the same questions in each (as the main difference between each is mostly syntax). We separate each of these loops by category so instructors have the option of 
+choosing exactly what kind of loop they wish to test. Instead of outlining each category as in the previous wave, we will outline two different types of questions (called Loop Counting and Loop Printing) that then create a category for each type of loops (6 categories total). Implementation between categories of the same question type (e.g. For Loops Counting vs. While Loops Counting) have virtually the same implementation (except for an edge case in do while loops as readers can imagine), so we will not distinguish between them and instead only talk of the different question types.
+
+\subsubsection{Loop Counting}
+
+This first question type of loops is probably similar to questions used in most introductory programming courses, as it is the fundamental concept behind loops (especially for loops). Simply, these
+questions ask a student how many times a statement within a for loop is executed, based on the common structure of a "counter" variable that is updated each loop, and then compared to a
+terminating condition: the same structure as a for loop. This is the essence of the question at each difficulty, however, due to the many dependent parts of the question, many different forms 
+of randomziation (mostly pertaining to the domain) occur between each difficulty, hence the distinction.
+
+\paragraph{Difficulty 1} \hfill \par
+This difficulty is the most common form of for loops, and, even to some new students, can be trivial to evaluate. However, it still ensures that the main concepts of loop syntax, terminating 
+conditions, and updating statements. Here is an example from the For Loops category:
+
+%TODO: fix format like all other examples
+% also pay attention to the indentation
+\hfill \par
+How many times does the `*' print? \par
+for (int b = 4; b \textless{}  7; b = b + 1) \par
+\{ \par
+\indent\indent cout \textless\textless{} `*'; \par
+\} \par
+\hfill \par
+
+To ensure each question is relatively easy, the comparison operator used is always ``\textless{}'' and the increment operator is always addition. This still leaves many essential details to be 
+randomized. First, the increment is chosen (it has the option of being either 1, 5, or 10 for simplicity), and then based on the increment, the starting value of the variable is chosen (between 2 and 10 and scaled based on the increment). Finally, the value used for the terminating condition is selected, which is between 3 and 6 greater than the starting value (again, also scaled based 
+on the increment). This last value also has a random value added to it (from 0 to the incremental value minus 1) to make the terminating value seem ``less nice'', That is, it is not guaranteed
+that the variable will be equal to the terminating value when it exits the loop. This guarantees that the loop will execute between 3 and 6 times, without making the actual aspects of the loop 
+seem too formulaic. 
+
+Due to the nature of this question, there are not many elaborate distractors, yet they are still effective. Obviously, the first two distractors are +/- 1 of the correct answer (the common 
+off-by-one error), and the last two distractors are a random amount away from the original question (+/- 2 to 4). To eliminate any obvious negative answers, the absolute value is used for each of these distractors. 
+
+\paragraph{Difficulty 2} \hfill \par
+This difficulty is very close to the first, but to increase the effort, more comparison operators (\textgreater, \textgreater =, \textless , \textless =) are used for the terminating condition, and the subtraction operator is used in the update
+statement. Here is an example from the Do While Loops category.
+
+\hfill \par
+How many times does the `*' print? \par
+int j = 53; \par
+do \par
+\{
+\indent\indent cout \textless\textless{} `*'; \par
+\indent\indent j = j - 5; \par
+\} while (j \textgreater = 30); \par
+\hfill \par
+
+ It uses the same domain of randomized values, except it swaps the initial value and the terminating value when the operator used to update the variable is ``-''. There is also a 
+guarantee to match the correct comparison operators (e.g. \textgreater, \textgreater =) with the proper operator in the update assignment (e.g. +) unless otherwise specified by the user.
+If they do allow such operators to be paired with each other, ``improper'' loops can occur. These are loops that run infinitely (or more precisely, a couple billion times due to integer overflow), 
+and this has a possibility of being the correct answer. When this situation does occur, the correct answer becomes ``Around a couple billion'', and in all other cases this is used as a distractor. This 
+option aids in the essence of the question by making it more difficulty, and it also introduces the option for non-homogeneous answer types (as all other available options are integer values). 
+Other than this new option, all distractor methods are the same as Difficulty 1.
+
+\paragraph{Difficulty 3} \hfill \par
+Using the same exact structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
+and subtraction operators. Here is an example from the While Loops category.
+
+\hfill \par
+How many times does the '*' print? \par
+int i = 13; \par
+while (i \textgreater = 3) \par
+\{
+\indent\indent cout \textless\textless{} '*'; \par
+\indent\indent i /= 2; \par
+\}
+
+As a consequence of using different operators in the update statement, a slightly different domain of random values is used for all parts. The increment is either 2 or 10, and the starting value 
+is chosen from 1 to 4 (and of course scaled by the increment as before). The value used in the terminating condition is calculated by taking the incremental value and raising it to a power 
+between 1 and 3. That value is then multiplied by the starting value to guarantee that the loop executes at least between 1 and 3 times. However, similar to in Difficulty 1, we wish to make
+values seem less formulaic, so a random value from 0 to the increment less 1 is added to the stopping value to make it appear ``less nice''. This may also add another iteration in the loop,
+so there is a final check to ensure the number of iterations is within the a defined amount, and the members are altered if not. 
+
+As in Difficulty 2, there is an option for ``improper'' loops, and the distractor methods are the same. The most interesting new aspect that this difficulty brings is the division operator, which tests students' ability on integer operations
+when updating variables, as well as for comparison. Overall, this difficulty is comparable to Difficulty 2, except it adds extra difficulty using new operations. 
+
+\paragraph{Difficulty 4} \hfill \par
+While still offering the main objective of all of these difficulties, this difficulty can appear to be fundamentally different. It uses the same generation methods as Difficulty 2, except it uses 
+a nested loop for execution instead of a single loop. Here is a concrete example from the For Loops category.
+
+\hfill \par
+How many times does the '*' print? \par
+for (int i = 43; i \textgreater= 20; i = i - 10) \par
+\{ \par
+\indent\indent for (int j = 56; j \textgreater 45; j = j - 5) \par
+\indent\indent \{ \par
+\indent\indent \indent\indent cout \textless\textless{} '*'; \par
+\indent\indent \} \par
+\} \par
+
+Each of these loops is created independently (yet always within the same category), and then evaluated together to create the correct answer. The nested loop structure allows for many more
+interesting distractors, and there may be some debate on choosing the optimal distractors (as there is a lot of room for student errors/misunderstandings). For this section we have used four
+basic distractors where 1)  is the number of iterations of the outer loop, 2) is the number of iterations of the outer loop + 1, 3) is the number of iterations of the outer loop + 1 and then 
+multiplied by the number of iterations for the inner loop, and 4) is the number of iterations of the outer loop + 1 multiplied by the number of iterations in the inner loop + 1. It is important to 
+note that we only used the number of iterations of the first two distractors and we did not introduce the inner loop, as some students may recognize that these two values can be multiplied 
+together to easily find the answer, without actually testing any skill.
+
+\subsubsection{Loop Printing}
+
+This next type of question in the Loops categories contains similarities to Loop Counting. It aims at the same essence, but it tries to test a deeper understanding of loops by printing out the 
+``counter'' variable at each iteration. Implicitly, it still tests the number of iterations the loop executes, but the main objective is to understand, explicitly, when a variable is incremented,
+how integer operations affect the update, and the value that makes the loop terminate. For the sake of questions not being too difficult, each loop only executes between 3 and 5 iterations, and there is no fourth difficulty including nested loops. Here is an example from the Do While Loops category.
+
+\hfill \par
+What is the following output of the code? \par
+int b = 61; \par
+do \par
+\{ \par
+\indent\indent cout \textless\textless{} b \textless\textless{} ` '; \par
+\indent\indent b = b - 10; \par
+\} while (b \textgreater 20); \par
+\hfill \par
+
+Each difficulty is generated using the exact same methods as Loop Counting but obviously has different distractor methods, yet the same distractors are used for each difficulty. The first 
+distractor uses all of the same values as the correct answer, except it omits the first value. The second distractor uses the same values as the correct answer, but it appends one more iteration
+from the loop. The third distractor is the same values as the correct one, except it omits the last value. Finally, the fourth distractor combines the first two methods by omitting the first value
+and appends an extra iteration to the end. While there are many options for generating distractors, these all seem to provide convincing answers that some students may create on their own.
+
+\subsection{Advanced}
+
+While this wave is not particularly more difficult than the others, we will refer to them as advanced because they are usually introduced near the end of a course, and they some categories also 
+utilize other earlier categories. Some of these difficulties also use very involved methods for question generation, evaluation, and distractor generation -- as well as the unique answer guarantee 
+for Arrays as discussed earlier. 
+
+\subsubsection{Switch Cases}
+The first category in this wave has the same essence for each difficulty; the only significant differences are the random elements, which then determine the difficulty. This is similar to the Loop 
+Counting types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example:
+
+\hfill \par
+What is the value of ``bar" after the switch case block? \par
+int bar = 4; \par
+switch (bar) \{ \par
+\indent\indent case 2: \par
+\indent\indent \indent\indent bar = 5; \par
+\indent\indent \indent\indent break; \par
+\indent\indent case 4: \par
+\indent\indent \indent\indent bar = 6; \par
+\indent\indent case 1: \par
+\indent\indent \indent\indent bar = 2; \par
+\indent\indent \indent\indent break; \par
+\indent\indent case 3: \par
+\indent\indent \indent\indent bar = 0; \par
+\indent\indent case 0: \par
+\indent\indent\indent\indent bar = 1; \par
+\indent\indent\indent\indent break; \par
+\} \par
+\hfill \par
+
+As it is easy to see, this category's main objective is to test students' knowledge of the control structure through a switch case block. This focuses on the syntax of a switch case statment, how
+the conditional cases are compared, and how break statements function as opposed to fall through. Occasionally, there may be a default case as well (depending on difficulty). 
+
+All distractor methods are also shared between each difficulty, which may be room for improvement, but for now, these methods offer plausible answers for each difficulty. The first distractor is
+the original value of the variable. The second distractor is always the value that is \textit{compared} to in the first case (e.g. the value 2 in the example above) and is a good distractor to identify students that are not very familiar with the block. The next two distractors (to be used more generally) are based on some conditions. 
+
+The third distractor is the value assigned to the variable in the first matching case. In the example above, this would be the value 6 (as the variable starts with value 4). This is a particularly good distractor when there is not a break statement
+and fall through occurs. However, if there is no matching case value for the original variable, the third distractor is then the last assigned value \textit{before} the default case, if there is a
+default case. If there is no default case, the third distractor is simply a random value from those that are assigned within the block (in the case above, this would be one of 5, 6, 2, 0, or 1). 
+
+%NOTE: should i even talk about this fourth distractor? it's really only values that are in the case statements, which aren't very interesting to those with experience
+The fourth distractor follows the same conditions as the third, except with different methods at each. First, if there is a matching case to the original variable value, then the fourth distractor
+is the next compared case value that has a break statement. In the example above, this corresponds to the value 1 (since it is the next compared value with a break statement). Again, this
+value does not make much sense to one with experience with switch case statements, but it may outline errors for those that are unfamiliar with them. If there is no matching case to the 
+original variable, on the other hand, then the fourth distractor is the compared value in the case statement before the default case (if there is one) or the first case value. 
+
+As it can be seen, these methods are somewhat lengthy and complicated, but they offer methods that can be used in each difficulty. However, it can be seen that there are many cases where 
+these distractors are the same value, which we rely upon the unique answer guarntee to solve. It is also important to note that there is a possibility of confusion between the values compared 
+in the case statements, and the values that are assigned after each case statement. This is because, while each assigned value (including the original) is guaranteed to be unique, there is no
+guarantee that any value compared in a case statement is not the same as one assigned to the variable. This may be improved upon for added clarity in further iterations. 
+
+As for the generation of the question, each difficulty shares the domain of nearly all random elements. Namely, the number of case statements (between 3 and 5), all 
+assigned values (between 1 and the number of case statements multiplied by 1.5), and the values compared in the case statement (with the same domain as the assigned values). The only 
+differing randomness occurs in the break statements and default statements.
+
+\paragraph{Difficulty 1} \hfill \par
+
+The first difficulty is probably the most common, or most ``uniform'' switch case statement. There is guaranteed that all cases have a corresponding break statement, and there is always a
+default case. This is a useful difficulty when just introducing the syntax of switch case statements.
+
+\paragraph{Difficulty 2} \hfill \par
+
+Here, there are no break statements, but always a default statement. This is a good test on the concept of fall through in a switch case block.
+
+\paragraph{Difficulty 3} \hfill \par
+
+Similar to the last difficulty, this difficulty guarantees that there are no break statements, but that there is no default statement either. This is also useful for testing fall through, but it is 
+interesting because it does not guarantee that the original value of the variable is changed (in the instance that it matches no case statement), which makes this question slightly more 
+difficulty.
+
+\paragraph{Difficulty 4} \hfill \par
+
+This final difficulty is completely random in all aspects. Instead of any guarantees, there is a 50/50 chance for each break statement to be generated, as well as a 50/50 chance for a default 
+case to be present. This is best used when testing all concepts of switch cases including fall through, break statements, and a block with or without a default case. For that reason, this is 
+regarded as the most difficulty question in the category. 
+
+\subsubsection{Arrays}
+
+
+\subsubsection{Functions}
+
+
+\section{Future Improvements}
+
+
+\section{Conclusion}
+
 
 
 \end{document}
