@@ -15,6 +15,7 @@
 
 \tableofcontents
 
+\section{Abstract}
 
 \section{Problem Description (needs work)}
 For any large introductory undergraduate course, testing becomes virtually impossible on a (clerical?) level, especially for a small examination
@@ -134,8 +135,8 @@ and it offers a fair test to each student. Overall, it gives the instructor more
 
 \subsection{Unique Answer Guarantee}
 
-Because of the universal format for questions, extra error checks can be done. While there is no general way
-to ensure that each question provides the correct answer (see Testing), we can confirm that each answer is unique
+Because of the universal format for questions, extra error checks can be done across all categories. While there is no general way
+to ensure that each question provides the correct answer, we can confirm that each answer is unique
 (and especially that no distractor is the same as the right answer) -- a seemingly trivial, but essential, restraint.
 This can become complicated is for two reasons: i) in an effort to create more convincing distractors,
 each difficulty in each category generates its own distractors using "clever" methods (e.g. evaluating an expression
@@ -152,9 +153,6 @@ another precondition that the number of permutations for the correct answer must
 number of available answers. Without this restraint, there would not be enough unique answers. If this is not met,
 then it suffices to revert to the original strategy and simply assign a random value to the vector. Although it may
 not be very convincing, unique distractors take precedence over plausible ones.
-
-
-\section{Testing (is this needed?)}
 
 
 \section{Categories}
@@ -461,15 +459,123 @@ regarded as the most difficulty question in the category.
 
 \subsubsection{Arrays}
 
+This category (along with the Functions category) differs greatly from the other types of categories and poses an almost altogether different type of category. The main difference being how difficulties are defined within it. As mentioned above in the Difficulty section, it is hard to alter a single aspect of these questions to make it more or less difficult, and
+for that reason each single difficulty in this category is a different question altogether -- yet still ordered by their relative difficulty. Of course, all of these questions still pertain to array concepts
+as a whole, and it is much easier to separate them and even use them in different settings. But here, the concept of difficulties is slightly different than what has been mentioned previously. 
+
+Another major difference that is specific to the Arrays category is its guarantee of unique answers. Although some answers have already contained a vector of values (such as Loop Printing), 
+the answers have an overwhelming chance of being unique (as nearly all vectors are of different sizes). In Arrays, however, some vector answers are all of the same length (some as short as 3) and contain all of the same values from a small domain. Solutions to guarantee uniqueness (while still trying to maintain plausible distractors) are discussed below in Difficulty 1. First, we will look
+at the question as a whole.
+
+\paragraph{Difficulty 1} \hfill \par
+
+This first type of question aims to test student's knowledge on array accesses dealing with fetching values and assigning values. Here is an example.
+
+\hfill \par
+What are the contents of the array after the following statements? \par
+int bar[6] = \{6, 5, 3, 8, 1, 9\}; \par
+int temp; \par
+temp = bar[4]; \par
+bar[4] = bar[1]; \par
+bar[1] = temp; \par
+\hfill \par
+
+Simple randomization methods are used in each aspect of the array, which makes for a clear, focused question. The size of the array is random (between 4 and 6), as well as its contents
+(unique values between 0 and 10), and the indices used to access the array (two different valid indices of the array). 
+
+The distractor methods used here are i) the original array, ii) a new array, made from both indices being subtracted by 1, iii) both indices are incremented by 1, and iv) the first index is
+subtracted by 1 and the second index is added by 1. Of course, all of these methods use the modulus operation to ensure that they are still all valid indices. Still, they offer convincing 
+answers to students confused by the common ``off-by-one'' error. 
+
+However, this poses another problem. Since all values are modulus the size of the array, there may be some cases where the same answers appear. Usually, when we identify identitcal answers,
+we simply generate a new random answer that -- while maybe not very convincing -- is guaranteed to be unique. Doing the same here would be useless, as a completely new array would not
+even be considered the correct answer given the question and the same is true if we even generate a single new element. Any array that contains an element that is not present in the 
+original array is a definite outlier and is in no way plausible. However, while it is still not sophisticated, a last resort may be shuffling the order of the original array. This way, it still contains all
+values of the original array while being unique. Again, any student familiar with the material is likely to quickly identify this as the wrong answer, but it is more plausible than our other methods.
+
+\paragraph{Difficulty 2} \hfill \par
+
+This type of question, now different from the first, has an objective to combine array access/updates with loops and loop variables. It uses a for loop to update each element in the array. This is
+useful for testing basic syntax and concepts of combining loops with array accessing. Here is an example. 
+
+\hfill \par
+What are the contents of the array after the following?\par
+int documents[6] = \{3, 3, 10, 1, 1, 2\};\par
+for (int i = 0; i \textless{} 6; i += 1)\par
+\{ \par
+\indent\indent documents[i] += 5; \par
+\} \par
+\hfill \par
+
+The randomization in this question is also fairly minimal. The for loop variable is predefined to start at 0 and increment by 1 until the variable is equal to the size of the array (given by the 
+condition). The only random parts here are the size of the array (between 3 and 6), the amount that each array element is updated by (1, 5 or 10), and the contents of the array (any value 
+between 0 and 10). 
+
+The distractor methods are also very simple, here they are i) the original array, ii) an off-by-one error of updating the array (i.e. update by the value of 6 instead of 5), iii) an array as if it was
+updated using the loop variable, and iv) the contents of the array are decremented instead of incremented. No index errors are used in these distractors as it is clear that the whole array is 
+updated, but these may be altered in the future to use this strategy for better distractors. As for the unique answer guarantee, the same method as Difficulty 1 is used. While in this case, it
+doesn't really offer better distractors, the use of this method is very minimal as the current distractors will theoretically never give identical answers. 
+
+\paragraph{Difficulty 3} \hfill \par
+
+This question also has the objective of testing correct array access, but it also has the possibilty of out-of-bounds access that the students must identify. Instead of making this a simple one time
+access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Here is an example.
+
+\hfill \par
+What is printed after the following statements? \par
+int dogs[6] = \{0, 1, 7, 3, 0, 2\}; \par
+for (int i = 1; i \textless{} 4; i = i + 1) \par
+\{ \par
+\indent\indent cout \textless\textless{} dogs[i] \textless\textless{} " ";\par
+\} \par
+\hfill \par
+
+The number of random aspects also increases relative to Difficulty 2. All random elements include the size of the array (from 3 to 6), the contents of the array (from 0 to 10), the beginning value
+of the loop variable (from 0 to half the size of the array), the loop comparison operator (either \textless{} or \textless{}=), the terminating loop value in the comparison (the size of the array 
+plus or minus 1), and the amount the loop variable is incremented (between 1 and 2). In order to minimize some randomness, the same methods used in the Loops category are used to ensure
+that each loop iterates at least 2 times and no more than 4 times. This means that some loop components may be changed, but this is a negligible cost to avoid loops that only iterate once, or 
+some loops that iterate 6 times.
+
+Distractors in this question include i) the loop variable is incremented an extra time (to simulate the next loop iteration, including one that never takes place), ii) the loop variable is decremented by one increment (to simulate a previous loop iteration), iii) the loop variable is subtracted by 1 (to simulate an off-by-one error), and iv) literally a ``Run-time error due to out of bound index''.
+The last distractor is a possibilty, because the correct answer may sometimes be ``Compile-time error due to out of bound index'' based on the loop parameters. Then this not only tests 
+student's ability on out of bounds accesses, but what specific type of error it generates. If this is too complex, the last distractor may be substitued for another vector for a more straightforward
+question.
+
+The unique answer guarantee used here is also the same as Difficulty 1, but more constraints must be put in place. Because the array elements are not guaranteed to be unique, then the
+elements of the vector are also not guaranteed to be unique. Then there may be a case where the number of the permutations of the vector is not great enough that we can simply shuffle 
+the answer. Take S to be the set of unique values in the correct answer. Then the factorial of the length of the vector divided by the product of the factorial of the occurence of each element S 
+in the original vector (i.e. the number of permutations) must be greater than or equal to 5 (the total number of answers). Here is a direct example:
+
+
+IS THIS WORTH EXPLAINING? IS THIS TOO DIFFICULT? DOES ANYONE CARE
+also change format if keeping 
+
+Correct = \{1, 1, 1, 2\}; \par
+S = \{1, 2\}; \par
+Number of instances of each s in S in Correct: \par
+1 : 3 \par
+2 : 1 \par
+Product of these factorials = factorial(3) * factorial(1) = 6\par
+Total Permutations of Correct = factorial(length of Correct) / Product = factorial(4) / 6 = 4 \par
+
+In this case, there are not enough permutations of the answer to be used uniquely in each answer. If this case ever occurs, we finally give up and simply add a new random element to the 
+vector.
 
 \subsubsection{Functions}
+
+\paragraph{Difficulty 1} \hfill \par
+
+\paragraph{Difficulty 2} \hfill \par
+
+\paragraph{Difficulty 3} \hfill \par
 
 
 \section{Future Improvements}
 
+%TODO
 
 \section{Conclusion}
 
-
+%TODO
 
 \end{document}

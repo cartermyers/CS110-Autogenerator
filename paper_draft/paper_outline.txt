@@ -143,7 +143,7 @@ c)
 Essential but not random:
     Loop increment operator (always +=)
 What's important:
-    Size of array (0 : 6)
+    Size of array (3 : 6)
     Array contents (integers 0 : 10)
     Beginning value for i (0 : floor(size(array)) / 2)
     Loop comparison operator (either < or <=)
