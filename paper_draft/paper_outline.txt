@@ -373,7 +373,7 @@ Distractor 4: The expression is evaluated with operands treated as floats
 Functions
 ==================
 
-Difficulty 1
+Difficulty 3 (NOTE: change to 3 because it's probably the hardest)
 --------------------
 a) The objective of this question is to test how the values of variables are affected
 based on reference parameters.
@@ -454,7 +454,7 @@ Distractor 2: The expression using the original float values
 Distractor 3: The expression using the original float values and with no order of operations
 Distractor 4: The floor of the correct answer (to provide an integer-like answer)
 
-Difficulty 3
+Difficulty 1
 --------------------
 a) Another question to test type coercion, but with function return types.
 Because the return type has an option of being void, the correct answer is
@@ -481,7 +481,7 @@ d)
 Distractor 1: Expression from right to left (and float value)
 Distractor 2: Integer value if float return type; float value if integer return type
 Distractor 3: Always "Run-time Error"
-Distractor 4: If the return type is not void, it is "Run-time error". If it is, it is the float value of the expression
+Distractor 4: If the return type is not void, it is "Compile-time error". If it is, it is the float value of the expression
 
 
 

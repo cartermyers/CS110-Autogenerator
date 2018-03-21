@@ -563,7 +563,33 @@ vector.
 
 \subsubsection{Functions}
 
+This next wave has similar structure to that of Arrays, as each difficulty is its own question, yet each contains main concepts of functions as a whole. There may be room to fine tune certain 
+random elements to spread some questions over multiple difficulties to mirror the earlier categories, but for now, we will simply propose each difficulty on its own. 
+
+The main problem with implementing this category is finding a particular balance between randomness to fulfill our original goals, while still maintaining a simple, easily understandable question for students to answer. Some questions can have a large degree of randomness, yet -- at a certain point -- this starts to take away from the question as it becomes hard to read and answer quickly, essential to these questions when used in a timed format. This can be illustrated in the further difficulties in the category, where some can contain very syntax-heavy code snippets.
+
 \paragraph{Difficulty 1} \hfill \par
+
+The objective of this first question is to simply test return types and any type coercion that takes place. It features a function with no parameters and a single return statement with a simple arithmetic statement. In the return expression, two float operands are used (any value between 1 and 10 in steps of 0.5) with a single operation (any of +, -, *, or /). There may be an opportunity here to randomize the amount of operands in the expression, but as it's not essential to the question, we have not considered it. Here is an example:
+
+%TODO
+\hfill \par
+Given the following function definition: \par
+int Pow() \par
+\{ \par
+	return 4.5 + 1.0; \par
+\} \par
+What is printed from the following call? \par
+cout << Pow() << endl; \par
+\hfill \par
+
+In addition to the randomness described above, the essential random element is the return type of the function. Of course, a different return type will produce different answers for the same return expression, so this provides the main random element. The return type can be any of (TODO make different font?) Int, Float, or Void. In the case that the return type is Void, the correct
+answer is actually a "Compile-time error", similar to some difficulties in Loop Printing. 
+
+As a consequence of this possibilty, one distractor is always ''Run-time error`` to test student knowledge on specific error types here. The other distractor methods include i) the float value
+of the expression evaluated from right to left and ii) if the return value is float, this uses the integer value (and vice versa for Int return types).
+
+Overall, this difficulty can benefit from its relative simplicity to explicitly test student knowledge on function return types and type coercion.
 
 \paragraph{Difficulty 2} \hfill \par
 
