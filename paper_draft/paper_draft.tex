@@ -593,8 +593,46 @@ Overall, this difficulty can benefit from its relative simplicity to explicitly 
 
 \paragraph{Difficulty 2} \hfill \par
 
+This next difficulty is in the same vain as difficulty 1, except it focuses on datatypes of paramters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
+Because of the similar objective of the two difficulties, a format that resembles difficulty 1 is used here as well. 
+
+\hfill \par
+Given the following function definition:\par
+float Switch(float a, int b)\par
+\{\par
+    return a - b;\par
+\}\par
+What is printed from the following call?\par
+cout << Switch(3.5, 1.5) << endl;\par
+\hfill \par
+
+Furthermore, similar randomization methods are used in this difficulty as well. That is, each literal ranges from 1 to 10 (ending in intervals of 0.5), the same operations are used, and a constant number of operands are used as well. The main difference in random elements here 
+is obviously the parameters of the function (although the underlying implementation and evaluation is nearly equivalent) and the return type (which is a constant value of float to ensure the largest amount of precision, adding to the questions simplicity). Again, all of these static methods (such as number of operands and return type) can be randomized further to add extra difficulty. For the sake of simplicity (both in explanation and question difficulty), we will only consider this form.
+
+As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in Expressions), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbirtray return type).
+
 \paragraph{Difficulty 3} \hfill \par
 
+The last difficulty of Functions is the most difficult, not only due to content, but simply because of the amount of syntax contained within the prompt. Of course, students should be farily competent in reading code at this point in the course, but it would be preferable to use a simpiler, yet still relatively challenging, strategy to test this question.
+
+\hfill \par
+Given the following function definition:\par
+void Calculate(int\& a, int\& b, int c)\par
+\{\par
+	b = a / b + c;\par
+\}\par
+
+What value is printed after the following statements?\par
+int marks = 5;\par
+int matrix = 4;\par
+int item = 5;\par
+Calculate(marks, matrix, item);\par
+cout << matrix << endl;\par
+\hfill \par
+
+The main objective here is to test students on reference parameters . This is possible to test with only one variable, but that limits the difficulty (as well as the overall randomness) that is the goal of these questions. Conversely, some may argue that three parameters is too complex in itself. In the current implementation, the number of variables (as well as the number of parameters) are constant, but can be easily changed and easily randomized if desired. Another option for added randomization is the datatype of all parameters and all variables (currently, only integers are used). A couple final static elements of this question are a) the order that the 
+
+Despite all of these static elements, there are still many options for randomization 
 
 \section{Future Improvements}
 
