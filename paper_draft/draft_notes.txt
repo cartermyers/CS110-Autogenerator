@@ -1,0 +1,19 @@
+notes on - what 110 is
+- why we chose moodle
+- why we chose GIFT (easy for students to write their questions, not syntax heavy)
+- reference to Moodle article on GIFT? footnote for a webpage
+
+- intro section to describe distractors, why they need to be convincing, some examples
+- whole section on distractors?
+- also a small intro on trivial cases (also has room for improvement)
+
+packages:
+- listings package?
+- fancy vrb
+- verbatim
+
+- differentiate between GIFT code and C++ code
+- three types of code:
+    1) The main program
+    2) The GIFT code it generates
+    3) The code the students are learning
