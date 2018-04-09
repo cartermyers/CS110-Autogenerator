@@ -392,7 +392,9 @@ switch (item) {
 ##### (i) - (iv) A randomly generated string with a chance of starting with a number, or having invalid characters
 
 Is the following a valid C++ identifier?
-```Tb306wN```
+```
+Tb306wN
+```
 
 - **True**
 - False

@@ -1,19 +1,67 @@
-notes on - what 110 is
+notes on
+
+have a section for this in problem description
+- what 110 is
 - why we chose moodle
 - why we chose GIFT (easy for students to write their questions, not syntax heavy)
 - reference to Moodle article on GIFT? footnote for a webpage
 
+
+put this right before unique answer
 - intro section to describe distractors, why they need to be convincing, some examples
 - whole section on distractors?
+
+put this right before distractors?
 - also a small intro on trivial cases (also has room for improvement)
 
-packages:
-- listings package?
-- fancy vrb
-- verbatim
-
+(maybe for input/output flow)
 - differentiate between GIFT code and C++ code
 - three types of code:
     1) The main program
     2) The GIFT code it generates
     3) The code the students are learning
+
+
+
+OUTLINES
+=============
+
+Problem description (extra)
+--------------------------
+- Main goals (as an outline):
+    - Same difficulty between questions
+    - Questions with an objective
+    - Non-trivial questions
+    - convincing distractors
+
+- CS110 is a basic introductory undergrad programming class; spans many faculties; focuses on basic control structures and syntax (in this case, in C++)
+- why we chose moodle (basically because URCourses is on it; but also because easy to upload; assign random question from bank; randomize answer order)
+- why we chose GIFT (easy to parse; not syntax heavy; students also write their own questions, so thats easy)
+- include footnote here
+
+Distractors
+--------------
+- Maybe explain what they are
+- an MC becomes too easy if a student can easily spot obvious wrong answers (not a great measure of knowledge)
+- give some examples
+- more complex techniques lead to us guaranteeing uniqueness (next section)
+
+
+TODO:
+
+maybe:
+- more on distractors?
+- abstract?
+
+must:
+- problem description
+    - with main goals
+    - with more intro on CS110, moodle, gift, etc.
+
+- input/output flow (differentiate different types of code)
+
+- trivial cases
+
+- future Improvements
+
+- conclusion 
