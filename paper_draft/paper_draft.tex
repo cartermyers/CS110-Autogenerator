@@ -27,6 +27,9 @@
 \section{Abstract}
 
 \section{Problem Description (needs work)}
+
+Maybe this is closer to an abstract style?
+
 For any large introductory undergraduate course, testing becomes virtually impossible on a (clerical?) level, especially for a small examination
 such as an in-class quiz. However, technology allows instructors to develop and distribute exams in an online environment,
 easing the arduous task of passing out and collecting paper exams. However, extra problems are presented with online tests (especially those
@@ -34,9 +37,10 @@ without a proctor), such as authentication, blah, and most importantly cheating 
 but problems still remain. In an effort to prevent cheating, instructors may use different questions for different students, but the task of creating exam
 questions (let alone multiple ones) has been noted to be very intensive and time-consuming (reference). A possible solution to this problem has been
 presented by (reference), but this implementation is in the somewhat narrow field of pharmacology, and it doesn't discuss important details such as
-the methods for generating distractors or the affect of randomness on each question -- which may be of interest to some as it can affect difficulty and
-the objective of some questions. Furthermore, there is no discussion of the reusability or additions of the system, making it seem completely isolated
+the methods for generating distractors or the relative difficulty of the questions. Furthermore, there is no discussion of the reusability or additions of the system, making it seem completely isolated
 and specific [VERFIY THESE POINTS].
+
+In this paper, we propose a system to be used for introductory programming classes at the undergraduate level, with a focus on syntax, control structures, and logic used in C++. This system offers a number of different categories, each with different levels of difficulty, that focus on fairly testing students. The
 
 
 \section{Input/output Flow}
@@ -56,7 +60,7 @@ unusable) which allows a small shell script to easily generate questions from ev
 Once the program has finished, all output files generated in .txt format containing the GIFT-formatted questions, and they can be uploaded
 directly to the Moodle course with no extra effort. Each category is contained in its own file, and any
 difficulties selected within the category are automatically separated into their own question banks, allowing
-for exam questions to be selected by difficulty.
+for exam questions to be selected by difficulty (this functionality is handled by Moodle).
 
 
 \section{Common Functions}
@@ -94,6 +98,8 @@ the "\~". When either of these identifiers is used, a answer is taken to be any 
 Anything between the title and the answer bank is
 considered to be the prompt, or the actual question being asked. GIFT format also allows HTML tags to be inserted,
 so usually <pre> tags are used to separate code excerpts and for readability.
+
+The reason we have chosen GIFT as the output markup language to these questions -- as opposed to HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our current course management system (CMS) Moodle [TODO: add footnote for moodle/GIFT here]; 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses [TODO: maybe reference here?], the instructors of this paper require students to construct their own multiple choice questions that may be used in a real exam. (TODO: should I mention this last point?) The reason we chose Moodle is because of its support through our instituiton. (should I mention this either?)
 
 Since we follow this basic structure for each question, we can abstract the implementation so each category
 only needs to generate a prompt and the corresponding answers. For this reason, the act of creating a new
