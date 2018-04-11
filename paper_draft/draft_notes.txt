@@ -5,6 +5,9 @@ have a section for this in problem description
 - why we chose moodle
 - why we chose GIFT (easy for students to write their questions, not syntax heavy)
 - reference to Moodle article on GIFT? footnote for a webpage
+- why cheating is a problem (mentioned in one paper -- Envisioning the use of online tests -- and they mention one solution is randomizing items)
+- regular, small tests are useful (MC testing and student understanding, what is the connection)
+- 
 
 
 put this right before unique answer
@@ -64,4 +67,4 @@ must:
 
 - future Improvements
 
-- conclusion 
+- conclusion
