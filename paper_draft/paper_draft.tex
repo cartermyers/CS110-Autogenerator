@@ -6,6 +6,9 @@
 %\usepackage{setspace}
 %\doublespacing
 
+%\usepackage{hyperref} %this includes hyperlinks
+\usepackage{url}
+
 \usepackage{amsmath}
 
 \usepackage{courier}
@@ -39,7 +42,7 @@ In an effort to mitigate cheating, it has been suggested that instructors random
 questions (let alone multiple versions) has been noted to be very intensive and time-consuming (reference). Some solutions have been presented using NLP techniques and machine learning  to generate questions from a corpus(A Proposed Framework for Generating Random
 Objective Exams using Paragraphs of Electronic
 Courses and Generating Diagnostic Multiple Choice Comprehension Cloze Questions), but these systems due not produce completely reliable questions or wrong answers. Another possible solution to this problem has been
-presented by (Creation of a dynamic question database for pharmacokinetics), which uses deterministic methods witihin Excel, but this implementation doesn't describe integration with other common online tools (such as Coures Management Systems, or CMS), and it doesn't discuss important details such as
+presented by (Creation of a dynamic question database for pharmacokinetics), which uses deterministic methods within Excel, but this implementation doesn't describe integration with other common online tools (such as Course Management Systems, or CMS), and it doesn't discuss important details such as
 the methods for generating distractors or the relative difficulty of the questions.
 
 To address these points, we propose a system to be used for introductory programming classes at the undergraduate level, with a focus on syntax, control structures, and logic used in C++. This system offers a number of different categories, each with different levels of difficulty, that focus on fairly testing students. In addition, we will discuss distractor generation methods used within the system to more effectively test students.
@@ -49,7 +52,7 @@ To address these points, we propose a system to be used for introductory program
 Given the executable file and a templated file for input, it becomes extremely easy to generate any number of questions
 repeatedly. In most cases, we wish to generate a single category of questions at a time, and this is the basis for the
 overall structure of the main program. It simply checks the user's input from the predefined file to read basic inputs
-such as the Main Category and Subcategory names (for identification in Moodle), the filename for output, the number of
+such as the Main Category and Subcategory names (for identification in our CMS, Moodle), the filename for output, the number of
 total questions to generate, the question set -- or category -- to generate from (such as Arrays, Functions, etc.),
 the base difficulty, and the max difficulty of questions. By having this input file, it becomes easy to slightly modify
 any parameters and repeatedly run the program.
@@ -61,16 +64,14 @@ unusable) which allows a small shell script to easily generate questions from ev
 Once the program has finished, all output files generated in .txt format containing the GIFT-formatted questions, and they can be uploaded
 directly to the Moodle course with no extra effort. Each category is contained in its own file, and any
 difficulties selected within the category are automatically separated into their own question banks, allowing
-for exam questions to be selected by difficulty (this functionality is handled by Moodle).
+for exam questions to be selected by difficulty. This functionality is handled by Moodle.
 
 
 \section{Common Functions}
 
-NOTE: maybe here is the place to quickly differentiate between 1) the program code, 2) the GIFT code it generates (which is shown below), and 3) the code the students are learning (mostly seen in each category with the examples).
-
 Each question, regardless of category, follows the same format: the title (including unique question number),
-a prompt to explain the question, the right answer, and a number of wrong answers (that can vary between categories).
-A standard question in GIFT looks something like this:
+a prompt to explain the question, the right answer, and a number of wrong answers that can vary between categories.
+A standard question in GIFTis shown below.
 
 \begin{Verbatim}[tabsize=4]
 ::Dynamic Expressions Level 1 #005::
@@ -86,11 +87,9 @@ int size = item / 3 - 3;</pre>
 	}
 \end{Verbatim}
 
-NOTE: why am I describing how GIFT or Moodle works? This seems unnecessary and boring.
-
 The title at the beginning (enclosed by two colons on each side) contains the subcategory name, "level" (i.e. difficulty) and a unique number (simply the current number
 of questions generated in this batch). This information is necessary in Moodle to differentiate between 1) different question banks (e.g. "Dynamic Expressions Level 1") and
-2) different questions within the question bank (e.g. \#005 vs. \#006). For this reason, it is reccomnded that only one output file per category be used to avoid any confusion
+2) different questions within the question bank (e.g. \#005 vs. \#006). For this reason, it is recommended that only one output file per category be used to avoid any confusion
 in the naming of question banks on Moodle.
 
 The answer bank at the end (enclosed by the braces) contains all answer options for the question. The correct answer is preceded by the "=" and all wrong answers are denoted by
@@ -100,21 +99,22 @@ Anything between the title and the answer bank is
 considered to be the prompt, or the actual question being asked. GIFT format also allows HTML tags to be inserted,
 so usually <pre> tags are used to separate code excerpts and for readability.
 
-The reason we have chosen GIFT as the output markup language to these questions -- as opposed to HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our current course management system (CMS) Moodle [TODO: add footnote for moodle/GIFT here]; 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses [TODO: maybe reference here?], the instructors of this paper require students to construct their own multiple choice questions that may be used in a real exam. (TODO: should I mention this last point?) The reason we chose Moodle is because of its support through our instituiton. (should I mention this either?)
+The reason we have chosen GIFT as the output markup language to these questions -- as opposed to HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our CMS, Moodle (footnote: \url{https://docs.moodle.org/23/en/GIFT_format}); 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses (Generating Practice Questions as a Preparation Strategy
+for Introductory Programming Exams), the instructors of this paper require students to construct their own multiple choice questions that may be used in a real exam. The reason we chose Moodle is because of its support through our institution. (TODO: should I mention this either?)
 
 Since we follow this basic structure for each question, we can abstract the implementation so each category
 only needs to generate a prompt and the corresponding answers. For this reason, the act of creating a new
 category of questions takes much less time to implement, and question-writers can be focused on the content of
 the question, rather than its final format. This also allows questions to have some certain specialized attributes
-(e.g. a different type of answer options, a true/false question, etc.), but most attributes are fixed or required (such as each question
-must have a title, a prompt, etc.).
+(e.g. a different type of answer options, a true/false question, etc.), but most attributes are fixed or required, such as each question
+must have a title, a prompt, etc..
 
 \subsection{Difficulty}
 
 The most important of these fixed attributes are the static number of difficulties offered. Each question category is
 limited by four possible difficulties, however it is not necessary that all four difficulties are implemented by each category
 as long as it is made explicit to the user. Although this fixed number of difficulties appears to be a shortfall of this
-implementation (and it is a focus for improvement in the future), these difficulties offer a great deal of flexibilty
+implementation (and it is a focus for improvement in the future), these difficulties offer a great deal of flexibility
 within a category of a question.
 
 The most simple case of difficulty is found in the Expressions category (see Expressions below)
@@ -140,7 +140,7 @@ be included in the same category, as each may be warranted their own category. H
 (by testing the same fundamental concept) and any less or extra randomization in the question would not provide anything beneficial to
 the question, but rather would shift focus from the objective of the question. We won't discuss in detail how a level of randomness affects,
 a question, but there is a certain amount of randomness in a question that no longer serves the purpose of making a question unique,
-but instead it makes a question unnecesarily difficult to comprehend. In short, these different difficulties are not substantial enough to
+but instead it makes a question unnecessarily difficult to comprehend. In short, these different difficulties are not substantial enough to
 create their own category and are similar enough to each other to be included in the same category.
 
 Although it now may seem that this concept of difficulty is unclear and unfocused, it is important to note that each of these in Moodle are
@@ -153,7 +153,9 @@ and it offers a fair test to each student. Overall, it gives the instructor more
 One of the most interesting aspect of this system, and one of its main goals, is to produce convincing distractors -- that is, seemingly plausible, yet wrong, answers offerred as an option to the student. Distractors
 are essential to all multiple choice questions because any options that students can easily identify as wrong take away from the difficulty of a question, and ultimately, does not add to the measure of knowledge of a student. Any blatant distractors make it easier for students to select (or guess) the correct answer. 
 
-This notion is also present in other systems (reference for nlp questions), but with varying success. This implementation is novel for similar systems based on deterministic methods (reference). Between categories, and sometimes between difficulties, there are different methods for generating distractors, specific to each question. We discuss all of the methods below within each category. Here are examples within a question using GIFT format.
+This notion is also present in other systems (A Proposed Framework for Generating Random
+Objective Exams using Paragraphs of Electronic
+Courses and Generating Diagnostic Multiple Choice Comprehension Cloze Questions), but with varying success. This implementation is novel for similar systems based on deterministic methods (pharmacy reference). Between categories, and sometimes between difficulties, there are different methods for generating distractors, specific to each question. We discuss all of the methods below within each category. Here are examples within a question using GIFT format.
 
 \begin{Verbatim}
 What is the variable "bar" equal to?
@@ -257,8 +259,15 @@ int marks = 8;
 \end{Verbatim}
 
 The only important random elements are the operand values (each is between 1 and 10) and all operators. It should first be noted that the structure of the expression
-is always in the form of (\textless sub-expression\textgreater ) \textless logical operator\textgreater (\textless sub-expression\textgreater ), where each sub-expression is of the form \textless variable> \textless comparison op\textgreater \textless literal\textgreater .
-Each comparison operator is chosen randomly from (\textgreater, \textgreater =, \textless , \textless =) and each logical operator is chosen randomly from (==, !=, \&\&, \textbar\textbar). Of course, the names
+is always in the form of 
+\begin{Verbatim}
+(< sub-expression >) < logical operator > (< sub-expression >)
+\end{Verbatim}
+where each sub-expression is of the form 
+\begin{Verbatim}
+< variable > < comparison op > < literal >
+\end{Verbatim}
+Each comparison operator is chosen randomly from \verb;(>, >=, <, <=); and each logical operator is chosen randomly from \verb;(==, !=, &&, ||);. Of course, the names
 of these operators do not seem apt, but they are sufficient for our conversation.
 
 Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3. And the other
@@ -309,7 +318,7 @@ choosing exactly what kind of loop they wish to test. Instead of outlining each 
 This first question type of loops is probably similar to questions used in most introductory programming courses, as it is the fundamental concept behind loops (especially for loops). Simply, these
 questions ask a student how many times a statement within a for loop is executed, based on the common structure of a "counter" variable that is updated each loop, and then compared to a
 terminating condition: the same structure as a for loop. This is the essence of the question at each difficulty, however, due to the many dependent parts of the question, many different forms 
-of randomziation (mostly pertaining to the domain) occur between each difficulty, hence the distinction.
+of randomization (mostly pertaining to the domain) occur between each difficulty, hence the distinction.
 
 \paragraph{Difficulty 1} \hfill \par
 This difficulty is the most common form of for loops, and, even to some new students, can be trivial to evaluate. However, it still ensures that the main concepts of loop syntax, terminating 
@@ -323,17 +332,17 @@ for (int b = 4; b < 7; b = b + 1)
 } 
 \end{lstlisting}
 
-To ensure each question is relatively easy, the comparison operator used is always ``\textless{}'' and the increment operator is always addition. This still leaves many essential details to be 
+To ensure each question is relatively easy, the comparison operator used is always \verb;"<"; and the increment operator is always \verb;"+=";. This still leaves many essential details to be 
 randomized. First, the increment is chosen (it has the option of being either 1, 5, or 10 for simplicity), and then based on the increment, the starting value of the variable is chosen (between 2 and 10 and scaled based on the increment). Finally, the value used for the terminating condition is selected, which is between 3 and 6 greater than the starting value (again, also scaled based 
 on the increment). This last value also has a random value added to it (from 0 to the incremental value minus 1) to make the terminating value seem ``less nice'', That is, it is not guaranteed
 that the variable will be equal to the terminating value when it exits the loop. This guarantees that the loop will execute between 3 and 6 times, without making the actual aspects of the loop 
 seem too formulaic. 
 
-Due to the nature of this question, there are not many elaborate distractors, yet they are still effective. Obviously, the first two distractors are +/- 1 of the correct answer (the common 
-off-by-one error), and the last two distractors are a random amount away from the original question (+/- 2 to 4). To eliminate any obvious negative answers, the absolute value is used for each of these distractors. 
+Due to the nature of this question, there are not many elaborate distractors, yet they are still effective. Obviously, the first two distractors are $\pm$ 1 of the correct answer (the common 
+off-by-one error), and the last two distractors are a random amount away from the original question ($\pm$ 4). To eliminate any obvious negative answers, the absolute value is used for each of these distractors. 
 
 \paragraph{Difficulty 2} \hfill \par
-This difficulty is very close to the first, but to increase the effort, more comparison operators (\textgreater, \textgreater =, \textless , \textless =) are used for the terminating condition, and the subtraction operator is used in the update
+This difficulty is very close to the first, but to increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
 statement. Here is an example from the Do While Loops category.
 
 \begin{lstlisting}
@@ -346,8 +355,8 @@ do
 } while (j >= 30); 
 \end{lstlisting}
 
- It uses the same domain of randomized values, except it swaps the initial value and the terminating value when the operator used to update the variable is ``-''. There is also a 
-guarantee to match the correct comparison operators (e.g. \textgreater, \textgreater =) with the proper operator in the update assignment (e.g. +) unless otherwise specified by the user.
+ It uses the same domain of randomized values, except it swaps the initial value and the terminating value when the operator used to update the variable is \verb;"-=";. There is also a 
+guarantee to match the correct comparison operators (e.g. \verb;>, >=;) with the proper operator in the update assignment (e.g. +) unless otherwise specified by the user.
 If they do allow such operators to be paired with each other, ``improper'' loops can occur. These are loops that run infinitely (or more precisely, a couple billion times due to integer overflow), 
 and this has a possibility of being the correct answer. When this situation does occur, the correct answer becomes ``Around a couple billion'', and in all other cases this is used as a distractor. This 
 option aids in the essence of the question by making it more difficulty, and it also introduces the option for non-homogeneous answer types (as all other available options are integer values). 
@@ -459,7 +468,7 @@ The third distractor is the value assigned to the variable in the first matching
 and fall through occurs. However, if there is no matching case value for the original variable, the third distractor is then the last assigned value \textit{before} the default case, if there is a
 default case. If there is no default case, the third distractor is simply a random value from those that are assigned within the block (in the case above, this would be one of 5, 6, 2, 0, or 1). 
 
-%NOTE: should i even talk about this fourth distractor? it's really only values that are in the case statements, which aren't very interesting to those with experience
+TODO: should i even talk about this fourth distractor? it's really only values that are in the case statements, which aren't very interesting to those with experience
 The fourth distractor follows the same conditions as the third, except with different methods at each. First, if there is a matching case to the original variable value, then the fourth distractor
 is the next compared case value that has a break statement. In the example above, this corresponds to the value 1 (since it is the next compared value with a break statement). Again, this
 value does not make much sense to one with experience with switch case statements, but it may outline errors for those that are unfamiliar with them. If there is no matching case to the 
@@ -525,7 +534,7 @@ The distractor methods used here are i) the original array, ii) a new array, mad
 subtracted by 1 and the second index is added by 1. Of course, all of these methods use the modulus operation to ensure that they are still all valid indices. Still, they offer convincing 
 answers to students confused by the common ``off-by-one'' error. 
 
-However, this poses another problem. Since all values are modulus the size of the array, there may be some cases where the same answers appear. Usually, when we identify identitcal answers,
+However, this poses another problem. Since all values are modulus the size of the array, there may be some cases where the same answers appear. Usually, when we identify identical answers,
 we simply generate a new random answer that -- while maybe not very convincing -- is guaranteed to be unique. Doing the same here would be useless, as a completely new array would not
 even be considered the correct answer given the question and the same is true if we even generate a single new element. Any array that contains an element that is not present in the 
 original array is a definite outlier and is in no way plausible. However, while it is still not sophisticated, a last resort may be shuffling the order of the original array. This way, it still contains all
@@ -556,7 +565,7 @@ doesn't really offer better distractors, the use of this method is very minimal 
 
 \paragraph{Difficulty 3} \hfill \par
 
-This question also has the objective of testing correct array access, but it also has the possibilty of out-of-bounds access that the students must identify. Instead of making this a simple one time
+This question also has the objective of testing correct array access, but it also has the possibility of out-of-bounds access that the students must identify. Instead of making this a simple one time
 access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Here is an example.
 
 \begin{lstlisting}
@@ -569,14 +578,14 @@ for (int i = 1; i < 4; i = i + 1)
 \end{lstlisting}
 
 The number of random aspects also increases relative to Difficulty 2. All random elements include the size of the array (from 3 to 6), the contents of the array (from 0 to 10), the beginning value
-of the loop variable (from 0 to half the size of the array), the loop comparison operator (either \textless{} or \textless{}=), the terminating loop value in the comparison (the size of the array 
+of the loop variable (from 0 to half the size of the array), the loop comparison operator (either \verb;<; or \verb;<=;), the terminating loop value in the comparison (the size of the array 
 plus or minus 1), and the amount the loop variable is incremented (between 1 and 2). In order to minimize some randomness, the same methods used in the Loops category are used to ensure
 that each loop iterates at least 2 times and no more than 4 times. This means that some loop components may be changed, but this is a negligible cost to avoid loops that only iterate once, or 
 some loops that iterate 6 times.
 
 Distractors in this question include i) the loop variable is incremented an extra time (to simulate the next loop iteration, including one that never takes place), ii) the loop variable is decremented by one increment (to simulate a previous loop iteration), iii) the loop variable is subtracted by 1 (to simulate an off-by-one error), and iv) literally a ``Run-time error due to out of bound index''.
-The last distractor is a possibilty, because the correct answer may sometimes be ``Compile-time error due to out of bound index'' based on the loop parameters. Then this not only tests 
-student's ability on out of bounds accesses, but what specific type of error it generates. If this is too complex, the last distractor may be substitued for another vector for a more straightforward
+The last distractor is a possibility, because the correct answer may sometimes be ``Compile-time error due to out of bound index'' based on the loop parameters. Then this not only tests 
+student's ability on out of bounds accesses, but what specific type of error it generates. If this is too complex, the last distractor may be substituted for another vector for a more straightforward
 question.
 
 The unique answer guarantee used here is also the same as Difficulty 1, but more constraints must be put in place. Because the array elements are not guaranteed to be unique, then the
@@ -585,7 +594,7 @@ the answer. Take $ U $ to be the set of unique values in the correct answer (a v
  (i.e. the number of permutations) must be greater than or equal to 5 (the total number of answers).
 
 \begin{equation*}
-V = \textrm{Number of occurrences in } C\! \forall\! u \in U
+V = \textrm{Number of occurrences in } C, \! \forall\! u \in U
 \end{equation*}
 
 \begin{equation*}
@@ -643,7 +652,7 @@ Overall, this difficulty can benefit from its relative simplicity to explicitly 
 
 \paragraph{Difficulty 2} \hfill \par
 
-This next difficulty is in the same vain as difficulty 1, except it focuses on datatypes of paramters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
+This next difficulty is in the same vain as difficulty 1, except it focuses on data types of parameters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
 Because of the similar objective of the two difficulties, a format that resembles difficulty 1 is used here as well. 
 
 \begin{VerbCM}
@@ -661,7 +670,7 @@ cout << Switch(3.5, 1.5) << endl;
 Furthermore, similar randomization methods are used in this difficulty as well. That is, each literal ranges from 1 to 10 (ending in intervals of 0.5), the same operations are used, and a constant number of operands are used as well. The main difference in random elements here 
 is obviously the parameters of the function (although the underlying implementation and evaluation is nearly equivalent) and the return type (which is a constant value of float to ensure the largest amount of precision, adding to the questions simplicity). Again, all of these static methods (such as number of operands and return type) can be randomized further to add extra difficulty. For the sake of simplicity (both in explanation and question difficulty), we will only consider this form.
 
-As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in Expressions), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbirtray return type).
+As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in Expressions), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbitrary return type).
 
 \paragraph{Difficulty 3} \hfill \par
 
