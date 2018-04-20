@@ -96,10 +96,10 @@ The answer bank at the end (enclosed by the braces) contains all answer options 
 the "\~". When either of these identifiers is used, a answer is taken to be any text until a line break.
 
 Anything between the title and the answer bank is
-considered to be the prompt, or the actual question being asked. GIFT format also allows HTML tags to be inserted,
-so usually <pre> tags are used to separate code excerpts and for readability.
+considered to be the prompt, the actual question being asked. GIFT format also allows HTML tags to be inserted,
+so usually \verb;<pre>; tags are used to separate code excerpts for readability.
 
-The reason we have chosen GIFT as the output markup language to these questions -- as opposed to HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our CMS, Moodle (footnote: \url{https://docs.moodle.org/23/en/GIFT_format}); 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses (Generating Practice Questions as a Preparation Strategy
+The reason we have chosen GIFT as the output markup language to these questions -- as opposed to pure HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our CMS, Moodle (footnote: \url{https://docs.moodle.org/23/en/GIFT_format}); 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses (Generating Practice Questions as a Preparation Strategy
 for Introductory Programming Exams), the instructors of this paper require students to construct their own multiple choice questions that may be used in a real exam. The reason we chose Moodle is because of its support through our institution. (TODO: should I mention this either?)
 
 Since we follow this basic structure for each question, we can abstract the implementation so each category
@@ -115,7 +115,7 @@ The most important of these fixed attributes are the static number of difficulti
 limited by four possible difficulties, however it is not necessary that all four difficulties are implemented by each category
 as long as it is made explicit to the user. Although this fixed number of difficulties appears to be a shortfall of this
 implementation (and it is a focus for improvement in the future), these difficulties offer a great deal of flexibility
-within a category of a question.
+within a category of a question. The ability to randomize elements of a question, yet have students tested fairly and with the same relative difficulty, is one of the aims of this system. 
 
 The most simple case of difficulty is found in the Expressions category (see Expressions below)
 that simply serves to test a student's understanding of integer operations and variable assignment in programming.
@@ -123,7 +123,7 @@ Each difficulty is the same essential type of question, but the number of operan
 Some may consider this a naive approach to difficulty, but it is effective and showcases the fundamental relation
 between question categories and difficulties.
 
-Other question categories (such as Switch Cases) don't exhibit such a straightforward
+Other question categories -- take Switch Cases, for example -- don't exhibit such a straightforward
 notion of difficulty, but still an interesting example. Still, each difficulty is essentially the same where students are tested on their
 ability to follow the control flow of a switch case statement by determining the final value of a variable (see Switch Cases for more detail).
 The first difficulty randomly generates break statements (for each case) and it may or may not include a default case, where the second difficulty
@@ -136,26 +136,22 @@ In contrast to these categories that implement the same essential question with 
 or Arrays), hold completely different questions in each difficulty. Here, a descriptor like "subcategory" seems more appropriate
 (since it becomes harder to evaluate question on difficulty in relation to a different question), but
 to avoid confusion, we will continue to reference these subcategories as difficulties. At first, it also seems like these questions shouldn't
-be included in the same category, as each may be warranted their own category. However, because each relates to the same category
-(by testing the same fundamental concept) and any less or extra randomization in the question would not provide anything beneficial to
-the question, but rather would shift focus from the objective of the question. We won't discuss in detail how a level of randomness affects,
+be included in the same category, as each may be warranted their own category. However, because each relates to the same question bank category
+(by testing the same fundamental concept) and any less or extra randomization in the question would not provide anything beneficial, but rather would shift focus from the objective of the question. We won't discuss in detail how a level of randomness affects
 a question, but there is a certain amount of randomness in a question that no longer serves the purpose of making a question unique,
 but instead it makes a question unnecessarily difficult to comprehend. In short, these different difficulties are not substantial enough to
 create their own category and are similar enough to each other to be included in the same category.
 
 Although it now may seem that this concept of difficulty is unclear and unfocused, it is important to note that each of these in Moodle are
-formed as their own question bank (meaning students are each given questions from the same bank -- meaning the same difficulty -- and not only
-the same category -- with different difficulties. The instructor then has the option of using whichever question bank (i.e. difficulty) is most appropriate,
+formed as their own question bank, meaning students are each given questions from the same bank (therefore the same difficulty), and are not simply given questions within the same category, which suggests that different students receive different difficulties. The instructor then has the option of using whichever question bank (i.e. difficulty) is most appropriate,
 and it offers a fair test to each student. Overall, it gives the instructor more choice on how to exactly test his or her students.
 
 \subsection{Convincing Distractors}
 
 One of the most interesting aspect of this system, and one of its main goals, is to produce convincing distractors -- that is, seemingly plausible, yet wrong, answers offerred as an option to the student. Distractors
-are essential to all multiple choice questions because any options that students can easily identify as wrong take away from the difficulty of a question, and ultimately, does not add to the measure of knowledge of a student. Any blatant distractors make it easier for students to select (or guess) the correct answer. 
+are essential to all multiple choice questions, for any options that students can easily identify as wrong take away from the difficulty of a question, and ultimately, does not add to the measure of knowledge of a student. Any blatant distractors make it easier for students to select (or guess) the correct answer. 
 
-This notion is also present in other systems (A Proposed Framework for Generating Random
-Objective Exams using Paragraphs of Electronic
-Courses and Generating Diagnostic Multiple Choice Comprehension Cloze Questions), but with varying success. This implementation is novel for similar systems based on deterministic methods (pharmacy reference). Between categories, and sometimes between difficulties, there are different methods for generating distractors, specific to each question. We discuss all of the methods below within each category. Here are examples within a question using GIFT format.
+This notion is also present in other systems (Generating Diagnostic Multiple Choice Comprehension Cloze Questions), but with varying success. This implementation is novel for similar systems based on deterministic methods (pharmacy reference). Between categories, and sometimes between difficulties, there are different methods for generating distractors, specific to each question. We discuss all of the methods below within each category. Here are examples within a question using GIFT format.
 
 \begin{Verbatim}
 What is the variable "bar" equal to?
@@ -212,7 +208,7 @@ parts affect the answer or structure of the question)? which of those parts are 
 and are there any essential parts of the question that are not randomized (i.e. are there any constant factors of the question)? and lastly d) what methods
 are used to generate the distractors? It is important to ask (a) so each question can have a definitive objective, and it should be easy to note if
 certain randomness adds/hinders that objective or if the randomness does not preserve a comparable difficulty for different students.
-This basically tries to prevent elements making a question "too random". It is also important to ask (c) for a deep understanding of how the question
+This basically tries to prevent elements making a question "too random". It is also important to ask [TODO: should I include this part c? is it talked about enough later on?] (c) for a deep understanding of how the question
 is randomized -- and how some parts are kept constant -- to produce independent yet similarly difficult questions. This part answers the main
 methodology of all question generation. And as a consequence, (d) becomes relevant to ask to offer convincing distractors for a cohesive question.
 
@@ -267,8 +263,7 @@ where each sub-expression is of the form
 \begin{Verbatim}
 < variable > < comparison op > < literal >
 \end{Verbatim}
-Each comparison operator is chosen randomly from \verb;(>, >=, <, <=); and each logical operator is chosen randomly from \verb;(==, !=, &&, ||);. Of course, the names
-of these operators do not seem apt, but they are sufficient for our conversation.
+Each comparison operator is chosen randomly from \verb;(>, >=, <, <=); and each logical operator is chosen randomly from \verb;(==, !=, &&, ||);. 
 
 Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3. And the other
 difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. For example,
@@ -276,14 +271,14 @@ difference between difficulties 1 and 2 from 3 and 4 is that the latter two diff
 \begin{lstlisting}
 int documents = 8;
 int bar = 10;
-(bar < = documents) != (10 < 9)
+(bar <= documents) != (10 < 9)
 \end{lstlisting}
 
 This does not offer any significant difficulty change, but it does alter a format that students may be familiar with, and does a better job of testing the variable accesses.
 
 
 \subsubsection{Expressions}
-This category is arguably the most important of all, as it serves as a basis for all other, more complex (sophisticated?) categories, and it is even utilized in other other categories
+This category is arguably the most important of all, as it serves as a basis for all other, more complex categories, and it is even utilized in other other categories
 (namely Functions). It still follows the basic structure as Identifiers and Conditional expressions (with simple prompts), but it introduces methods used to generate convincing distractors.
 The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to Conditional Expressions, it also
 tests minor variable accessing. Here is an example:
@@ -297,7 +292,7 @@ int bar = foo * 4 % 3 + 7;
 Again, each difficulty does not change significantly (only the number of operands are increased), but these simple questions are sufficient for one last category for introduction.
 The main sources of randomness obviously come from the value (between 2 and 10) and number of operands (between 3 and 7 depending on difficulty). It is also important to note that
 operator precedence is implicitly tested (no parentheses are generated), but there is room to grow and generate interesting parenthetical expressions in the future that may make
-these types of questions more challenging for students. 
+these types of questions more challenging for students. However, this does add the need to check for more trivial cases. 
 
 The most interesting change in this category from the last is the greater possibility of answers (that is, it is not a simple true/false question) that allow for new distractor methods to be implemented. Compared to later categories, these methods are not very complex, but they focus on common mistakes made by students, which makes for a more difficult question. The main
 purpose of these distractors (and really of all distractors) is to try and generalize common mistakes for convincing answers, just as an instructor would try to create with a single question. 
@@ -308,7 +303,7 @@ of the question in their deliberate misunderstanding of the main concepts. For e
 
 \subsection{Loops}
 
-This wave of questions is usually offered to students next, although -- implementation wise -- it doesn't have many similarities to the previous wave other than general format. Instead, loops provides 
+This wave of questions is usually offered to students next, although -- implementation wise -- it doesn't have many similarities to the previous wave other than general format. Instead, Loops provides 
 a general template for all of its own categories. Since we may wish to test all types of loops (we will only consider for loops, while loops, and do while loops), we can create a general base for 
 all types of loops and test the same questions in each (as the main difference between each is mostly syntax). We separate each of these loops by category so instructors have the option of 
 choosing exactly what kind of loop they wish to test. Instead of outlining each category as in the previous wave, we will outline two different types of questions (called Loop Counting and Loop Printing) that then create a category for each type of loops (6 categories total). Implementation between categories of the same question type (e.g. For Loops Counting vs. While Loops Counting) have virtually the same implementation (except for an edge case in do while loops as readers can imagine), so we will not distinguish between them and instead only talk of the different question types.
@@ -342,7 +337,7 @@ Due to the nature of this question, there are not many elaborate distractors, ye
 off-by-one error), and the last two distractors are a random amount away from the original question ($\pm$ 4). To eliminate any obvious negative answers, the absolute value is used for each of these distractors. 
 
 \paragraph{Difficulty 2} \hfill \par
-This difficulty is very close to the first, but to increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
+To increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
 statement. Here is an example from the Do While Loops category.
 
 \begin{lstlisting}
@@ -359,11 +354,11 @@ do
 guarantee to match the correct comparison operators (e.g. \verb;>, >=;) with the proper operator in the update assignment (e.g. +) unless otherwise specified by the user.
 If they do allow such operators to be paired with each other, ``improper'' loops can occur. These are loops that run infinitely (or more precisely, a couple billion times due to integer overflow), 
 and this has a possibility of being the correct answer. When this situation does occur, the correct answer becomes ``Around a couple billion'', and in all other cases this is used as a distractor. This 
-option aids in the essence of the question by making it more difficulty, and it also introduces the option for non-homogeneous answer types (as all other available options are integer values). 
+option aids in the essence of the question by making it more difficult, and it also introduces the option for non-homogeneous answer types (as all other available options are integer values). 
 Other than this new option, all distractor methods are the same as Difficulty 1.
 
 \paragraph{Difficulty 3} \hfill \par
-Using the same exact structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
+Using the same structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
 and subtraction operators. Here is an example from the While Loops category.
 
 \begin{lstlisting}
@@ -458,7 +453,7 @@ switch (bar) {
 } 
 \end{lstlisting}
 
-As it is easy to see, this category's main objective is to test students' knowledge of the control structure through a switch case block. This focuses on the syntax of a switch case statment, how
+This category's main objective is to test students' knowledge of the control structure through a switch case block. This focuses on the syntax of a switch case statment, how
 the conditional cases are compared, and how break statements function as opposed to fall through. Occasionally, there may be a default case as well (depending on difficulty). 
 
 All distractor methods are also shared between each difficulty, which may be room for improvement, but for now, these methods offer plausible answers for each difficulty. The first distractor is
@@ -594,7 +589,7 @@ the answer. Take $ U $ to be the set of unique values in the correct answer (a v
  (i.e. the number of permutations) must be greater than or equal to 5 (the total number of answers).
 
 \begin{equation*}
-V = \textrm{Number of occurrences in } C, \! \forall\! u \in U
+V = \textrm{Number of occurrences in } C, \forall u \in U
 \end{equation*}
 
 \begin{equation*}
