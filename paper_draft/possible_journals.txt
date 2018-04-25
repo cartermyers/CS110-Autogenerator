@@ -58,6 +58,7 @@ Latex template
 Research and Practice in Technology Enhanced Learning
 ---------------------------
 Latex template
+unknown word count
 
 
 American Journal of Distance Education
