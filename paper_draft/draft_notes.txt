@@ -1,13 +1,30 @@
+- use list format
+- distractor examples for every question
+- gift vs. html comparison
+- use /ref{} for references (with /label{sec-asdf})
+- bibtex
+- quotations
+- listings off the edge of paper
+- watch out for "Of course," "Simply", "obviously"; if its obvious, dont say it
+- define something first ("this is what a category is; why do students have difficulty with it"),
+    then give them properites (like "how it relates to other problems")
+- quotes out of verb
+- remove redundancies
+- emphasize or bold names of categories
+- watch out for orphans (package in an H box)
+- put excerpts in figures?? maybe a listing environment?? look online for standard code excerpts online
+- math expression: use \begin{equation}, and inside text use H box; also google about quantifiers: /, /- /. 
+
 notes on
 
 have a section for this in problem description
+-
 - what 110 is
 - why we chose moodle
 - why we chose GIFT (easy for students to write their questions, not syntax heavy)
 - reference to Moodle article on GIFT? footnote for a webpage
 - why cheating is a problem (mentioned in one paper -- Envisioning the use of online tests -- and they mention one solution is randomizing items)
 - regular, small tests are useful (MC testing and student understanding, what is the connection)
-- 
 
 
 put this right before unique answer
