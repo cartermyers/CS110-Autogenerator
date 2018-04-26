@@ -13,7 +13,7 @@
 
 \usepackage{courier}
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily, language=C++}
+\lstset{basicstyle=\ttfamily, language=C++, captionpos=b}
 
 \usepackage{fancyvrb}
 \DefineVerbatimEnvironment{VerbCM}{Verbatim}{fontfamily=cm} %default latex typeface
@@ -27,9 +27,9 @@
 
 \tableofcontents
 
-\section{Abstract}
+\section{Abstract} \label{sec-abstract}
 
-\section{Problem Description}
+\section{Problem Description} \label{sec-problem_description}
 
 maybe this is better as the abstract?
 
@@ -47,13 +47,13 @@ the methods for generating distractors or the relative difficulty of the questio
 
 To address these points, we propose a system to be used for introductory programming classes at the undergraduate level, with a focus on syntax, control structures, and logic used in C++. This system offers a number of different categories, each with different levels of difficulty, that focus on fairly testing students. In addition, we will discuss distractor generation methods used within the system to more effectively test students.
 
-\section{Input/output Flow}
+\section{Input/output Flow} \label{sec-input/output_flow}
 
 Given the executable file and a templated file for input, it becomes extremely easy to generate any number of questions
 repeatedly. In most cases, we wish to generate a single category of questions at a time, and this is the basis for the
 overall structure of the main program. It simply checks the user's input from the predefined file to read basic inputs
-such as the Main Category and Subcategory names (for identification in our CMS, Moodle), the filename for output, the number of
-total questions to generate, the question set -- or category -- to generate from (such as Arrays, Functions, etc.),
+such as the main category and subcategory names (for identification in our CMS, Moodle), the filename for output, the number of
+total questions to generate, the question set -- or category -- to generate from (such as \textbf{Arrays}, \textbf{Functions}, etc.),
 the base difficulty, and the max difficulty of questions. By having this input file, it becomes easy to slightly modify
 any parameters and repeatedly run the program.
 
@@ -67,13 +67,13 @@ difficulties selected within the category are automatically separated into their
 for exam questions to be selected by difficulty. This functionality is handled by Moodle.
 
 
-\section{Common Functions}
+\section{Common Functions} \label{sec-common_functions}
 
 Each question, regardless of category, follows the same format: the title (including unique question number),
 a prompt to explain the question, the right answer, and a number of wrong answers that can vary between categories.
-A standard question in GIFTis shown below.
-
-\begin{Verbatim}[tabsize=4]
+A standard question in GIFT is shown below.
+\begin{hbox}{}
+\begin{lstlisting}[language=, caption={A full question in GIFT format.}, label={lst-gift}]	%use no specfic language here because it is in GIFT format
 ::Dynamic Expressions Level 1 #005::
 What is the variable "size" equal to?
 <pre> int item = 4; 
@@ -85,21 +85,21 @@ int size = item / 3 - 3;</pre>
 	~1.5 
 	~0 
 	}
-\end{Verbatim}
+\end{lstlisting}
+\end{hbox}
 
-The title at the beginning (enclosed by two colons on each side) contains the subcategory name, "level" (i.e. difficulty) and a unique number (simply the current number
-of questions generated in this batch). This information is necessary in Moodle to differentiate between 1) different question banks (e.g. "Dynamic Expressions Level 1") and
-2) different questions within the question bank (e.g. \#005 vs. \#006). For this reason, it is recommended that only one output file per category be used to avoid any confusion
+The title at the beginning (enclosed by two colons on each side) contains the subcategory name, ``level" (i.e. difficulty) and a unique number (simply the current number
+of questions generated in this batch). This information is necessary in Moodle to differentiate between different question banks (e.g. ``Dynamic Expressions Level 1") and different questions within the question bank (e.g. \#005 vs. \#006). For this reason, it is recommended that only one output file per category be used to avoid any confusion
 in the naming of question banks on Moodle.
 
-The answer bank at the end (enclosed by the braces) contains all answer options for the question. The correct answer is preceded by the "=" and all wrong answers are denoted by
-the "\~". When either of these identifiers is used, a answer is taken to be any text until a line break.
+The answer bank at the end (enclosed by the braces) contains all answer options for the question. The correct answer is preceded by the ``=" and all wrong answers are denoted by
+the ``$\sim$". When either of these identifiers is used, a answer is taken to be any text until a line break.
 
 Anything between the title and the answer bank is
 considered to be the prompt, the actual question being asked. GIFT format also allows HTML tags to be inserted,
 so usually \verb;<pre>; tags are used to separate code excerpts for readability.
 
-The reason we have chosen GIFT as the output markup language to these questions -- as opposed to pure HTML or XML -- is for a number of reasons: 1) this language was constructed specifically for use in our CMS, Moodle (footnote: \url{https://docs.moodle.org/23/en/GIFT_format}); 2) GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and 3) similar to other courses (Generating Practice Questions as a Preparation Strategy
+The reason we have chosen GIFT as the output markup language to these questions -- as opposed to pure HTML or XML -- is for a number of reasons: this language was constructed specifically for use in our CMS, Moodle (footnote: \url{https://docs.moodle.org/23/en/GIFT_format}); GIFT has very minimal syntax, which allows it to be easily parsed and read by humans, which is useful when quickly evaluating the questions; and, similar to other courses (Generating Practice Questions as a Preparation Strategy
 for Introductory Programming Exams), the instructors of this paper require students to construct their own multiple choice questions that may be used in a real exam. The reason we chose Moodle is because of its support through our institution. (TODO: should I mention this either?)
 
 Since we follow this basic structure for each question, we can abstract the implementation so each category
@@ -109,7 +109,7 @@ the question, rather than its final format. This also allows questions to have s
 (e.g. a different type of answer options, a true/false question, etc.), but most attributes are fixed or required, such as each question
 must have a title, a prompt, etc..
 
-\subsection{Difficulty}
+\subsection{Difficulty} \label{sec-difficulty}
 
 The most important of these fixed attributes are the static number of difficulties offered. Each question category is
 limited by four possible difficulties, however it is not necessary that all four difficulties are implemented by each category
@@ -117,23 +117,23 @@ as long as it is made explicit to the user. Although this fixed number of diffic
 implementation (and it is a focus for improvement in the future), these difficulties offer a great deal of flexibility
 within a category of a question. The ability to randomize elements of a question, yet have students tested fairly and with the same relative difficulty, is one of the aims of this system. 
 
-The most simple case of difficulty is found in the Expressions category (see Expressions below)
+A simple and informative example of difficulty is found in the \textbf{Expressions} category (see section \ref{subsubsec-expressions})
 that simply serves to test a student's understanding of integer operations and variable assignment in programming.
 Each difficulty is the same essential type of question, but the number of operands increases with increasing difficulty.
 Some may consider this a naive approach to difficulty, but it is effective and showcases the fundamental relation
 between question categories and difficulties.
 
-Other question categories -- take Switch Cases, for example -- don't exhibit such a straightforward
-notion of difficulty, but still an interesting example. Still, each difficulty is essentially the same where students are tested on their
-ability to follow the control flow of a switch case statement by determining the final value of a variable (see Switch Cases for more detail).
+Other question categories -- take \textbf{Switch Cases}, for example -- don't exhibit such a straightforward
+notion of difficulty, but still offer interesting examples. Each difficulty tests students on the same essential concept of
+the control flow of a switch case statement by assigning a value to a variable (see section \ref{subsubsec-switch_cases} for more detail).
 The first difficulty randomly generates break statements (for each case) and it may or may not include a default case, where the second difficulty
-always includes a break statement for each case and automatically includes a default case. Each difficulty of the Switch Case category follows the
+always includes a break statement for each case and automatically includes a default case. Each difficulty of the \textbf{Switch Cases} category follows the
 same pattern by simply modifying random elements of the same core quesiton. While one may seem like more common -- but not necessarily always
 correct -- example of a switch case block, it seems difficult to argue that one is inherently more "difficult" than another. However, it is clear
 that each difficulty of this category would be beneficial to test in its own right, while still being able to test students fairly.
 
-In contrast to these categories that implement the same essential question with slight changes, some categories (such as Functions
-or Arrays), hold completely different questions in each difficulty. Here, a descriptor like "subcategory" seems more appropriate
+In contrast to these categories that implement the same essential question with slight changes, some categories (such as \textbf{Functions}
+or \textbf{Arrays}), hold completely different questions in each difficulty. Here, a descriptor like "subcategory" seems more appropriate
 (since it becomes harder to evaluate question on difficulty in relation to a different question), but
 to avoid confusion, we will continue to reference these subcategories as difficulties. At first, it also seems like these questions shouldn't
 be included in the same category, as each may be warranted their own category. However, because each relates to the same question bank category
@@ -143,17 +143,17 @@ but instead it makes a question unnecessarily difficult to comprehend. In short,
 create their own category and are similar enough to each other to be included in the same category.
 
 Although it now may seem that this concept of difficulty is unclear and unfocused, it is important to note that each of these in Moodle are
-formed as their own question bank, meaning students are each given questions from the same bank (therefore the same difficulty), and are not simply given questions within the same category, which suggests that different students receive different difficulties. The instructor then has the option of using whichever question bank (i.e. difficulty) is most appropriate,
+formed as their own question bank, meaning students are each given questions from the same bank (therefore the same difficulty) and are not simply given questions of arbitrary difficulty within the same category, which suggests that different students receive different difficulties. The instructor then has the option of using whichever question bank (i.e. difficulty) is most appropriate,
 and it offers a fair test to each student. Overall, it gives the instructor more choice on how to exactly test his or her students.
 
-\subsection{Convincing Distractors}
+\subsection{Convincing Distractors} \label{sec-convincing_distractors}
 
 One of the most interesting aspect of this system, and one of its main goals, is to produce convincing distractors -- that is, seemingly plausible, yet wrong, answers offerred as an option to the student. Distractors
 are essential to all multiple choice questions, for any options that students can easily identify as wrong take away from the difficulty of a question, and ultimately, does not add to the measure of knowledge of a student. Any blatant distractors make it easier for students to select (or guess) the correct answer. 
 
 This notion is also present in other systems (Generating Diagnostic Multiple Choice Comprehension Cloze Questions), but with varying success. This implementation is novel for similar systems based on deterministic methods (pharmacy reference). Between categories, and sometimes between difficulties, there are different methods for generating distractors, specific to each question. We discuss all of the methods below within each category. Here are examples within a question using GIFT format.
-
-\begin{Verbatim}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true, caption={A question with distractors in GIFT format.}, label=lst-distractors]
 What is the variable "bar" equal to?
 int foo = 2;
 int bar = foo - 4 / 3 + 4;
@@ -164,44 +164,46 @@ int bar = foo - 4 / 3 + 4;
 	~2
 	~3.33
 }
-\end{Verbatim}
+\end{lstlisting}
+\end{hbox}
 
 The first distractor method disregards the order of operations and simply evaluates the expression from left to right. The next method uses float operands and operations (a common mistake for beginners), and the third method evaluates the expression from right to left. The fourth and final method combines the first two, by disregarding the order of operations and using float operands and operations.
 
 While our main goal is to have every distractor be, not only plausible, but convincing, it becomes difficult when very general methods are used, as it can be the case that the same answer occurs twice. We will now discuss how to prevent duplicates and guarantee that all answers are unique.
 
-\subsection{Unique Answer Guarantee}
+\subsection{Unique Answer Guarantee} \label{sec-unique_answer_guarantee}
 
 Because of the universal format for questions, extra error checks can be done across all categories. While there is no general way
 to ensure that each question provides the correct answer (other than unit testing), we can confirm that each answer is unique and, especially, that no distractor is the same as the right answer -- a seemingly trivial, but essential, restraint. If there are repeating answers, then either the right answer is repeated as a wrong answer (in which case, a student may be penalized for picking the right answer), or a wrong answer is repeated twice (most students will disregard this answer as false). Both of these situations results in an unusable question, and this is unacceptable. 
 
-Producing unique answers can become complicated is for two reasons: i) each category generates its own distractors using "clever" methods (e.g. evaluating an expression
+TODO: do a fancy list thing here
+Producing unique answers can become complicated is for two reasons: i) each category generates its own distractors using ``clever" methods (e.g. evaluating an expression
 without order of operations, or evaluating an expression based on wrong datatypes) and ii) complex answers
-(in particular, answers containing vectors; see Arrays) become more difficult to compare and even more difficult
+(in particular, answers containing vectors as in \textbf{Arrays}) become more difficult to compare and even more difficult
 to generate an arbitrary new distractor (for the sake of uniqueness) that is still a somewhat plausible answer.
 In the case of (i), it is fairly simple to compare all answers, and any distractors that are not unique are reassigned
 a random value close to the answer. This is usually done with computational questions where the answer is simply a
 numerical value. However, in the case of (ii), if we were to simply alter a value in the vector, the distractor would
-become completely implausible because the answer only contains values that are originally in the array (see Arrays
-Difficulty 1). It would make no sense at all to change a value in the array. In order to generate distractors that
+become completely implausible because the answer only contains values that are originally in the array (see \textbf{Arrays Difficulty 3} in section \ref{subsubsec-arrays}). 
+It would make no sense at all to change a value in the array. In order to generate distractors that
 are still plausible (but are guaranteed to be unique), we can simply shuffle the order of the vector. Yet, this has
 another precondition that the number of permutations for the correct answer must be greater than or equal to the
 number of available answers. Without this restraint, there would not be enough unique answers. If this is not met,
 then it suffices to revert to the original strategy and simply assign a random value to the vector. Although it may
 not be very convincing, unique distractors take precedence over plausible ones.
 
-\subsection{Prevention of Trivial Cases}
+\subsection{Prevention of Trivial Cases} \label{sec-prevention_of_trivial_cases}
 
 While this is not a main focus of this paper, it should be noted that there are measures taken within each question to prevent trivial cases. For example, simple expressions such as \verb;1 * x - x; or a loop body that never executes (in the context of counting the number of iterations) are far too simple to test student knowledge, and this takes away from the objective of the question. We are able to set parameters when generating the questions that will hopefully restrict their occurrence, yet, due to the random nature of the questions, trivial questions may still appear. As a response, this system checks for predetermined, common trivial cases (such as a loop that iterates not enough) are changed to try and provide a more difficult question.
 
-
-\section{Categories}
+\section{Categories} \label{sec-categoires}
 
 There are basically three types/waves of categories: introductory, loops (intermediate), and advanced. The names of these categories reference not only how
 they are implemented, but how they are presented to students. As with any course, it is imperative to test student knowledge on material as it is presented
 to ensure that learning is occurring and prerequisite concepts are understood well enough to proceed. In this section, we'll give a more in-depth explanation
 of each category, their subcategories, and how some categories are related, based on their order of relative difficulty of content and implementation.
 
+TODO: another fancy list thing here
 There are four essential components we wish to answer with each of these categories: a) what is the goal of the question; what is it asking? b) an example question
 (removed from GIFT format) for easy reference, c) what parts of the question are random? which of those parts are essential to the question (i.e. what
 parts affect the answer or structure of the question)? which of those parts are non-essential (i.e. what parts have no affect over the question whatsoever)?
@@ -214,23 +216,25 @@ methodology of all question generation. And as a consequence, (d) becomes releva
 
 The first wave we will examine is introductory questions.
 
-\subsection{Introductory Questions}
-The categories included in this wave are identifiers, conditional expressions, and expressions. Each of these are topics are presented fairly early, and their main
+\subsection{Introductory Questions} \label{subsec-introductory_questions}
+The categories included in this wave are \textbf{Identifiers}, \textbf{Conditional Expressions}, and \textbf{Expressions}. Each of these are topics are presented fairly early, and their main
 focus includes -- explicitly and implicitly -- basic ideas such as syntax, variable access, integer operations, logical operations, and operator precedence.
-Two of these categories (identifiers and conditional expressions) are simply true/false questions, so there are no sophisticated methods of generating
+The first two categories are simply true/false questions, so there are no sophisticated methods of generating
 distractors, and this is part of the reason these categories are considered simple (from the point of view of implementation). However, these categories are still
-worth discussing for their testing methods and more of a concrete introduction to the implementation. Let's take a detailed look at each category.
+worth discussing for their testing methods and more of a concrete introduction. Let's take a detailed look at each category.
 
-\subsubsection{Identifiers}
+\subsubsection{Identifiers} \label{subsubsec-identifiers}
 
 This first category is the simplest of all the questions here. The main objective of the question is to test students' knowledge on identifier syntax in C++.
 All difficulties are also the same, just with a differing length of string, which only contributes a small amount to the essence of the question, so we'll consider
 them all at once.
 Here is an example of the true/false question:
-\begin{Verbatim}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true, caption={A question on identifiers.}, label=lst-identifiers]
 Is the following a valid C++ identifier?
 Tb306wN 
-\end{Verbatim}
+\end{lstlisting}
+\end{hbox}
 
 The reason this question is so simple is because there are not a lot of different elements that attribute to the question; there is only the identifier.
 Furthermore, as noted before, the true/false nature of the question obviously limits the number of available answers and doesn't allow for convincing distractors.
@@ -241,53 +245,55 @@ length 9 has a 30.1\% chance of being valid.
 
 NOTE: should i add something on how this adds to difficulty? I'm not sure how to close out this section
 
-\subsubsection{Conditional Expressions}
+\subsubsection{Conditional Expressions} \label{subsubsec-condtional_expressions}
 This category is also fairly simple, mostly because it is another true/false question, but it does introduce some of the structure that we will reuse in other
 categories (mostly the expression structure). The aim for this category is to have students evaluate a conditional expression, which tests logical operations
 and their precedence. It also implicitly tests variable access, but this concept should be understood by this point, and it does not affect the question greatly.
 Here is an example:
-
-\begin{Verbatim}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true, caption={Conditional Expressions Question}, label=lst-condtionals_1]
 What is the result of the following logical expression? 
 int numbers = 3; 
 int marks = 8; 
 (numbers <= 4) == (marks <= 10) 
-\end{Verbatim}
+\end{lstlisting}
+\end{hbox}
 
 The only important random elements are the operand values (each is between 1 and 10) and all operators. It should first be noted that the structure of the expression
 is always in the form of 
 \begin{Verbatim}
-(< sub-expression >) < logical operator > (< sub-expression >)
+(<sub-expression>) <logical operator> (<sub-expression>)
 \end{Verbatim}
 where each sub-expression is of the form 
 \begin{Verbatim}
-< variable > < comparison op > < literal >
+<variable> <comparison operator> <literal>
 \end{Verbatim}
 Each comparison operator is chosen randomly from \verb;(>, >=, <, <=); and each logical operator is chosen randomly from \verb;(==, !=, &&, ||);. 
 
-Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3. And the other
+Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3 sub-expressions. The other
 difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. For example,
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 int documents = 8;
 int bar = 10;
 (bar <= documents) != (10 < 9)
 \end{lstlisting}
+\end{hbox}
 
 This does not offer any significant difficulty change, but it does alter a format that students may be familiar with, and does a better job of testing the variable accesses.
 
-
-\subsubsection{Expressions}
+\subsubsection{Expressions} \label{subsubsec-expressions}
 This category is arguably the most important of all, as it serves as a basis for all other, more complex categories, and it is even utilized in other other categories
-(namely Functions). It still follows the basic structure as Identifiers and Conditional expressions (with simple prompts), but it introduces methods used to generate convincing distractors.
-The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to Conditional Expressions, it also
+(namely \textbf{Functions}). It still follows the basic structure as \textbf{Identifiers} and \textbf{Conditional Expressions} (with simple prompts), but it introduces methods used to generate convincing distractors.
+The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to \textbf{Conditional Expressions}, it also
 tests minor variable accessing. Here is an example:
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What is the variable "bar" equal to? 
 int foo = 2; 
 int bar = foo * 4 % 3 + 7; 
 \end{lstlisting}
+\end{hbox}
 
 Again, each difficulty does not change significantly (only the number of operands are increased), but these simple questions are sufficient for one last category for introduction.
 The main sources of randomness obviously come from the value (between 2 and 10) and number of operands (between 3 and 7 depending on difficulty). It is also important to note that
@@ -297,35 +303,38 @@ these types of questions more challenging for students. However, this does add t
 The most interesting change in this category from the last is the greater possibility of answers (that is, it is not a simple true/false question) that allow for new distractor methods to be implemented. Compared to later categories, these methods are not very complex, but they focus on common mistakes made by students, which makes for a more difficult question. The main
 purpose of these distractors (and really of all distractors) is to try and generalize common mistakes for convincing answers, just as an instructor would try to create with a single question. 
 
+TODO: fancy list thing below
+
 In this instance, the four distractor methods alter how the expression is evaluated by 1) disregarding order of operations, 2) using float values and operations, 3) evaluating the expression from
 right to left, and 4) disregarding the order of operations and using the float values (a combination of 1 and 2). These methods, while not particularly novel or sophisticated, aid the main objective 
-of the question in their deliberate misunderstanding of the main concepts. For example, any student that is unfamiliar with integer operations is certain to select the distractor provided by method 2. Of course, in some cases, certain methods would not provide a different answer than the correct one (as integer addition and float addition are similar, etc.), however different answers are still guaranteed by the unique answer checking (see Unique Answer Guarantee above).
+of the question in their deliberate misunderstanding of the main concepts. For example, any student that is unfamiliar with integer operations is certain to select the distractor provided by method 2. Of course, in some cases, certain methods would not provide a different answer than the correct one (as integer addition and float addition are similar, etc.), however different answers are still guaranteed by the unique answer checking (see Unique Answer Guarantee in section \ref{sec-unique_answer_guarantee}).
 
-\subsection{Loops}
+\subsection{Loops} \label{subsec-loops}
 
-This wave of questions is usually offered to students next, although -- implementation wise -- it doesn't have many similarities to the previous wave other than general format. Instead, Loops provides 
+This wave of questions is usually offered to students next, although -- implementation wise -- it doesn't have many similarities to the previous wave other than general format. Instead, \textbf{Loops} provides 
 a general template for all of its own categories. Since we may wish to test all types of loops (we will only consider for loops, while loops, and do while loops), we can create a general base for 
 all types of loops and test the same questions in each (as the main difference between each is mostly syntax). We separate each of these loops by category so instructors have the option of 
-choosing exactly what kind of loop they wish to test. Instead of outlining each category as in the previous wave, we will outline two different types of questions (called Loop Counting and Loop Printing) that then create a category for each type of loops (6 categories total). Implementation between categories of the same question type (e.g. For Loops Counting vs. While Loops Counting) have virtually the same implementation (except for an edge case in do while loops as readers can imagine), so we will not distinguish between them and instead only talk of the different question types.
+choosing exactly what kind of loop they wish to test. Instead of outlining each category as in the previous wave, we will outline two different types of questions (called \textbf{Loop Counting} and \textbf{Loop Printing}) that then create a category for each type of loops (6 categories total). Implementation between categories of the same question type (e.g. For Loops Counting vs. While Loops Counting) have virtually the same implementation (except for an edge case in do while loops as readers can imagine), so we will not distinguish between them and instead only talk of the different question types.
 
-\subsubsection{Loop Counting}
+\subsubsection{Loop Counting} \label{subsubsec-loop_counting}
 
 This first question type of loops is probably similar to questions used in most introductory programming courses, as it is the fundamental concept behind loops (especially for loops). Simply, these
-questions ask a student how many times a statement within a for loop is executed, based on the common structure of a "counter" variable that is updated each loop, and then compared to a
+questions ask a student how many times a statement within a for loop is executed, based on the common structure of a ``counter" variable that is updated each loop, and then compared to a
 terminating condition: the same structure as a for loop. This is the essence of the question at each difficulty, however, due to the many dependent parts of the question, many different forms 
 of randomization (mostly pertaining to the domain) occur between each difficulty, hence the distinction.
 
-\paragraph{Difficulty 1} \hfill \par
+\paragraph{Difficulty 1} \hfill \par 
 This difficulty is the most common form of for loops, and, even to some new students, can be trivial to evaluate. However, it still ensures that the main concepts of loop syntax, terminating 
-conditions, and updating statements. Here is an example from the For Loops category:
-
-\begin{lstlisting}
+conditions, and updating statements. Here is an example from the \textbf{For Loops} category:
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 How many times does the '*' print? 
 for (int b = 4; b < 7; b = b + 1)
 {
 	cout << '*';
 } 
 \end{lstlisting}
+\end{hbox}
 
 To ensure each question is relatively easy, the comparison operator used is always \verb;"<"; and the increment operator is always \verb;"+=";. This still leaves many essential details to be 
 randomized. First, the increment is chosen (it has the option of being either 1, 5, or 10 for simplicity), and then based on the increment, the starting value of the variable is chosen (between 2 and 10 and scaled based on the increment). Finally, the value used for the terminating condition is selected, which is between 3 and 6 greater than the starting value (again, also scaled based 
@@ -338,9 +347,9 @@ off-by-one error), and the last two distractors are a random amount away from th
 
 \paragraph{Difficulty 2} \hfill \par
 To increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
-statement. Here is an example from the Do While Loops category.
-
-\begin{lstlisting}
+statement. Here is an example from the \textbf{Do While Loops} category.
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 How many times does the '*' print? 
 int j = 53;
 do 
@@ -349,6 +358,7 @@ do
 	j = j - 5; 
 } while (j >= 30); 
 \end{lstlisting}
+\end{hbox}
 
  It uses the same domain of randomized values, except it swaps the initial value and the terminating value when the operator used to update the variable is \verb;"-=";. There is also a 
 guarantee to match the correct comparison operators (e.g. \verb;>, >=;) with the proper operator in the update assignment (e.g. +) unless otherwise specified by the user.
@@ -357,11 +367,11 @@ and this has a possibility of being the correct answer. When this situation does
 option aids in the essence of the question by making it more difficult, and it also introduces the option for non-homogeneous answer types (as all other available options are integer values). 
 Other than this new option, all distractor methods are the same as Difficulty 1.
 
-\paragraph{Difficulty 3} \hfill \par
+\paragraph{Difficulty 3} \hfill \par 
 Using the same structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
-and subtraction operators. Here is an example from the While Loops category.
-
-\begin{lstlisting}
+and subtraction operators. Below is an example from the \textbf{While Loops} category.
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true, float]
 How many times does the '*' print?
 int i = 13; 
 while (i >= 3) 
@@ -370,6 +380,9 @@ while (i >= 3)
 	i /= 2;
 }
 \end{lstlisting}
+\end{hbox}
+
+TODO: maybe the list thing here 
 
 As a consequence of using different operators in the update statement, a slightly different domain of random values is used for all parts. The increment is either 2 or 10, and the starting value 
 is chosen from 1 to 4 (and of course scaled by the increment as before). The value used in the terminating condition is calculated by taking the incremental value and raising it to a power 
@@ -380,11 +393,11 @@ so there is a final check to ensure the number of iterations is within the a def
 As in Difficulty 2, there is an option for ``improper'' loops, and the distractor methods are the same. The most interesting new aspect that this difficulty brings is the division operator, which tests students' ability on integer operations
 when updating variables, as well as for comparison. Overall, this difficulty is comparable to Difficulty 2, except it adds extra difficulty using new operations. 
 
-\paragraph{Difficulty 4} \hfill \par
+\paragraph{Difficulty 4} \hfill \par 
 While still offering the main objective of all of these difficulties, this difficulty can appear to be fundamentally different. It uses the same generation methods as Difficulty 2, except it uses 
-a nested loop for execution instead of a single loop. Here is a concrete example from the For Loops category.
-
-\begin{lstlisting}
+a nested loop for execution instead of a single loop. Here is a concrete example from the \textbf{For Loops} category.
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 How many times does the '*' print? 
 for (int i = 43; i >= 20; i = i - 10) 
 { 
@@ -394,6 +407,7 @@ for (int i = 43; i >= 20; i = i - 10)
 	} 
 }
 \end{lstlisting}
+\end{hbox}
 
 Each of these loops is created independently (yet always within the same category), and then evaluated together to create the correct answer. The nested loop structure allows for many more
 interesting distractors, and there may be some debate on choosing the optimal distractors (as there is a lot of room for student errors/misunderstandings). For this section we have used four
@@ -402,13 +416,13 @@ multiplied by the number of iterations for the inner loop, and 4) is the number 
 note that we only used the number of iterations of the first two distractors and we did not introduce the inner loop, as some students may recognize that these two values can be multiplied 
 together to easily find the answer, without actually testing any skill.
 
-\subsubsection{Loop Printing}
+\subsubsection{Loop Printing} \label{subsubsec-loop_printing}
 
-This next type of question in the Loops categories contains similarities to Loop Counting. It aims at the same essence, but it tries to test a deeper understanding of loops by printing out the 
+This next type of question in the \textbf{Loops} categories contains similarities to \textbf{Loop Counting}. It aims at the same essence, but it tries to test a deeper understanding of loops by printing out the 
 ``counter'' variable at each iteration. Implicitly, it still tests the number of iterations the loop executes, but the main objective is to understand, explicitly, when a variable is incremented,
 how integer operations affect the update, and the value that makes the loop terminate. For the sake of questions not being too difficult, each loop only executes between 3 and 5 iterations, and there is no fourth difficulty including nested loops. Here is an example from the Do While Loops category.
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What is the following output of the code? 
 int b = 61; 
 do
@@ -417,23 +431,24 @@ do
 	b = b - 10; 
 } while (b > 20); 
 \end{lstlisting}
+\end{hbox}
 
-Each difficulty is generated using the exact same methods as Loop Counting but obviously has different distractor methods, yet the same distractors are used for each difficulty. The first 
+Each difficulty is generated using the exact same methods as \textbf{Loop Counting} but obviously has different distractor methods, yet the same distractors are used for each difficulty. The first 
 distractor uses all of the same values as the correct answer, except it omits the first value. The second distractor uses the same values as the correct answer, but it appends one more iteration
 from the loop. The third distractor is the same values as the correct one, except it omits the last value. Finally, the fourth distractor combines the first two methods by omitting the first value
 and appends an extra iteration to the end. While there are many options for generating distractors, these all seem to provide convincing answers that some students may create on their own.
 
-\subsection{Advanced}
+\subsection{Advanced} \label{subsec-advanced}
 
 While this wave is not particularly more difficult than the others, we will refer to them as advanced because they are usually introduced near the end of a course, and they some categories also 
 utilize other earlier categories. Some of these difficulties also use very involved methods for question generation, evaluation, and distractor generation -- as well as the unique answer guarantee 
-for Arrays as discussed earlier. 
+for \textbf{Arrays}. 
 
-\subsubsection{Switch Cases}
-The first category in this wave has the same essence for each difficulty; the only significant differences are the random elements, which then determine the difficulty. This is similar to the Loop 
-Counting types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example:
-
-\begin{lstlisting}
+\subsubsection{Switch Cases} \label{subsubsec-switch_cases}
+The first category in this wave has the same essence for each difficulty; the only significant differences are the random elements, which then determine the difficulty. This is similar to the \textbf{Loop 
+Counting} types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example:
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What is the value of "bar" after the switch case block?
 int bar = 4; 
 switch (bar) { 
@@ -452,6 +467,7 @@ switch (bar) {
 		break; 
 } 
 \end{lstlisting}
+\end{hbox}
 
 This category's main objective is to test students' knowledge of the control structure through a switch case block. This focuses on the syntax of a switch case statment, how
 the conditional cases are compared, and how break statements function as opposed to fall through. Occasionally, there may be a default case as well (depending on difficulty). 
@@ -483,7 +499,7 @@ differing randomness occurs in the break statements and default statements.
 The first difficulty is probably the most common, or most ``uniform'' switch case statement. There is guaranteed that all cases have a corresponding break statement, and there is always a
 default case. This is a useful difficulty when just introducing the syntax of switch case statements.
 
-\paragraph{Difficulty 2} \hfill \par
+\paragraph{Difficulty 2} \hfill \par 
 
 Here, there are no break statements, but always a default statement. This is a good test on the concept of fall through in a switch case block.
 
@@ -499,21 +515,21 @@ This final difficulty is completely random in all aspects. Instead of any guaran
 case to be present. This is best used when testing all concepts of switch cases including fall through, break statements, and a block with or without a default case. For that reason, this is 
 regarded as the most difficulty question in the category. 
 
-\subsubsection{Arrays}
+\subsubsection{Arrays} \label{subsubsec-arrays}
 
-This category (along with the Functions category) differs greatly from the other types of categories and poses an almost altogether different type of category. The main difference being how difficulties are defined within it. As mentioned above in the Difficulty section, it is hard to alter a single aspect of these questions to make it more or less difficult, and
+This category (along with the \textbf{Functions} category) differs greatly from the other types of categories and poses an almost altogether different type of category. The main difference being how difficulties are defined within it. As mentioned above in the Difficulty section (\ref{sec-difficulty}), it is hard to alter a single aspect of these questions to make it more or less difficult, and
 for that reason each single difficulty in this category is a different question altogether -- yet still ordered by their relative difficulty. Of course, all of these questions still pertain to array concepts
 as a whole, and it is much easier to separate them and even use them in different settings. But here, the concept of difficulties is slightly different than what has been mentioned previously. 
 
-Another major difference that is specific to the Arrays category is its guarantee of unique answers. Although some answers have already contained a vector of values (such as Loop Printing), 
-the answers have an overwhelming chance of being unique (as nearly all vectors are of different sizes). In Arrays, however, some vector answers are all of the same length (some as short as 3) and contain all of the same values from a small domain. Solutions to guarantee uniqueness (while still trying to maintain plausible distractors) are discussed below in Difficulty 1. First, we will look
+Another major difference that is specific to the \textbf{Arrays} category is its guarantee of unique answers. Although some answers have already contained a vector of values (such as \textbf{Loop Printing}), 
+the answers have an overwhelming chance of being unique (as nearly all vectors are of different sizes). In \textbf{Arrays}, however, some vector answers are all of the same length (some as short as 3) and contain all of the same values from a small domain. Solutions to guarantee uniqueness (while still trying to maintain plausible distractors) are discussed below in Difficulty 1. First, we will look
 at the question as a whole.
 
 \paragraph{Difficulty 1} \hfill \par
 
 This first type of question aims to test student's knowledge on array accesses dealing with fetching values and assigning values. Here is an example.
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What are the contents of the array after the following statements? 
 int bar[6] = {6, 5, 3, 8, 1, 9}; 
 int temp; 
@@ -521,6 +537,7 @@ temp = bar[4];
 bar[4] = bar[1]; 
 bar[1] = temp; 
 \end{lstlisting}
+\end{hbox}
 
 Simple randomization methods are used in each aspect of the array, which makes for a clear, focused question. The size of the array is random (between 4 and 6), as well as its contents
 (unique values between 0 and 10), and the indices used to access the array (two different valid indices of the array). 
@@ -539,8 +556,8 @@ values of the original array while being unique. Again, any student familiar wit
 
 This type of question, now different from the first, has an objective to combine array access/updates with loops and loop variables. It uses a for loop to update each element in the array. This is
 useful for testing basic syntax and concepts of combining loops with array accessing. Here is an example. 
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What are the contents of the array after the following?
 int documents[6] = {3, 3, 10, 1, 1, 2};
 for (int i = 0; i < 6; i += 1)
@@ -548,6 +565,7 @@ for (int i = 0; i < 6; i += 1)
 	documents[i] += 5; 
 } 
 \end{lstlisting}
+\end{hbox}
 
 The randomization in this question is also fairly minimal. The for loop variable is predefined to start at 0 and increment by 1 until the variable is equal to the size of the array (given by the 
 condition). The only random parts here are the size of the array (between 3 and 6), the amount that each array element is updated by (1, 5 or 10), and the contents of the array (any value 
@@ -562,8 +580,8 @@ doesn't really offer better distractors, the use of this method is very minimal 
 
 This question also has the objective of testing correct array access, but it also has the possibility of out-of-bounds access that the students must identify. Instead of making this a simple one time
 access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Here is an example.
-
-\begin{lstlisting}
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 What is printed after the following statements?
 int dogs[6] = {0, 1, 7, 3, 0, 2}; 
 for (int i = 1; i < 4; i = i + 1) 
@@ -571,6 +589,7 @@ for (int i = 1; i < 4; i = i + 1)
 	cout << dogs[i] << " ";
 } 
 \end{lstlisting}
+\end{hbox}
 
 The number of random aspects also increases relative to Difficulty 2. All random elements include the size of the array (from 3 to 6), the contents of the array (from 0 to 10), the beginning value
 of the loop variable (from 0 to half the size of the array), the loop comparison operator (either \verb;<; or \verb;<=;), the terminating loop value in the comparison (the size of the array 
@@ -587,9 +606,9 @@ The unique answer guarantee used here is also the same as Difficulty 1, but more
 elements of the correct answer vector are also not guaranteed to be unique. Then there may be a case where the number of the permutations of this vector is not great enough that we can simply shuffle 
 the answer. Take $ U $ to be the set of unique values in the correct answer (a vector called $ C $). We then construct another vector, say $ V $, that, for each element in $ U $, counts the number of occurences in $ C $.  Then the factorial of the length of $ C $ divided by the product of the factorial of each element in $ V $ 
  (i.e. the number of permutations) must be greater than or equal to 5 (the total number of answers).
-
+\begin{hbox}{}
 \begin{equation*}
-V = \textrm{Number of occurrences in } C, \forall u \in U
+V = \textrm{Number of occurrences in } C, \forall \- u \in U
 \end{equation*}
 
 \begin{equation*}
@@ -606,13 +625,14 @@ V = {3, 1};
 \begin{equation*}
 \textrm{Number of permutations} = \frac{length(C)!}{\displaystyle \prod_{v \in V} v!} = \frac{24}{6} = 4
 \end{equation*}
+\end{hbox}
 
 In this case, there are not enough permutations of the answer to be used uniquely in each answer. If this case ever occurs, we finally give up and simply add a new random element to the 
 vector.
 
-\subsubsection{Functions}
+\subsubsection{Functions} \label{subsubsec-functions}
 
-This next wave has similar structure to that of Arrays, as each difficulty is its own question, yet each contains main concepts of functions as a whole. There may be room to fine tune certain 
+This next wave has similar structure to that of \textbf{Arrays}, as each difficulty is its own question, yet each contains main concepts of functions as a whole. There may be room to fine tune certain 
 random elements to spread some questions over multiple difficulties to mirror the earlier categories, but for now, we will simply propose each difficulty on its own. 
 
 The main problem with implementing this category is finding a particular balance between randomness to fulfill our original goals, while still maintaining a simple, easily understandable question for students to answer. Some questions can have a large degree of randomness, yet -- at a certain point -- this starts to take away from the question as it becomes hard to read and answer quickly, essential to these questions when used in a timed format. This can be illustrated in the further difficulties in the category, where some can contain very syntax-heavy code snippets.
@@ -620,11 +640,11 @@ The main problem with implementing this category is finding a particular balance
 \paragraph{Difficulty 1} \hfill \par
 
 The objective of this first question is to simply test return types and any type coercion that takes place. It features a function with no parameters and a single return statement with a simple arithmetic statement. In the return expression, two float operands are used (any value between 1 and 10 in steps of 0.5) with a single operation (any of +, -, *, or /). In the future, there may be an opportunity here to randomize the amount of operands in the expression, but as it's not essential to the question, we have not yet considered it. Here is an example:
-
+\begin{hbox}{}
 \begin{VerbCM}
 Given the following function definition:
 \end{VerbCM}
-\begin{lstlisting}
+\begin{lstlisting}[breaklines=true]
 int Pow() 
 { 
 	return 4.5 + 1.0; 
@@ -633,27 +653,28 @@ int Pow()
 \begin{VerbCM}
 What is printed from the following call? 
 \end{VerbCM}
-\begin{lstlisting}
+\begin{lstlisting}[breaklines=true]
 cout << Pow() << endl; 
 \end{lstlisting}
+\end{hbox}
 
-In addition to the randomness described above, the essential random element is the return type of the function. Of course, a different return type will produce different answers for the same return expression, so this provides the main random element. The return type can be any of  \texttt{int}, \texttt{float}, or \texttt{void}. In the case that the return type is Void, the correct
-answer is actually a "Compile-time error", similar to some difficulties in Loop Printing. 
+In addition to the randomness described above, the essential random element is the return type of the function. Of course, a different return type will produce different answers for the same return expression, so this provides the main random element. The return type can be any of  \texttt{int}, \texttt{float}, or \texttt{void}. In the case that the return type is \texttt{void}, the correct
+answer is actually a ``Compile-time error", similar to some difficulties in Loop Printing. 
 
-As a consequence of this possibilty, one distractor is always ''Run-time error`` to test student knowledge on specific error types here. The other distractor methods include i) the float value
+As a consequence of this possibilty, one distractor is always ``Run-time error'' to test student knowledge on specific error types here. The other distractor methods include i) the float value
 of the expression evaluated from right to left and ii) if the return value is float, this uses the integer value (and vice versa for Int return types).
 
 Overall, this difficulty can benefit from its relative simplicity to explicitly test student knowledge on function return types and type coercion.
 
 \paragraph{Difficulty 2} \hfill \par
 
-This next difficulty is in the same vain as difficulty 1, except it focuses on data types of parameters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
-Because of the similar objective of the two difficulties, a format that resembles difficulty 1 is used here as well. 
-
+This next difficulty is in the same vain as Difficulty 1, except it focuses on data types of parameters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
+Because of the similar objective of the two difficulties, a format that resembles Difficulty 1 is used here as well. 
+\begin{hbox}{}
 \begin{VerbCM}
 Given the following function definition:
 \end{VerbCM}
-\begin{lstlisting}
+\begin{lstlisting}[breaklines=true]
 float Switch(float a, int b)
 {
     return a - b;
@@ -661,17 +682,20 @@ float Switch(float a, int b)
 What is printed from the following call?
 cout << Switch(3.5, 1.5) << endl;
 \end{lstlisting}
+\end{hbox}
 
 Furthermore, similar randomization methods are used in this difficulty as well. That is, each literal ranges from 1 to 10 (ending in intervals of 0.5), the same operations are used, and a constant number of operands are used as well. The main difference in random elements here 
 is obviously the parameters of the function (although the underlying implementation and evaluation is nearly equivalent) and the return type (which is a constant value of float to ensure the largest amount of precision, adding to the questions simplicity). Again, all of these static methods (such as number of operands and return type) can be randomized further to add extra difficulty. For the sake of simplicity (both in explanation and question difficulty), we will only consider this form.
 
-As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in Expressions), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbitrary return type).
+TODO: decide about list thing
+
+As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in \textbf{Expressions}), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbitrary return type).
 
 \paragraph{Difficulty 3} \hfill \par
 
-The last difficulty of Functions is the most difficult, not only due to content, but simply because of the amount of syntax contained within the prompt. Of course, students should be farily competent in reading code at this point in the course, but it would be preferable to use a simpiler, yet still relatively challenging, strategy to test this question.
-
-\begin{lstlisting}
+The last difficulty of \textbf{Functions} is the most difficult, not only due to content, but simply because of the amount of syntax contained within the prompt. Of course, students should be farily competent in reading code at this point in the course, but it would be preferable to use a simpiler, yet still relatively challenging, strategy to test this question.
+\begin{hbox}{}
+\begin{lstlisting}[breaklines=true]
 Given the following function definition:
 void Calculate(int& a, int& b, int c)
 {
@@ -685,6 +709,7 @@ int item = 5;
 Calculate(marks, matrix, item);
 cout << matrix << endl;
 \end{lstlisting}
+\end{hbox}
 
 The main objective here is to test students on reference parameters . This is possible to test with only one variable, but that limits the difficulty (as well as the overall randomness) that is the goal of these questions. Conversely, some may argue that three parameters is too complex in itself. In the current implementation, the number of variables (as well as the number of parameters) are constant, but can be easily changed and easily randomized if desired. Another option for added randomization is the datatype of all parameters and all variables (currently, only integers are used). The final static elements of this question are a) the order that the variables are defined in is the same order that the variables are passed to the function; b) the variable printed at the end of the prompt always corresponds to the parameter that is assigned in the function; c) the order that the parameters are defined in is the same order they appear in the expression; and d) the number of operands in the expression is the same as the number of parameters. All of these elements can be randomized, but again, they usually add difficulty without changing the essence of the question. 
 
@@ -692,16 +717,18 @@ Despite all of these static elements, there are still many options for randomiza
 
 Because this question depends on the expression inside the function, some of the same distractor methods are used within this category, such as disregarding order of operations and
 using float values and float operations. The novel distractor methods are much more interesting.
-The first (and most obvious method) distractor being equal to the original value of the variable -- if the parameter is pss-by-reference -- or the value of the expression -- if the parameter is pass-by-value. A fairly straightforward method, but effective in testing the objective of this question. 
+The first (and most obvious method) distractor being equal to the original value of the variable -- if the parameter is pass-by-reference -- or the value of the expression -- if the parameter is pass-by-value. A fairly straightforward method, but effective in testing the objective of this question. 
 The next distractor is simply the value of the variable declared after the printed variable (in the example above, this would be item). This method is not as particularly sophisticated, but serves as an obvious wrong answer for knowledgeable students. 
 
-\section{Future Work}
+\section{Future Work} \label{sec-future_work}
+
+TODO: list thing
 
 The next research that should take place is in regards to actual use of the system that produces quantitative results. Any statistics would not only be helpful in evaluating the system as a whole, but also useful in identifying a) the efficacy of each category, b) a statistically-based distinction between difficulties within categories, and c) efficacy of certain distractor methods for a question. With these results, this system (and other systems) would be better able to produce and classify the questions within them, as well as produce more effective distractor methods. However, there are some ethical problems that will need to be addressed in some of this work. Namely, any test for difficulty between students may cause lower test scores than usual or what is considered ``fair", which adversely and unintentionally affects students. 
 
 In addition to requiring data, simply adding to the system with more question categories, or improving each question method and each distractor method is always a potential focus.
 
-\section{Conclusion}
+\section{Conclusion} \label{sec-conclusion}
 
 The proposed system offers instructors a simple interface to easily generate and upload a multitude of multiple choice questions to be used in an online exam. With a unique question used for each student, this will hopefully reduce the presence of cheating in online exams. Along with the many different categories, this system distinguishes between relative difficulty of a question (to challenge and test all students fairly), and it also offers methods of generating convincing distractors to more effectively test student knowledge. 
 

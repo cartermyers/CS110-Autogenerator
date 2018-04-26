@@ -1,19 +1,22 @@
-- use list format
-- distractor examples for every question
-- gift vs. html comparison
-- use /ref{} for references (with /label{sec-asdf})
+- use list format for lists (and remove if unnecessary)
+- distractor examples for every question (do i do this in GIFT? in html? in another format for readability?)
+- gift vs. html comparison on example
+- use /ref{} for references of sections (with /label{sec-asdf})                                                                     DONE
 - bibtex
-- quotations
-- listings off the edge of paper
+- quotations (`` and '')
+- listings off the edge of paper (hard breaks)                                                                                      DONE
 - watch out for "Of course," "Simply", "obviously"; if its obvious, dont say it
 - define something first ("this is what a category is; why do students have difficulty with it"),
     then give them properites (like "how it relates to other problems")
-- quotes out of verb
+- quotes out of verb (see in-line verb stuff)
 - remove redundancies
-- emphasize or bold names of categories
-- watch out for orphans (package in an H box)
+- emphasize or bold names of categories (readability)                                                                               DONE
+- watch out for orphans (figures/listings that run off of a page); package in an H box; maybe don't need hboxes and use [float]
 - put excerpts in figures?? maybe a listing environment?? look online for standard code excerpts online
-- math expression: use \begin{equation}, and inside text use H box; also google about quantifiers: /, /- /. 
+- math expression: use \begin{equation}, and inside text use H box; also google about quantifiers: /, /- /.                         DONE
+- separate prompt font and code excerpts!!
+- maybe change lstlisting caption names? see https://tex.stackexchange.com/questions/64839/how-to-change-listing-caption
+
 
 notes on
 
