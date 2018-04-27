@@ -1,6 +1,6 @@
 - use list format for lists (and remove if unnecessary)
 - distractor examples for every question (do i do this in GIFT? in html? in another format for readability?)
-- gift vs. html comparison on example
+- gift vs. html comparison on example; probably need screenshots (see https://tex.stackexchange.com/questions/35155/lstlisting-in-two-columns)
 - use /ref{} for references of sections (with /label{sec-asdf})                                                                     DONE
 - bibtex
 - quotations (`` and '')                                                                                                            DONE
@@ -11,7 +11,7 @@
 - quotes out of verb (see in-line verb stuff)
 - remove redundancies
 - emphasize or bold names of categories (readability)                                                                               DONE
-- watch out for orphans (figures/listings that run off of a page); package in an H box; maybe don't need hboxes and use [float]
+- watch out for orphans (figures/listings that run off of a page); package in an H box; maybe don't need hboxes and use [float] (this might need to be defined at every lstlisting; not just at the environment)
 - put excerpts in figures?? maybe a listing environment?? look online for standard code excerpts online
 - math expression: use \begin{equation}, and inside text use H box; also google about quantifiers: /, /- /.                         DONE
 - separate prompt font and code excerpts!!

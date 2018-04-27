@@ -230,7 +230,7 @@ All difficulties are also the same, just with a differing length of string, whic
 them all at once.
 Here is an example of the true/false question:
 
-\begin{lstlisting}[breaklines=true, caption={A question on identifiers.}, label=lst-identifiers]
+\begin{lstlisting}[caption={A question on identifiers.}, label=lst-identifiers]
 Is the following a valid C++ identifier?
 Tb306wN 
 \end{lstlisting}
@@ -249,9 +249,9 @@ NOTE: should i add something on how this adds to difficulty? I'm not sure how to
 This category is also fairly simple, mostly because it is another true/false question, but it does introduce some of the structure that we will reuse in other
 categories (mostly the expression structure). The aim for this category is to have students evaluate a conditional expression, which tests logical operations
 and their precedence. It also implicitly tests variable access, but this concept should be understood by this point, and it does not affect the question greatly.
-Here is an example:
+Listing \ref{lst-conditionals_1} serves as an example.
 
-\begin{lstlisting}[breaklines=true, caption={Conditional Expressions Question}, label=lst-condtionals_1]
+\begin{lstlisting}[breaklines=true, caption={Conditional Expressions Question}, label=lst-conditionals_1]
 What is the result of the following logical expression? 
 int numbers = 3; 
 int marks = 8; 
@@ -271,9 +271,9 @@ where each sub-expression is of the form
 Each comparison operator is chosen randomly from \verb;(>, >=, <, <=); and each logical operator is chosen randomly from \verb;(==, !=, &&, ||);. 
 
 Each difficulty does not differ greatly from the other. Difficulties 1 and 3 always have 2 sub-expressions, and difficulties 2 and 4 always have 3 sub-expressions. The other
-difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. For example,
+difference between difficulties 1 and 2 from 3 and 4 is that the latter two difficulties have a random order of operands in the expression. See listing \ref{lst-conditionals_rndm} as an example.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Conditional Question with Random Order of Operands}, label=lst-conditionals_rndm]
 int documents = 8;
 int bar = 10;
 (bar <= documents) != (10 < 9)
@@ -286,9 +286,9 @@ This does not offer any significant difficulty change, but it does alter a forma
 This category is arguably the most important of all, as it serves as a basis for all other, more complex categories, and it is even utilized in other other categories
 (namely \textbf{Functions}). It still follows the basic structure as \textbf{Identifiers} and \textbf{Conditional Expressions} (with simple prompts), but it introduces methods used to generate convincing distractors.
 The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to \textbf{Conditional Expressions}, it also
-tests minor variable accessing. Here is an example:
+tests minor variable accessing. There is an example at listing \ref{lst-expressions_1}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Expressions Question}, label=lst-expressions_1]
 What is the variable "bar" equal to? 
 int foo = 2; 
 int bar = foo * 4 % 3 + 7; 
@@ -325,9 +325,9 @@ of randomization (mostly pertaining to the domain) occur between each difficulty
 
 \paragraph{Difficulty 1} \hfill \par 
 This difficulty is the most common form of for loops, and, even to some new students, can be trivial to evaluate. However, it still ensures that the main concepts of loop syntax, terminating 
-conditions, and updating statements. Here is an example from the \textbf{For Loops} category:
+conditions, and updating statements. Tere is an example from the \textbf{For Loops} category at listing \ref{lst-loop_counting_d1}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Loop Counting Difficulty 1 Example}, label=lst-loop_counting_d1]
 How many times does the '*' print? 
 for (int b = 4; b < 7; b = b + 1)
 {
@@ -347,9 +347,9 @@ off-by-one error), and the last two distractors are a random amount away from th
 
 \paragraph{Difficulty 2} \hfill \par
 To increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
-statement. Here is an example from the \textbf{Do While Loops} category.
+statement. Listing \ref{lst-loop_counting_d2} shows an example from the \textbf{Do While Loops} category.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Loop Counting Difficulty 2 Example}, label=lst-loop_counting_d2]
 How many times does the '*' print? 
 int j = 53;
 do 
@@ -369,9 +369,9 @@ Other than this new option, all distractor methods are the same as Difficulty 1.
 
 \paragraph{Difficulty 3} \hfill \par 
 Using the same structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
-and subtraction operators. Below is an example from the \textbf{While Loops} category.
+and subtraction operators. An example from the \textbf{While Loops} category is found at listing \ref{lst-loop_counting_d3}.
 
-\begin{lstlisting}[breaklines=true, float]
+\begin{lstlisting}[caption={Loop Counting Difficulty 3 Example}, label=lst-loop_counting_d3]
 How many times does the '*' print?
 int i = 13; 
 while (i >= 3) 
@@ -395,9 +395,9 @@ when updating variables, as well as for comparison. Overall, this difficulty is 
 
 \paragraph{Difficulty 4} \hfill \par 
 While still offering the main objective of all of these difficulties, this difficulty can appear to be fundamentally different. It uses the same generation methods as Difficulty 2, except it uses 
-a nested loop for execution instead of a single loop. Here is a concrete example from the \textbf{For Loops} category.
+a nested loop for execution instead of a single loop. There is a concrete example from the \textbf{For Loops} category at listing \ref{lst-loop_counting_4}.
 
-\begin{lstlisting}
+\begin{lstlisting}[float, caption={Loop Counting Difficulty 4 Example}, label=lst-loop_counting_4]
 How many times does the '*' print? 
 for (int i = 43; i >= 20; i = i - 10) 
 { 
@@ -420,9 +420,9 @@ together to easily find the answer, without actually testing any skill.
 
 This next type of question in the \textbf{Loops} categories contains similarities to \textbf{Loop Counting}. It aims at the same essence, but it tries to test a deeper understanding of loops by printing out the 
 ``counter'' variable at each iteration. Implicitly, it still tests the number of iterations the loop executes, but the main objective is to understand, explicitly, when a variable is incremented,
-how integer operations affect the update, and the value that makes the loop terminate. For the sake of questions not being too difficult, each loop only executes between 3 and 5 iterations, and there is no fourth difficulty including nested loops. Here is an example from the Do While Loops category.
+how integer operations affect the update, and the value that makes the loop terminate. For the sake of questions not being too difficult, each loop only executes between 3 and 5 iterations, and there is no fourth difficulty including nested loops. Listing \ref{lst-loop_printing} is an example from the \textbf{Do While Loops} category.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={Loop Printing Difficulty 2 Example}, label=lst-loop_printing]
 What is the following output of the code? 
 int b = 61; 
 do
@@ -446,9 +446,9 @@ for \textbf{Arrays}.
 
 \subsubsection{Switch Cases} \label{subsubsec-switch_cases}
 The first category in this wave has the same essence for each difficulty; the only significant differences are the random elements, which then determine the difficulty. This is similar to the \textbf{Loop 
-Counting} types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example:
+Counting} types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example is shown at listing \ref{lst-switch_cases}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Switch Cases} Example}, label=lst-switch_cases]
 What is the value of "bar" after the switch case block?
 int bar = 4; 
 switch (bar) { 
@@ -527,9 +527,9 @@ at the question as a whole.
 
 \paragraph{Difficulty 1} \hfill \par
 
-This first type of question aims to test student's knowledge on array accesses dealing with fetching values and assigning values. Here is an example.
+This first type of question aims to test student's knowledge on array accesses dealing with fetching values and assigning values. There is an example at listing \ref{lst-arrays_1}.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 1 Example}, label=lst-arrays_1]
 What are the contents of the array after the following statements? 
 int bar[6] = {6, 5, 3, 8, 1, 9}; 
 int temp; 
@@ -555,9 +555,9 @@ values of the original array while being unique. Again, any student familiar wit
 \paragraph{Difficulty 2} \hfill \par
 
 This type of question, now different from the first, has an objective to combine array access/updates with loops and loop variables. It uses a for loop to update each element in the array. This is
-useful for testing basic syntax and concepts of combining loops with array accessing. Here is an example. 
+useful for testing basic syntax and concepts of combining loops with array accessing. See listing \ref{lst-arrays_2} as an example. 
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 2 Example}, label=lst-arrays_2, float]
 What are the contents of the array after the following?
 int documents[6] = {3, 3, 10, 1, 1, 2};
 for (int i = 0; i < 6; i += 1)
@@ -579,9 +579,9 @@ doesn't really offer better distractors, the use of this method is very minimal 
 \paragraph{Difficulty 3} \hfill \par
 
 This question also has the objective of testing correct array access, but it also has the possibility of out-of-bounds access that the students must identify. Instead of making this a simple one time
-access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Here is an example.
+access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Listing \ref{lst-arrays_3} shows an example.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 3 Example}, label=lst-arrays_3]
 What is printed after the following statements?
 int dogs[6] = {0, 1, 7, 3, 0, 2}; 
 for (int i = 1; i < 4; i = i + 1) 
@@ -639,7 +639,7 @@ The main problem with implementing this category is finding a particular balance
 
 \paragraph{Difficulty 1} \hfill \par
 
-The objective of this first question is to simply test return types and any type coercion that takes place. It features a function with no parameters and a single return statement with a simple arithmetic statement. In the return expression, two float operands are used (any value between 1 and 10 in steps of 0.5) with a single operation (any of +, -, *, or /). In the future, there may be an opportunity here to randomize the amount of operands in the expression, but as it's not essential to the question, we have not yet considered it. Here is an example:
+The objective of this first question is to simply test return types and any type coercion that takes place. It features a function with no parameters and a single return statement with a simple arithmetic statement. In the return expression, two float operands are used (any value between 1 and 10 in steps of 0.5) with a single operation (any of +, -, *, or /). In the future, there may be an opportunity here to randomize the amount of operands in the expression, but as it's not essential to the question, we have not yet considered it. There is an example at listing \ref{lst-functions_1}.
 
 \begin{VerbCM}
 Given the following function definition:
@@ -653,7 +653,7 @@ int Pow()
 \begin{VerbCM}
 What is printed from the following call? 
 \end{VerbCM}
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 1 Example}, label=lst-functions_1]
 cout << Pow() << endl; 
 \end{lstlisting}
 
@@ -685,7 +685,7 @@ float Switch(float a, int b)
 \begin{VerbCM}
 What is printed from the following call?
 \end{VerbCM}
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 2 Example}, label=lst-functions_2]
 cout << Switch(3.5, 1.5) << endl;
 \end{lstlisting}
 
@@ -701,7 +701,7 @@ As for distractor methods, this question uses methods similar to the first diffi
 
 The last difficulty of \textbf{Functions} is the most difficult, not only due to content, but simply because of the amount of syntax contained within the prompt. Of course, students should be farily competent in reading code at this point in the course, but it would be preferable to use a simpiler, yet still relatively challenging, strategy to test this question.
 
-\begin{lstlisting}
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 3 Example}, label=lst-functions_3, float]
 Given the following function definition:
 void Calculate(int& a, int& b, int c)
 {
