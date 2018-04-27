@@ -3,7 +3,7 @@
 - gift vs. html comparison on example
 - use /ref{} for references of sections (with /label{sec-asdf})                                                                     DONE
 - bibtex
-- quotations (`` and '')
+- quotations (`` and '')                                                                                                            DONE
 - listings off the edge of paper (hard breaks)                                                                                      DONE
 - watch out for "Of course," "Simply", "obviously"; if its obvious, dont say it
 - define something first ("this is what a category is; why do students have difficulty with it"),
