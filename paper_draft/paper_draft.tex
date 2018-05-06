@@ -713,20 +713,21 @@ The main problem with implementing this category is finding a particular balance
 
 The objective of this first question is to simply test return types and any type coercion that takes place. It features a function with no parameters and a single return statement with a simple arithmetic statement. In the return expression, two float operands are used (any value between 1 and 10 in steps of 0.5) with a single operation (any of +, -, *, or /). In the future, there may be an opportunity here to randomize the amount of operands in the expression, but as it's not essential to the question, we have not yet considered it. There is an example at listing \ref{lst-functions_1}.
 
-\begin{VerbCM}
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 1 GIFT Example}, label=lst-functions_1]
 Given the following function definition:
-\end{VerbCM}
-\begin{lstlisting}
 int Pow() 
-{ 
-	return 4.5 + 1.0; 
-}
-\end{lstlisting}
-\begin{VerbCM}
+\{ 
+	return 4.5 - 1.0; 
+\}
 What is printed from the following call? 
-\end{VerbCM}
-\begin{lstlisting}[caption={\textbf{Functions} Difficulty 1 Example}, label=lst-functions_1]
-cout << Pow() << endl; 
+cout << Pow() << endl;
+{
+	=3
+	~-3.5
+	~3.5
+	~Run-time Error
+	~Compile-time Error
+} 
 \end{lstlisting}
 
 
@@ -742,23 +743,21 @@ Overall, this difficulty can benefit from its relative simplicity to explicitly 
 
 This next difficulty is in the same vain as Difficulty 1, except it focuses on data types of parameters instead of the return type. This way, students are tested more on knowledge on parameter passing and type coercion, as well as the operations that result from them.
 Because of the similar objective of the two difficulties, a format that resembles Difficulty 1 is used here as well.
-\hfill \par \hfill \par
 
-\noindent
-\begin{VerbCM}
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 2 GIFT Example}, label=lst-functions_2, float]
 Given the following function definition:
-\end{VerbCM}
-\begin{lstlisting}
-float Switch(float a, int b)
-{
-    return a - b;
-}
-\end{lstlisting}
-\begin{VerbCM}
+float Switch(int a, int b)
+\{
+    return a / b;
+\}
 What is printed from the following call?
-\end{VerbCM}
-\begin{lstlisting}[caption={\textbf{Functions} Difficulty 2 Example}, label=lst-functions_2]
-cout << Switch(3.5, 1.5) << endl;
+cout << Switch(5.5, 4.5) << endl;
+{
+	=1
+	~1.25
+	~1.222
+	~1.5
+}
 \end{lstlisting}
 
 
@@ -773,19 +772,26 @@ As for distractor methods, this question uses methods similar to the first diffi
 
 The last difficulty of \textbf{Functions} is the most difficult, not only due to content, but simply because of the amount of syntax contained within the prompt. Of course, students should be farily competent in reading code at this point in the course, but it would be preferable to use a simpiler, yet still relatively challenging, strategy to test this question.
 
-\begin{lstlisting}[caption={\textbf{Functions} Difficulty 3 Example}, label=lst-functions_3, float]
+\begin{lstlisting}[caption={\textbf{Functions} Difficulty 3 GIFT Example}, label=lst-functions_3, float]
 Given the following function definition:
 void Calculate(int& a, int& b, int c)
-{
-	b = a / b + c;
-}
+\{
+	b = a + b / c;
+\}
 
 What value is printed after the following statements?
-int marks = 5;
+int marks = 2;
 int matrix = 4;
 int item = 5;
 Calculate(marks, matrix, item);
 cout << matrix << endl;
+{
+	=2
+	~4
+	~5
+	~1
+	~2.8
+}
 \end{lstlisting}
 
 
@@ -795,7 +801,7 @@ Despite all of these static elements, there are still many options for randomiza
 
 Because this question depends on the expression inside the function, some of the same distractor methods are used within this category, such as disregarding order of operations and
 using float values and float operations. The novel distractor methods are much more interesting.
-The first (and most obvious method) distractor being equal to the original value of the variable -- if the parameter is pass-by-reference -- or the value of the expression -- if the parameter is pass-by-value. A fairly straightforward method, but effective in testing the objective of this question. 
+The first (and most obvious method) distractor being equal to the original value of the variable -- if the parameter is pass-by-reference -- or the value of the expression -- if the parameter is pass-by-value; a fairly straightforward method, but effective in testing the objective of this question. 
 The next distractor is simply the value of the variable declared after the printed variable (in the example above, this would be item). This method is not as particularly sophisticated, but serves as an obvious wrong answer for knowledgeable students. 
 
 \section{Future Work} \label{sec-future_work}
