@@ -13,7 +13,12 @@
 
 \usepackage{courier}
 \usepackage{listings}
-\lstset{basicstyle=\ttfamily, language=C++, captionpos=b, breaklines=true, float}
+\lstset{basicstyle=\ttfamily, 
+	language=C++,
+ 	literate={~} {$\sim$}{1}, 
+	captionpos=b, 
+	breaklines=true, 
+	float}
 
 \usepackage{fancyvrb}
 \DefineVerbatimEnvironment{VerbCM}{BVerbatim}{fontfamily=helvetica} %this is used for question prompts in natural language (aka non-code excerpts) %, fontsize=\large}
@@ -288,10 +293,17 @@ This category is arguably the most important of all, as it serves as a basis for
 The main aim is to test students' ability to evaluate simple arithmetic expressions in C++ using integer operands and operations. Similar to \textbf{Conditional Expressions}, it also
 tests minor variable accessing. There is an example at listing \ref{lst-expressions_1}.
 
-\begin{lstlisting}[caption={Expressions Question}, label=lst-expressions_1]
+\begin{lstlisting}[caption={Expressions Question in GIFT}, label=lst-expressions_1]
 What is the variable "bar" equal to? 
 int foo = 2; 
-int bar = foo * 4 % 3 + 7; 
+int bar = foo * 4 + 8 / 3;
+{
+	=10
+	~5
+	~10.667
+	~12
+	~5.333
+}
 \end{lstlisting}
 
 
@@ -327,12 +339,19 @@ of randomization (mostly pertaining to the domain) occur between each difficulty
 This difficulty is the most common form of for loops, and, even to some new students, can be trivial to evaluate. However, it still ensures that the main concepts of loop syntax, terminating 
 conditions, and updating statements. Tere is an example from the \textbf{For Loops} category at listing \ref{lst-loop_counting_d1}.
 
-\begin{lstlisting}[caption={Loop Counting Difficulty 1 Example}, label=lst-loop_counting_d1]
+\begin{lstlisting}[caption={Loop Counting Difficulty 1 GIFT Example}, label=lst-loop_counting_d1, float]
 How many times does the '*' print? 
 for (int b = 4; b < 7; b = b + 1)
-{
+\{
 	cout << '*';
-} 
+\}
+{
+	=3
+	~2
+	~4
+	~6
+	~7
+}
 \end{lstlisting}
 
 
@@ -349,14 +368,21 @@ off-by-one error), and the last two distractors are a random amount away from th
 To increase the effort, more comparison operators \verb;(>, >=, <, <=); are used for the terminating condition, and the subtraction operator is used in the update
 statement. Listing \ref{lst-loop_counting_d2} shows an example from the \textbf{Do While Loops} category.
 
-\begin{lstlisting}[caption={Loop Counting Difficulty 2 Example}, label=lst-loop_counting_d2]
+\begin{lstlisting}[caption={Loop Counting Difficulty 2 GIFT Example}, label=lst-loop_counting_d2, float]
 How many times does the '*' print? 
 int j = 53;
 do 
-{
+\{
 	cout << '*'; 
 	j = j - 5; 
-} while (j >= 30); 
+\} while (j >= 30); 
+{
+	=5
+	~4
+	~6
+	~2
+	~1
+}
 \end{lstlisting}
 
 
@@ -371,13 +397,20 @@ Other than this new option, all distractor methods are the same as Difficulty 1.
 Using the same structure as the previous difficulty, the most significant difference is that the update statements use the multiplication and division operators as opposed to the addition
 and subtraction operators. An example from the \textbf{While Loops} category is found at listing \ref{lst-loop_counting_d3}.
 
-\begin{lstlisting}[caption={Loop Counting Difficulty 3 Example}, label=lst-loop_counting_d3]
+\begin{lstlisting}[caption={Loop Counting Difficulty 3 GIFT Example}, label=lst-loop_counting_d3]
 How many times does the '*' print?
 int i = 13; 
 while (i >= 3) 
-{
+\{
 	cout << '*'; 
 	i /= 2;
+\}
+{
+	=3
+	~2
+	~4
+	~1
+	~6
 }
 \end{lstlisting}
 
@@ -397,14 +430,21 @@ when updating variables, as well as for comparison. Overall, this difficulty is 
 While still offering the main objective of all of these difficulties, this difficulty can appear to be fundamentally different. It uses the same generation methods as Difficulty 2, except it uses 
 a nested loop for execution instead of a single loop. There is a concrete example from the \textbf{For Loops} category at listing \ref{lst-loop_counting_4}.
 
-\begin{lstlisting}[float, caption={Loop Counting Difficulty 4 Example}, label=lst-loop_counting_4]
+\begin{lstlisting}[float, caption={Loop Counting Difficulty 4 GIFT Example}, label=lst-loop_counting_4]
 How many times does the '*' print? 
 for (int i = 43; i >= 20; i = i - 10) 
-{ 
+\{ 
 	for (int j = 56; j > 45; j = j - 5) 
-	{ 
+	\{ 
 		cout << '*'; 
-	} 
+	\} 
+\}
+{
+	=9
+	~3
+	~4
+	~12
+	~16
 }
 \end{lstlisting}
 
@@ -422,18 +462,25 @@ This next type of question in the \textbf{Loops} categories contains similaritie
 ``counter'' variable at each iteration. Implicitly, it still tests the number of iterations the loop executes, but the main objective is to understand, explicitly, when a variable is incremented,
 how integer operations affect the update, and the value that makes the loop terminate. For the sake of questions not being too difficult, each loop only executes between 3 and 5 iterations, and there is no fourth difficulty including nested loops. Listing \ref{lst-loop_printing} is an example from the \textbf{Do While Loops} category.
 
-\begin{lstlisting}[caption={Loop Printing Difficulty 2 Example}, label=lst-loop_printing]
+\begin{lstlisting}[caption={Loop Printing Difficulty 2 GIFT Example}, label=lst-loop_printing]
 What is the following output of the code? 
 int b = 61; 
 do
-{ 
+\{ 
 	cout << b << ' '; 
 	b = b - 10; 
-} while (b > 20); 
+\} while (b > 20);
+{
+	=61 51 41 31 21
+	~51 41 31 21
+	~61 51 41 31 21 11
+	~61 51 41 31
+	~51 41 31 21 11
+}
 \end{lstlisting}
 
 
-Each difficulty is generated using the exact same methods as \textbf{Loop Counting} but obviously has different distractor methods, yet the same distractors are used for each difficulty. The first 
+Each difficulty is generated using the exact same methods as \textbf{Loop Counting} but obviously has different distractor methods, yet the same distractors are used for each difficulty within the \textbf{Loop Printing} category. The first 
 distractor uses all of the same values as the correct answer, except it omits the first value. The second distractor uses the same values as the correct answer, but it appends one more iteration
 from the loop. The third distractor is the same values as the correct one, except it omits the last value. Finally, the fourth distractor combines the first two methods by omitting the first value
 and appends an extra iteration to the end. While there are many options for generating distractors, these all seem to provide convincing answers that some students may create on their own.
@@ -448,11 +495,11 @@ for \textbf{Arrays}.
 The first category in this wave has the same essence for each difficulty; the only significant differences are the random elements, which then determine the difficulty. This is similar to the \textbf{Loop 
 Counting} types described before. For the sake of brevitiy, here is a description of all shared aspects, and we will later discuss each difficulty's subtleties. First, a general example is shown at listing \ref{lst-switch_cases}.
 
-\begin{lstlisting}[caption={\textbf{Switch Cases} Example}, label=lst-switch_cases]
+\begin{lstlisting}[caption={\textbf{Switch Cases} GIFT Example}, label=lst-switch_cases]
 What is the value of "bar" after the switch case block?
 int bar = 4; 
-switch (bar) { 
-	case 2: 
+switch (bar) \{ 
+	case 7: 
 		bar = 5; 
 		break; 
 	case 4: 
@@ -462,9 +509,13 @@ switch (bar) {
 		break; 
 	case 3: 
 		bar = 0; 
-	case 0: 
-		bar = 1; 
-		break; 
+\}
+{
+	=2
+	~4
+	~7
+	~6
+	~1
 } 
 \end{lstlisting}
 
@@ -473,7 +524,7 @@ This category's main objective is to test students' knowledge of the control str
 the conditional cases are compared, and how break statements function as opposed to fall through. Occasionally, there may be a default case as well (depending on difficulty). 
 
 All distractor methods are also shared between each difficulty, which may be room for improvement, but for now, these methods offer plausible answers for each difficulty. The first distractor is
-the original value of the variable. The second distractor is always the value that is \textit{compared} to in the first case (e.g. the value 2 in the example above) and is a good distractor to identify students that are not very familiar with the block. The next two distractors (to be used more generally) are based on some conditions. 
+the original value of the variable. The second distractor is always the value that is \textit{compared} to in the first case (e.g. the value 7 in the example above) and is a good distractor to identify students that are not very familiar with the structure. The next two distractors (to be used more generally) are based on some conditions. 
 
 The third distractor is the value assigned to the variable in the first matching case. In the example above, this would be the value 6 (as the variable starts with value 4). This is a particularly good distractor when there is not a break statement
 and fall through occurs. However, if there is no matching case value for the original variable, the third distractor is then the last assigned value \textit{before} the default case, if there is a
@@ -529,13 +580,20 @@ at the question as a whole.
 
 This first type of question aims to test student's knowledge on array accesses dealing with fetching values and assigning values. There is an example at listing \ref{lst-arrays_1}.
 
-\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 1 Example}, label=lst-arrays_1]
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 1 GIFT Example}, label=lst-arrays_1]
 What are the contents of the array after the following statements? 
-int bar[6] = {6, 5, 3, 8, 1, 9}; 
+int bar[6] = \{6, 5, 3, 8, 1, 9\}; 
 int temp; 
 temp = bar[4]; 
 bar[4] = bar[1]; 
-bar[1] = temp; 
+bar[1] = temp;
+{
+	=\{6, 1, 3, 8, 5, 9\}
+	~\{6, 5, 3, 8, 1, 9\}
+	~\{8, 5, 3, 6, 1, 9\}
+	~\{6, 5, 9, 8, 1, 3\}
+	~\{9, 5, 3, 8, 1, 6\}
+} 
 \end{lstlisting}
 
 
@@ -557,12 +615,19 @@ values of the original array while being unique. Again, any student familiar wit
 This type of question, now different from the first, has an objective to combine array access/updates with loops and loop variables. It uses a for loop to update each element in the array. This is
 useful for testing basic syntax and concepts of combining loops with array accessing. See listing \ref{lst-arrays_2} as an example. 
 
-\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 2 Example}, label=lst-arrays_2, float]
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 2 GIFT Example}, label=lst-arrays_2, float]
 What are the contents of the array after the following?
-int documents[6] = {3, 3, 10, 1, 1, 2};
+int documents[6] = \{3, 3, 10, 1, 1, 2\};
 for (int i = 0; i < 6; i += 1)
-{ 
+\{ 
 	documents[i] += 5; 
+\}
+{
+	=\{8, 8, 15, 6, 6, 7\}
+	~\{3, 3, 10, 1, 1, 2\}
+	~\{9, 9, 16, 7, 7, 8\}
+	~\{0, 1, 2, 3, 4, 5\}
+	~\{-2, -2, 5, -4, -4, -3\}
 } 
 \end{lstlisting}
 
@@ -581,13 +646,20 @@ doesn't really offer better distractors, the use of this method is very minimal 
 This question also has the objective of testing correct array access, but it also has the possibility of out-of-bounds access that the students must identify. Instead of making this a simple one time
 access, a for loop is used similar to Difficulty 2 to iterate through the loop, yet in a less deterministic way. Listing \ref{lst-arrays_3} shows an example.
 
-\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 3 Example}, label=lst-arrays_3]
+\begin{lstlisting}[caption={\textbf{Arrays} Difficulty 3 GIFT Example}, label=lst-arrays_3, float]
 What is printed after the following statements?
-int dogs[6] = {0, 1, 7, 3, 0, 2}; 
-for (int i = 1; i < 4; i = i + 1) 
-{ 
-	cout << dogs[i] << " ";
-} 
+int bar[6] = \{4, 10, 4, 6, 9, 2\};
+for (int i = 1; i < 6; i = i + 2)
+\{
+	cout << bar[i] << " ";
+\}
+{
+	=10 6 2 
+	~6 2 10 
+	~6 10 6 
+	~4 4 9 
+	~Run-time error due to out of bound index.
+}
 \end{lstlisting}
 
 

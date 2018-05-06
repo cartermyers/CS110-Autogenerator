@@ -14,7 +14,7 @@
 - watch out for orphans (figures/listings that run off of a page); package in an H box; maybe don't need hboxes and use [float] (this might need to be defined at every lstlisting; not just at the environment)
 - put excerpts in figures?? maybe a listing environment?? look online for standard code excerpts online
 - math expression: use \begin{equation}, and inside text use H box; also google about quantifiers: /, /- /.                         DONE
-- separate prompt font and code excerpts!!
+- separate prompt font and code excerpts!! (maybe not if im doing GIFT vs. rendered)
 - maybe change lstlisting caption names? see https://tex.stackexchange.com/questions/64839/how-to-change-listing-caption
 
 
