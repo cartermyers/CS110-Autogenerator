@@ -9,6 +9,8 @@
 %\usepackage{hyperref} %this includes hyperlinks
 \usepackage{url}
 
+\usepackage{enumitem}
+
 \usepackage{amsmath}
 
 \usepackage{courier}
@@ -181,14 +183,16 @@ While our main goal is to have every distractor be, not only plausible, but conv
 Because of the universal format for questions, extra error checks can be done across all categories. While there is no general way
 to ensure that each question provides the correct answer (other than unit testing), we can confirm that each answer is unique and, especially, that no distractor is the same as the right answer -- a seemingly trivial, but essential, restraint. If there are repeating answers, then either the right answer is repeated as a wrong answer (in which case, a student may be penalized for picking the right answer), or a wrong answer is repeated twice (most students will disregard this answer as false). Both of these situations results in an unusable question, and this is unacceptable. 
 
-TODO: do a fancy list thing here
-Producing unique answers can become complicated is for two reasons: i) each category generates its own distractors using ``clever" methods (e.g. evaluating an expression
-without order of operations, or evaluating an expression based on wrong datatypes) and ii) complex answers
-(in particular, answers containing vectors as in \textbf{Arrays}) become more difficult to compare and even more difficult
-to generate an arbitrary new distractor (for the sake of uniqueness) that is still a somewhat plausible answer.
-In the case of (i), it is fairly simple to compare all answers, and any distractors that are not unique are reassigned
+
+Producing unique answers can become complicated is for two reasons: 
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+\item \label{enum-unique_1} Each category generates its own distractors using ``clever" methods (e.g. evaluating an expression
+without order of operations, or evaluating an expression based on wrong datatypes). 
+\item \label{enum-unique_2} Complex answers (in particular, answers containing vectors as in \textbf{Arrays}) become more difficult to compare and even more difficult to generate an arbitrary new distractor (for the sake of uniqueness) that is still a somewhat plausible answer.
+\end{enumerate}
+In the case of \ref{enum-unique_1}, it is fairly simple to compare all answers, and any distractors that are not unique are reassigned
 a random value close to the answer. This is usually done with computational questions where the answer is simply a
-numerical value. However, in the case of (ii), if we were to simply alter a value in the vector, the distractor would
+numerical value. However, in the case of \ref{enum-unique_2}, if we were to simply alter a value in the vector, the distractor would
 become completely implausible because the answer only contains values that are originally in the array (see \textbf{Arrays Difficulty 3} in section \ref{subsubsec-arrays}). 
 It would make no sense at all to change a value in the array. In order to generate distractors that
 are still plausible (but are guaranteed to be unique), we can simply shuffle the order of the vector. Yet, this has
@@ -208,16 +212,27 @@ they are implemented, but how they are presented to students. As with any course
 to ensure that learning is occurring and prerequisite concepts are understood well enough to proceed. In this section, we'll give a more in-depth explanation
 of each category, their subcategories, and how some categories are related, based on their order of relative difficulty of content and implementation.
 
-TODO: another fancy list thing here
-There are four essential components we wish to answer with each of these categories: a) what is the goal of the question; what is it asking? b) an example question
-(removed from GIFT format) for easy reference, c) what parts of the question are random? which of those parts are essential to the question (i.e. what
-parts affect the answer or structure of the question)? which of those parts are non-essential (i.e. what parts have no affect over the question whatsoever)?
-and are there any essential parts of the question that are not randomized (i.e. are there any constant factors of the question)? and lastly d) what methods
-are used to generate the distractors? It is important to ask (a) so each question can have a definitive objective, and it should be easy to note if
+
+There are four essential components we wish to answer with each of these categories: 
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+\item \label{enum-categories_1}
+What is the goal of the question; what is it asking? 
+\item \label{enum-categories_2}
+An example question
+(in both GIFT and rendered format) for reference.
+\item \label{enum-categories_3}
+What parts of the question are random? Furthermore, which of those parts are essential to the question (i.e. what
+parts affect the answer or structure of the question), and which of those parts are non-essential (i.e. what parts have no affect over the question whatsoever)?
+Are there any essential parts of the question that are not randomized (i.e. are there any constant factors)?
+\item \label{enum-categories_4}
+What methods
+are used to generate the distractors? 
+\end{enumerate}
+It is important to ask \ref{enum-categories_1} so each question can have a definitive objective, and it should be easy to note if
 certain randomness adds/hinders that objective or if the randomness does not preserve a comparable difficulty for different students.
-This basically tries to prevent elements making a question ``too random". It is also important to ask [TODO: should I include this part c? is it talked about enough later on?] (c) for a deep understanding of how the question
+This basically tries to prevent elements making a question ``too random". It is also important to ask [TODO: should I include this part \ref{enum-categories_3}? is it talked about enough later on?] \ref{enum-categories_3} for a deep understanding of how the question
 is randomized -- and how some parts are kept constant -- to produce independent yet similarly difficult questions. This part answers the main
-methodology of all question generation. And as a consequence, (d) becomes relevant to ask to offer convincing distractors for a cohesive question.
+methodology of all question generation. And as a consequence, \ref{enum-categories_4} becomes relevant to ask to offer convincing distractors for a cohesive question.
 
 The first wave we will examine is introductory questions.
 
@@ -315,11 +330,19 @@ these types of questions more challenging for students. However, this does add t
 The most interesting change in this category from the last is the greater possibility of answers (that is, it is not a simple true/false question) that allow for new distractor methods to be implemented. Compared to later categories, these methods are not very complex, but they focus on common mistakes made by students, which makes for a more difficult question. The main
 purpose of these distractors (and really of all distractors) is to try and generalize common mistakes for convincing answers, just as an instructor would try to create with a single question. 
 
-TODO: fancy list thing below
-
-In this instance, the four distractor methods alter how the expression is evaluated by 1) disregarding order of operations, 2) using float values and operations, 3) evaluating the expression from
-right to left, and 4) disregarding the order of operations and using the float values (a combination of 1 and 2). These methods, while not particularly novel or sophisticated, aid the main objective 
-of the question in their deliberate misunderstanding of the main concepts. For example, any student that is unfamiliar with integer operations is certain to select the distractor provided by method 2. Of course, in some cases, certain methods would not provide a different answer than the correct one (as integer addition and float addition are similar, etc.), however different answers are still guaranteed by the unique answer checking (see Unique Answer Guarantee in section \ref{sec-unique_answer_guarantee}).
+In this instance, the four distractor methods alter how the expression is evaluated by:
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+\item \label{enum-expr_1}
+Disregarding order of operations 
+\item \label{enum-expr_2}
+Using float values and operations
+\item \label{enum-expr_3}
+Evaluating the expression from right to left 
+\item \label{enum-expr_4}
+Disregarding the order of operations and using the float values (a combination of \ref{enum-expr_1} and \ref{enum-expr_2})
+\end{enumerate}
+These methods, while not particularly novel or sophisticated, aid the main objective 
+of the question in their deliberate misunderstanding of the main concepts. For example, any student that is unfamiliar with integer operations is certain to select the distractor provided by method \ref{enum-expr_2} . Of course, in some cases, certain methods would not provide a different answer than the correct one (as integer addition and float addition are similar, etc.), however different answers are still guaranteed by the unique answer checking (see Unique Answer Guarantee in section \ref{sec-unique_answer_guarantee}).
 
 \subsection{Loops} \label{subsec-loops}
 
@@ -764,9 +787,16 @@ cout << Switch(5.5, 4.5) << endl;
 Furthermore, similar randomization methods are used in this difficulty as well. That is, each literal ranges from 1 to 10 (ending in intervals of 0.5), the same operations are used, and a constant number of operands are used as well. The main difference in random elements here 
 is obviously the parameters of the function (although the underlying implementation and evaluation is nearly equivalent) and the return type (which is a constant value of float to ensure the largest amount of precision, adding to the questions simplicity). Again, all of these static methods (such as number of operands and return type) can be randomized further to add extra difficulty. For the sake of simplicity (both in explanation and question difficulty), we will only consider this form.
 
-TODO: decide about list thing
-
-As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in \textbf{Expressions}), but the most interesting methods here include i) evaluating the expression with all float operations (regardless of any previous type coercion), ii) evaluating the expression with all the original float values (essentially ignoring type coercion), and iii) using the floor of the correct answer (to provide an integer-like answer). Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbitrary return type).
+As for distractor methods, this question uses methods similar to the first difficulty (which are also similar to those in \textbf{Expressions}), but the most interesting methods here include:
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+\item
+Evaluating the expression with all float operations (regardless of any previous type coercion) 
+\item
+Evaluating the expression with all the original float values (essentially ignoring type coercion)
+\item
+Using the floor of the correct answer (to provide an integer-like answer)
+\end{enumerate}
+Of course, as this question is furthered, these methods will have to be slightly altered to try and provide more convincing distractors in a general case (as in an arbitrary number of operands or an arbitrary return type).
 
 \paragraph{Difficulty 3} \hfill \par
 
@@ -806,9 +836,16 @@ The next distractor is simply the value of the variable declared after the print
 
 \section{Future Work} \label{sec-future_work}
 
-TODO: list thing
-
-The next research that should take place is in regards to actual use of the system that produces quantitative results. Any statistics would not only be helpful in evaluating the system as a whole, but also useful in identifying a) the efficacy of each category, b) a statistically-based distinction between difficulties within categories, and c) efficacy of certain distractor methods for a question. With these results, this system (and other systems) would be better able to produce and classify the questions within them, as well as produce more effective distractor methods. However, there are some ethical problems that will need to be addressed in some of this work. Namely, any test for difficulty between students may cause lower test scores than usual or what is considered ``fair", which adversely and unintentionally affects students. 
+The next research that should take place is in regards to actual use of the system that produces quantitative results. Any statistics would not only be helpful in evaluating the system as a whole, but also useful in identifying: 
+\begin{enumerate}[label=\textbf{(\arabic*)}]
+\item
+The efficacy of each category
+\item
+A statistically-based distinction between difficulties within categories
+\item
+Efficacy of certain distractor methods for a question
+\end{enumerate}
+With these results, this system (and other systems) would be better able to produce and classify the questions within them, as well as produce more effective distractor methods. However, there are some ethical problems that will need to be addressed in some of this work. Namely, any test for difficulty between students may cause lower test scores than usual or what is considered ``fair", which adversely and unintentionally affects students. 
 
 In addition to requiring data, simply adding to the system with more question categories, or improving each question method and each distractor method is always a potential focus.
 
